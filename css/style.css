@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto&display=swap');
+
+:root {
+  --color1: #00B686;
+  --color2: #131E2D;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /*Navbar */
+
+  .logo{
+    display: inline;
+    margin-top: 1rem;
+    margin-left: 6vw;
+    width: 10.8rem;
+    height: 3.8rem;
+  }
+
+  nav {
+    position: fixed;
+    padding: 0%;
+    z-index: 1;
+    width: 100vw;
+    height: 6rem;
+    margin: 0%;
+  }
+
+  .navbar-solid{
+   background-color: #fff;
+   box-shadow: 0px 1px 13px -8px rgba(0,0,0,0.49);
+   -webkit-box-shadow: 0px 1px 13px -8px rgba(0,0,0,0.49);
+   -moz-box-shadow: 0px 1px 13px -8px rgba(0,0,0,0.49);
+   height: 5.5rem!important;
+  }
+  
+  .menu {
+    float: right;
+    margin-right: 10vw;
+    margin-top: 2.5rem;
+  }
+
+  .links li{
+      display: inline;
+  }
+  
+  .links a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.2rem; 
+    letter-spacing: 0.5px;
+    color: var(--color2);
+    padding-right: 3vw ;
+  } 
+
+  .menuToggle {
+    display: block;
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+    z-index: 1;  
+   
+  }
+  
+  .menuToggle input {
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;  
+    cursor: pointer;   
+    opacity: 0;
+    z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+  } 
+  
+  .menuToggle span {
+    display: none;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+  
+    background: #232323;
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  
+  .menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  .menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  .menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  .menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  .menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  .listmenu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    margin: -100px 0 0 0;
+    padding: 20px;
+    padding-top: 125px;
+    right: -100px;
+    
+    background: #f1f1f1;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  
+  .listmenu li {
+    padding: 10px 0 10px 30px;
+    margin: auto;
+  }
+  .listmenu a{
+    font-size: 1.6rem;
+    line-height: 1.2rem; 
+    letter-spacing: 0.5px;
+    color: #131E2D;
+  }
+  
+  .menuToggle input:checked ~ ul {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  
+  @media only screen and (min-width: 425px){
+   .listmenu{
+       width: 70vw;
+   }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    :root{
+        font-size: 75%;
+    }
+    .menuToggle span {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+    }
+}
+
+/* Section-1 */
+.section1{
+background: url(../assets/bg-vector.svg) no-repeat;
+background-size: 100vw auto;
+width: 100vw;
+min-height: 140vh;
+}
+
+.text1{
+position: relative;
+margin-left: 6.8vw;
+margin-top: 17%;
+font-family: 'Josefin Sans', sans-serif ;
+font-style: normal;
+font-weight: 300;
+font-size: 4.8rem;
+line-height: 4.8rem;
+width: auto;
+height: auto;
+color: var(--color2);
+}
+
+.text2{
+color: var(--color1);
+}
+
+.text3{
+  max-width: 38.5rem;
+  min-height: 4.1rem;
+  font-size: 1.8rem;
+line-height: 120%;
+margin-top: 2rem;
+}
+
+.mobile{
+  position: relative;
+width: 16.4rem;
+height: 34rem;
+margin-left: 15%;
+margin-right: 10%;
+margin-top: 10%;
+
+}
+
+.button-wrapper{
+  display: flex;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.button{
+width: 30%;
+}
+
+@media only screen and (max-width: 768px){
+  .text1{
+    font-size: 4rem;
+    margin-top: 25%;
+  }
+  .mobile{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .button{
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .text1{
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: 40%;
+  }
+  .text3{
+    margin-top: 5%;
+    font-size:1.2rem ;
+  }
+  .mobile{
+    margin-top: 5%;
+  }
+  .button{
+    width: 50%;
+  }
+
+}
+
+/* Section 2 */
