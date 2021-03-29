@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto:wght@400;500&display=swap');
 
 :root {
   --color1: #00B686;
@@ -161,6 +161,7 @@ html {
   }
   
   @media only screen and (min-width: 425px){
+    
    .listmenu{
        width: 70vw;
    }
@@ -169,7 +170,7 @@ html {
 
   @media only screen and (max-width: 768px) {
     :root{
-        font-size: 75%;
+        font-size: 65%!important;
     }
     .menuToggle span {
       display: block;
@@ -185,7 +186,7 @@ html {
 background: url(../assets/bg-vector.svg) no-repeat;
 background-size: 100vw auto;
 width: 100vw;
-min-height: 140vh;
+
 }
 
 .text1{
@@ -212,6 +213,7 @@ color: var(--color1);
   font-size: 1.8rem;
 line-height: 120%;
 margin-top: 2rem;
+color: var(--color2);
 }
 
 .mobile{
@@ -236,8 +238,8 @@ width: 30%;
 
 @media only screen and (max-width: 768px){
   .text1{
-    font-size: 4rem;
     margin-top: 25%;
+   
   }
   .mobile{
     margin-left: 5%;
@@ -249,13 +251,13 @@ width: 30%;
 }
 @media only screen and (max-width: 425px) {
   .text1{
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     margin-top: 40%;
   }
   .text3{
     margin-top: 5%;
-    font-size:1.2rem ;
+    font-size: 1.3rem;
   }
   .mobile{
     margin-top: 5%;
@@ -267,3 +269,54 @@ width: 30%;
 }
 
 /* Section 2 */
+
+.text4{
+  margin-left: 6.8vw;
+  color: var(--color2);
+  font-family: Josefin Sans;
+font-style: normal;
+font-weight: 300;
+font-size: 3.8rem;
+line-height: 3.8rem;
+margin-top: 25%;
+}
+
+.text5,.text6,.text7{
+  margin-top: 4.5rem;
+  max-width: 41.5rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 180%;
+  letter-spacing: 0.15px;
+  color: var(--color1);
+  margin-right: 5%;
+}
+
+.text5{
+  margin-left: 6.8vw;
+}
+
+.text6{
+  margin-left: 28%;
+}
+
+.text7{
+  margin-left: 48%;
+}
+
+@media only screen and (max-width: 425px){ 
+  .text4{
+    font-size: 3rem;
+    margin-top: 20%;
+  }
+  .text6,.text7{
+    margin-left: 6.8vw ;
+    margin-top: 5%;
+
+  }
+.text5{
+  margin-top: 5%;
+}
+}
