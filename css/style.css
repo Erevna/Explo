@@ -214,6 +214,7 @@ color: var(--color1);
 line-height: 120%;
 margin-top: 2rem;
 color: var(--color2);
+letter-spacing: 0.02em;
 }
 
 .mobile{
@@ -270,19 +271,25 @@ width: 30%;
 
 /* Section 2 */
 
-.text4{
+.section2{
+  margin-top: 23%;
   margin-left: 6.8vw;
-  color: var(--color2);
-  font-family: Josefin Sans;
-font-style: normal;
-font-weight: 300;
-font-size: 3.8rem;
-line-height: 3.8rem;
-margin-top: 25%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.text5,.text6,.text7{
-  margin-top: 4.5rem;
+.text4{
+  color: var(--color2);
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  max-width: 45rem;
+}
+
+.text5{
+  margin-top: 4rem;
   max-width: 41.5rem;
   font-family: Roboto;
   font-style: normal;
@@ -294,29 +301,88 @@ margin-top: 25%;
   margin-right: 5%;
 }
 
-.text5{
-  margin-left: 6.8vw;
+.social-icon{
+  min-width: 5rem;
+  min-height: 5rem;
 }
 
-.text6{
-  margin-left: 28%;
-}
-
-.text7{
-  margin-left: 48%;
-}
-
-@media only screen and (max-width: 425px){ 
+@media only screen and (max-width: 425px){
+  .network{
+    display: none;
+  } 
+  .section2{
+    padding-right: 6.8vw;
+  }
   .text4{
     font-size: 3rem;
+    width: 100%;
     margin-top: 20%;
   }
-  .text6,.text7{
-    margin-left: 6.8vw ;
-    margin-top: 5%;
+  .text5{
+    width: 20rem;
+    width: 100%;
 
   }
-.text5{
-  margin-top: 5%;
+
 }
+
+/* Section 4 */
+
+.news-card-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4.75rem;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  overflow-x: auto;
+}
+
+.news-card{
+  margin: 1.5rem;
+  width: 19.4rem;
+  min-width: 18rem;
+  min-height: 23rem;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.news-card-heading{
+  margin-top: 0.5rem;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: var(--color2);
+}
+
+.timer{
+  font-size: 0.625rem;
+  color: rgba(19, 30, 45, 0.6);
+  float: right;
+}
+.news-card-content{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.25px;
+  color: rgba(19, 30, 45, 0.6); 
+}
+
+@media only screen and (max-width: 768px){
+  .news-card{
+    margin: 1rem;
+  }
+  .news-card-wrapper{
+    margin-right: 0%;
+  }
+  .news-card-wrapper::-webkit-scrollbar{
+    width: 0%;
+  }
 }
