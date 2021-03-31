@@ -1,33 +1,33 @@
-<svg width="574" height="699" viewBox="0 0 574 699" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="588" height="699" viewBox="0 0 588 699" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g filter="url(#filter0_f)">
-<circle cx="446.5" cy="464.5" r="12.5" fill="url(#paint0_linear)"/>
+<circle cx="334.5" cy="464.5" r="12.5" fill="url(#paint0_linear)"/>
 </g>
-<circle cx="350" cy="342" r="156.5" stroke="url(#paint1_linear)"/>
-<circle cx="350" cy="342" r="244.5" stroke="url(#paint2_linear)" stroke-dasharray="15 15"/>
-<circle cx="350" cy="342" r="316.5" stroke="url(#paint3_linear)"/>
-<circle cx="40" cy="302" r="40" fill="#C4C4C4"/>
-<circle cx="40" cy="302" r="40" fill="url(#pattern0)"/>
-<circle cx="148.5" cy="587.5" r="7.5" fill="url(#paint4_linear)"/>
+<circle cx="238" cy="342" r="156.5" stroke="url(#paint1_linear)"/>
+<circle cx="238" cy="342" r="244.5" stroke="url(#paint2_linear)" stroke-dasharray="15 15"/>
+<circle cx="238" cy="342" r="316.5" stroke="url(#paint3_linear)"/>
+<circle cx="548" cy="302" r="40" fill="#C4C4C4"/>
+<circle cx="548" cy="302" r="40" fill="url(#pattern0)"/>
+<circle cx="36.5" cy="587.5" r="7.5" fill="url(#paint4_linear)"/>
 <g filter="url(#filter1_f)">
-<circle cx="148.5" cy="587.5" r="12.5" fill="url(#paint5_linear)"/>
+<circle cx="36.5" cy="587.5" r="12.5" fill="url(#paint5_linear)"/>
 </g>
 <g filter="url(#filter2_f)">
-<circle cx="536.5" cy="181.5" r="12.5" fill="url(#paint6_linear)"/>
+<circle cx="424.5" cy="181.5" r="12.5" fill="url(#paint6_linear)"/>
 </g>
-<circle cx="446.5" cy="464.5" r="7.5" fill="url(#paint7_linear)"/>
-<circle cx="536.5" cy="181.5" r="7.5" fill="url(#paint8_linear)"/>
-<circle cx="456" cy="40.0002" r="40" fill="#C4C4C4"/>
-<circle cx="456" cy="40.0002" r="40" fill="url(#pattern1)"/>
-<circle cx="205" cy="150" r="40" fill="#C4C4C4"/>
-<circle cx="205" cy="150" r="40" fill="url(#pattern2)"/>
-<circle cx="385" cy="189" r="40" fill="#C4C4C4"/>
-<circle cx="385" cy="189" r="40" fill="url(#pattern3)"/>
-<circle cx="376" cy="659" r="40" fill="#C4C4C4"/>
-<circle cx="376" cy="659" r="40" fill="url(#pattern4)"/>
-<circle cx="181" cy="499" r="40" fill="#C4C4C4"/>
-<circle cx="181" cy="499" r="40" fill="url(#pattern5)"/>
+<circle cx="334.5" cy="464.5" r="7.5" fill="url(#paint7_linear)"/>
+<circle cx="424.5" cy="181.5" r="7.5" fill="url(#paint8_linear)"/>
+<circle cx="344" cy="40.0002" r="40" fill="#C4C4C4"/>
+<circle cx="344" cy="40.0002" r="40" fill="url(#pattern1)"/>
+<circle cx="93" cy="150" r="40" fill="#C4C4C4"/>
+<circle cx="93" cy="150" r="40" fill="url(#pattern2)"/>
+<circle cx="273" cy="189" r="40" fill="#C4C4C4"/>
+<circle cx="273" cy="189" r="40" fill="url(#pattern3)"/>
+<circle cx="264" cy="659" r="40" fill="#C4C4C4"/>
+<circle cx="264" cy="659" r="40" fill="url(#pattern4)"/>
+<circle cx="69" cy="499" r="40" fill="#C4C4C4"/>
+<circle cx="69" cy="499" r="40" fill="url(#pattern5)"/>
 <defs>
-<filter id="filter0_f" x="374" y="392" width="145" height="145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f" x="262" y="392" width="145" height="145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur"/>
@@ -35,12 +35,12 @@
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(0 -0.25) scale(0.003125)"/>
 </pattern>
-<filter id="filter1_f" x="76" y="515" width="145" height="145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_f" x="-36" y="515" width="145" height="145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur"/>
 </filter>
-<filter id="filter2_f" x="464" y="109" width="145" height="145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_f" x="352" y="109" width="145" height="145" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur"/>
@@ -60,39 +60,39 @@
 <pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image5" transform="translate(-0.25) scale(0.003125)"/>
 </pattern>
-<linearGradient id="paint0_linear" x1="421.896" y1="464.105" x2="446.104" y2="488.313" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear" x1="309.896" y1="464.105" x2="334.104" y2="488.313" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>
-<linearGradient id="paint1_linear" x1="40.9701" y1="337.03" x2="345.03" y2="641.09" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear" x1="-71.0299" y1="337.03" x2="233.03" y2="641.09" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>
-<linearGradient id="paint2_linear" x1="-132.244" y1="334.244" x2="342.244" y2="808.733" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear" x1="-244.244" y1="334.244" x2="230.244" y2="808.733" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>
-<linearGradient id="paint3_linear" x1="-273.965" y1="331.965" x2="339.965" y2="945.895" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint3_linear" x1="-385.965" y1="331.965" x2="227.965" y2="945.895" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>
-<linearGradient id="paint4_linear" x1="133.737" y1="587.263" x2="148.263" y2="601.788" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint4_linear" x1="21.7374" y1="587.263" x2="36.2626" y2="601.788" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>
-<linearGradient id="paint5_linear" x1="123.896" y1="587.105" x2="148.104" y2="611.313" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint5_linear" x1="11.8957" y1="587.105" x2="36.1043" y2="611.313" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>
-<linearGradient id="paint6_linear" x1="511.896" y1="181.105" x2="536.104" y2="205.313" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint6_linear" x1="399.896" y1="181.105" x2="424.104" y2="205.313" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>
-<linearGradient id="paint7_linear" x1="431.737" y1="464.263" x2="446.263" y2="478.788" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint7_linear" x1="319.737" y1="464.263" x2="334.263" y2="478.788" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>
-<linearGradient id="paint8_linear" x1="521.737" y1="181.263" x2="536.263" y2="195.788" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint8_linear" x1="409.737" y1="181.263" x2="424.263" y2="195.788" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1DE9B6"/>
 <stop offset="1" stop-color="#03A9F4"/>
 </linearGradient>

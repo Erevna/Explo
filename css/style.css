@@ -273,9 +273,9 @@ width: 30%;
 
 .section2{
   margin-top: 23%;
-  margin-left: 6.8vw;
   display: flex;
   justify-content: space-between;
+  margin-right: 2vw;
 }
 
 .text4{
@@ -285,7 +285,6 @@ width: 30%;
   font-weight: 300;
   font-size: 3.8rem;
   line-height: 3.8rem;
-  max-width: 45rem;
 }
 
 .text5{
@@ -311,7 +310,8 @@ width: 30%;
     display: none;
   } 
   .section2{
-    padding-right: 6.8vw;
+    margin-left: 6.8vw;
+    margin-right: 6.8vw;
   }
   .text4{
     font-size: 3rem;
@@ -326,14 +326,42 @@ width: 30%;
 
 }
 
-/* Section 4 */
+/* Section 3 */
 
+
+.bg-vector2{
+  margin-top: 4rem;
+  width: 22.4rem;
+  height: 22.5rem;
+  transform: translateX(-3rem);
+}
+
+.section3-header{
+ position: absolute; 
+  top: 9.5rem;
+  left: 6.8vw;
+}
+
+/* Section 4 */
+.bg-vector3{
+   position: absolute; 
+  right: 0%;
+  top: 0%;
+  
+}
+
+.section4-header{
+   position: absolute; 
+  left: 6.8vw ;
+  top: 13.5rem;
+}
 .news-card-wrapper{
+   position: absolute; 
   display: flex;
   justify-content: space-between;
-  margin-top: 4.75rem;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-top: 20rem;
+  left: 5vw;
+  right: 5vw;
   overflow-x: auto;
 }
 
@@ -380,7 +408,8 @@ width: 30%;
     margin: 1rem;
   }
   .news-card-wrapper{
-    margin-right: 0%;
+    margin-top: 25rem;
+    right: 0%;
   }
   .news-card-wrapper::-webkit-scrollbar{
     width: 0%;
