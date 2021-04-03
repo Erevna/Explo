@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto:wght@400;500&display=swap');
 
 :root {
-  --color1: #00B686;
-  --color2: #131E2D;
+  --gradient:  linear-gradient(135deg, #1DE9B6 0%, #03A9F4 96.83%);
+  --color-dark: #131E2D;
+  --color-light: #07B3EB;
+  --text5: #00B686;
 }
 html {
     scroll-behavior: smooth;
@@ -37,11 +39,12 @@ html {
   }
 
   .navbar-solid{
+    transition: all 0.3s ease-in-out;
    background-color: #fff;
    box-shadow: 0px 1px 13px -8px rgba(0,0,0,0.49);
    -webkit-box-shadow: 0px 1px 13px -8px rgba(0,0,0,0.49);
    -moz-box-shadow: 0px 1px 13px -8px rgba(0,0,0,0.49);
-   height: 5.5rem!important;
+   height: 6rem!important;
     margin: 0%!important;
   }
   
@@ -60,7 +63,7 @@ html {
     font-size: 1.1rem;
     line-height: 1.2rem; 
     letter-spacing: 0.5px;
-    color: var(--color2);
+    color: var(--color-dark);
     padding-right: 3vw ;
   } 
 
@@ -92,7 +95,7 @@ html {
     margin-bottom: 5px;
     position: relative;
   
-    background: var(--color2);
+    background: var(--color-dark);
     border-radius: 3px;
    
     z-index: 1;
@@ -114,7 +117,7 @@ html {
   .menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: var(--color2);
+    background: var(--color-dark);
   }
   
   .menuToggle input:checked ~ span:nth-last-child(3) {
@@ -138,7 +141,7 @@ html {
     opacity: 0.8;
     transition: 0.5s ease-in;
   
-    background: #f1f1f1;
+    background: #f0f0f0;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
   
@@ -155,7 +158,7 @@ html {
     font-size: 1.6rem;
     line-height: 1.2rem; 
     letter-spacing: 0.5px;
-    color: var(--color2);
+    color: var(--color-dark);
   }
   
   .menuToggle input:checked ~ ul {
@@ -203,11 +206,11 @@ font-size: 4.8rem;
 line-height: 4.8rem;
 width: 50vw;
 height: auto;
-color: var(--color2);
+color: var(--color-dark);
 }
 
 .text2{
-color: var(--color1);
+color: var(--color-light);
 }
 
 .text3{
@@ -216,7 +219,7 @@ color: var(--color1);
   font-size: 1.8rem;
 line-height: 120%;
 margin-top: 2rem;
-color: var(--color2);
+color: var(--color-dark);
 letter-spacing: 0.02em;
 }
 
@@ -238,7 +241,7 @@ font-weight: normal;
 font-size: 1rem;
 line-height: 1.5rem;
 letter-spacing: 0.25px;
-color: var(--color2);
+color: var(--color-dark);
 margin-top: 2rem;
 }
 
@@ -259,7 +262,7 @@ padding: 0.5rem;
 }
 
 .subscribe-btn{
-background: linear-gradient(135deg, #1DE9B6 0%, #03A9F4 96.83%);
+background: var(--gradient);
 border-radius: 0px 5px 5px 0px;
 width: 4.4rem;
 height: 3.1rem;
@@ -305,12 +308,19 @@ height: 3.1rem;
 /* Section 2 */
 
 .section2{
+  width: 100vw;
   display: flex;
-  margin-right: 2vw;
+  padding-right: 6.8vw;
+  padding-top: 5.5rem;
+  /* position: relative; */
+}
+
+.section2-content{
+  margin-left: 18rem;
 }
 
 .text4{
-  color: var(--color2);
+  color: var(--color-dark);
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 300;
@@ -320,15 +330,13 @@ height: 3.1rem;
 
 .text5{
   margin-top: 4rem;
-  max-width: 41.5rem;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 180%;
   letter-spacing: 0.15px;
-  color: var(--color1);
-  margin-right: 5%;
+  color: var(--text5);
 }
 
 .social-icon{
@@ -337,65 +345,71 @@ height: 3.1rem;
 }
 
 .network{
-  width: 100%;
-  height: 50rem;
-  
+  width: 50vw;
+  height: 50vw;
 }
 
 .elements{
-  position: relative;
-  width: 90%;
+  width: 100%;
   height: 100%;
-  
-}
+  position: relative;
 
+}
 
 .network-bg{
   position: absolute;
-  background-image: url(../assets/network-bg.svg);
-  background-position: center;
-  background-size: cover;
-  backface-visibility: hidden;
-  width: 80%;
-  top: 0;
-  left: -4rem;
-  height: 80%;
-  overflow: visible;
+  top: 5.5vw;
+  left: -4vw;
+  width: 40vw;
+  height: 40vw;
 }
 
 .network-icons1{
-  background-image: url(../assets/network-icons1.svg) ;
-  background-repeat: no-repeat;
-  -webkit-animation: rotate-back 78.5s infinite;
-    animation: rotate-back 78.5s infinite;
+  -webkit-animation: rotate-1 78.5s infinite;
+    animation: rotate-1 78.5s infinite;
     -webkit-animation-timing-function: cubic-bezier(.35,0,.35,1);
     animation-timing-function: cubic-bezier(.35,0,.35,1);
-    -webkit-transform-origin: center 31%;
-    transform-origin: center 31%;
-    background-position: center;
-    width: 100%;
+   -webkit-transform-origin: center;
+    transform-origin: center;
+    width: 46vw;
+    height: 46vw;
     position: absolute;
-    top: -10rem;
-    left: -15rem;
-    height: 100%;
-    overflow: visible;
+    top: 2.5vw;
+    left: -7vw;
+    border-radius: 50%;
+    /* border: 1px solid black; */
 }
 
 .network-icons2{
-  background-image: url(../assets/network-icons2.svg);
-  -webkit-animation: rotate 60.6s infinite;
-    animation: rotate 60.6s infinite;
-    -webkit-animation-timing-function: cubic-bezier(.35,0,.35,1);
-    animation-timing-function: cubic-bezier(.35,0,.35,1);
-    -webkit-transform-origin: center 31%;
-    transform-origin: center 31%;
-    background-position: center;
-    background-size: cover;
-    backface-visibility: hidden;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 100%;
+  -webkit-animation: rotate-2 60.6s infinite;
+    animation: rotate-2 60.6s infinite;
+    -webkit-animation-timing-function: cubic-bezier(.30,0,.30,1);
+    animation-timing-function: cubic-bezier(.30,0,.30,1);
+     -webkit-transform-origin: center;
+    transform-origin: center; 
+    position: absolute;
+    top: 7.5vw;
+    left: -2vw;
+    width: 36vw;
+    height: 36vw;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+}
+
+.network-icons3{
+  -webkit-animation: rotate-3 40s infinite;
+  animation: rotate-3 40s infinite;
+  -webkit-animation-timing-function: cubic-bezier(.25,0,.25,1);
+  animation-timing-function: cubic-bezier(.25,0,.25,1);
+ -webkit-transform-origin: center ;
+  transform-origin: center ;
+  /* border: 1px solid black; */
+  position: absolute;
+  border-radius: 50%;
+  top: 13vw;
+  left: 3.5vw;
+  width: 25vw;
+  height: 25vw;
 }
 
 
@@ -404,8 +418,8 @@ height: 3.1rem;
     display: none;
   } 
   .section2{
-    margin-left: 6.8vw;
-    margin-right: 6.8vw;
+    padding-left: 6.8vw;
+    padding-right: 6.8vw;
   }
   .text4{
     font-size: 3rem;
@@ -417,8 +431,53 @@ height: 3.1rem;
     width: 100%;
 
   }
+  .section2-content{
+    margin-left: 0%;
+  }
 
 }
+
+/* network animation */
+
+@keyframes rotate-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes rotate-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  } 
+}
+
+@keyframes rotate-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(28deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  } 
+}
+
+
+
 
 /* Section 3 */
 .section3{
@@ -460,7 +519,7 @@ margin-left: 6.8vw;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.5px;
-  color: var(--color2);
+  color: var(--color-dark);
 }
 
 .timer{
@@ -512,7 +571,7 @@ margin-left: 6.8vw;
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: 0.5px;
-  color: var(--color1);
+  color: var(--color-light);
   padding-bottom: 0.5rem;
 }
 
