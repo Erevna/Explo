@@ -21,7 +21,7 @@ html {
 
   .logo{
     display: inline;
-    margin-top: 1rem;
+    margin-top: 1.1rem;
     margin-left: 6vw;
     width: 10.8rem;
     height: 3.8rem;
@@ -33,7 +33,7 @@ html {
     z-index: 20;
     width: 100vw;
     height: 6rem;
-    margin: 0%;
+    margin-top: 2rem;
   }
 
   .navbar-solid{
@@ -42,12 +42,13 @@ html {
    -webkit-box-shadow: 0px 1px 13px -8px rgba(0,0,0,0.49);
    -moz-box-shadow: 0px 1px 13px -8px rgba(0,0,0,0.49);
    height: 5.5rem!important;
+    margin: 0%!important;
   }
   
   .menu {
     float: right;
-    margin-right: 10vw;
-    margin-top: 2.5rem;
+    margin-right: 12.5vw;
+    margin-top: 2.3rem;
   }
 
   .links li{
@@ -91,15 +92,15 @@ html {
     margin-bottom: 5px;
     position: relative;
   
-    background: #232323;
+    background: var(--color2);
     border-radius: 3px;
-  
+   
     z-index: 1;
   
     transform-origin: 4px 0px;
   
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
   
   .menuToggle span:first-child {
@@ -113,7 +114,7 @@ html {
   .menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: var(--color2);
   }
   
   .menuToggle input:checked ~ span:nth-last-child(3) {
@@ -134,7 +135,9 @@ html {
     padding: 20px;
     padding-top: 125px;
     right: -100px;
-    
+    opacity: 0.8;
+    transition: 0.5s ease-in;
+  
     background: #f1f1f1;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -152,12 +155,13 @@ html {
     font-size: 1.6rem;
     line-height: 1.2rem; 
     letter-spacing: 0.5px;
-    color: #131E2D;
+    color: var(--color2);
   }
   
   .menuToggle input:checked ~ ul {
     transform: scale(1, 1);
     opacity: 1;
+    transition: 0.5s ease-out;
   }
   
   @media only screen and (min-width: 425px){
@@ -186,19 +190,18 @@ html {
 background: url(../assets/bg-vector.svg) no-repeat;
 background-size: 100vw auto;
 width: 100vw;
-
+height: 130vh;
 }
 
 .text1{
-position: relative;
 margin-left: 6.8vw;
-margin-top: 17%;
+margin-top: 20%;
 font-family: 'Josefin Sans', sans-serif ;
 font-style: normal;
 font-weight: 300;
 font-size: 4.8rem;
 line-height: 4.8rem;
-width: auto;
+width: 50vw;
 height: auto;
 color: var(--color2);
 }
@@ -217,25 +220,52 @@ color: var(--color2);
 letter-spacing: 0.02em;
 }
 
+
+
 .mobile{
-  position: relative;
-width: 16.4rem;
-height: 34rem;
-margin-left: 15%;
-margin-right: 10%;
-margin-top: 10%;
+  width: 30vw;
+  height: auto;
+margin-left: 5%;
+margin-right: 5%;
+margin-top: 9%;
 
 }
 
-.button-wrapper{
-  display: flex;
-  margin-top: 2rem;
-  width: 100%;
+.subscribe-header{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 1rem;
+line-height: 1.5rem;
+letter-spacing: 0.25px;
+color: var(--color2);
+margin-top: 2rem;
 }
 
-.button{
-width: 30%;
+.input-group{
+  display: inline-flex;
+  height: 3.1rem;
+  margin-top: 1rem;
 }
+
+.input-box{
+width: 26.75rem;
+height: 3.1rem;
+border: 1px solid #C9C9C9;
+border-radius: 5px 0px 0px 5px;
+font-size: 0.88rem;
+margin-right: 0%;
+padding: 0.5rem;
+}
+
+.subscribe-btn{
+background: linear-gradient(135deg, #1DE9B6 0%, #03A9F4 96.83%);
+border-radius: 0px 5px 5px 0px;
+width: 4.4rem;
+height: 3.1rem;
+
+}
+
 
 @media only screen and (max-width: 768px){
   .text1{
@@ -245,10 +275,9 @@ width: 30%;
   .mobile{
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: auto;
   }
-  .button{
-    width: 40%;
-  }
+
 }
 @media only screen and (max-width: 425px) {
   .text1{
@@ -261,20 +290,22 @@ width: 30%;
     font-size: 1.3rem;
   }
   .mobile{
-    margin-top: 5%;
+    width: 50rem;
+    height: 30vh;
+    margin-top: 35%;
   }
-  .button{
-    width: 50%;
+
+  .input-box{
+    width: 65vw;
   }
+
 
 }
 
 /* Section 2 */
 
 .section2{
-  margin-top: 23%;
   display: flex;
-  justify-content: space-between;
   margin-right: 2vw;
 }
 
@@ -304,6 +335,69 @@ width: 30%;
   min-width: 5rem;
   min-height: 5rem;
 }
+
+.network{
+  width: 100%;
+  height: 50rem;
+  
+}
+
+.elements{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  
+}
+
+
+.network-bg{
+  position: absolute;
+  background-image: url(../assets/network-bg.svg);
+  background-position: center;
+  background-size: cover;
+  backface-visibility: hidden;
+  width: 80%;
+  top: 0;
+  left: -4rem;
+  height: 80%;
+  overflow: visible;
+}
+
+.network-icons1{
+  background-image: url(../assets/network-icons1.svg) ;
+  background-repeat: no-repeat;
+  -webkit-animation: rotate-back 78.5s infinite;
+    animation: rotate-back 78.5s infinite;
+    -webkit-animation-timing-function: cubic-bezier(.35,0,.35,1);
+    animation-timing-function: cubic-bezier(.35,0,.35,1);
+    -webkit-transform-origin: center 31%;
+    transform-origin: center 31%;
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    top: -10rem;
+    left: -15rem;
+    height: 100%;
+    overflow: visible;
+}
+
+.network-icons2{
+  background-image: url(../assets/network-icons2.svg);
+  -webkit-animation: rotate 60.6s infinite;
+    animation: rotate 60.6s infinite;
+    -webkit-animation-timing-function: cubic-bezier(.35,0,.35,1);
+    animation-timing-function: cubic-bezier(.35,0,.35,1);
+    -webkit-transform-origin: center 31%;
+    transform-origin: center 31%;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
 
 @media only screen and (max-width: 425px){
   .network{
@@ -391,7 +485,7 @@ margin-left: 6.8vw;
   .news-card-wrapper{
     margin-right: 0%;
   }
-  .news-card-wrapper::-webkit-scrollbar{
+  .news-card-wrapper::-webkit-scrollbar {
     width: 0%;
   }
 }
