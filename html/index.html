@@ -144,7 +144,10 @@
 
     <!-- Section 3 -->
     <div class="section3">
-        <p class="text4">What can you do with Explo?</p>
+        <div class="section3-header">
+            <img src="../assets/bg-vector2.svg" class="bg-vector2" alt="bg-vector2">
+            <p class="text6">What can you do with Explo?</p>
+        </div>
         <div class="gallery">
             <div class="gallery-container">
                 <div class="gallery-item">
@@ -187,58 +190,60 @@
 
 
     <!-- Section4 -->
-    <div>
-        <p class="text4 section4-header ">All the latest buzz</p>
-        <div class="news-card-wrapper">
-
-            <div class="news-card">
-                <img class="rounded-xl" src="../assets/newscard-1.png" alt="newscard1">
-                <div>
-                    <p class="news-card-heading">How we built our native app
-                        <span class="timer"><i class="fa fa-clock-o"></i> 5 min</span> </p>
-                    <p class="news-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
-                        sapien auctor non amet fermentum in.</p>
+    <div class="section4">
+        <div class="relative">
+            <p class="text4 section4-header ">All the latest buzz</p>
+            <img src="../assets/bg-vector3.svg" class="bg-vector3" alt="bg-vector3">
+            <div class="news-card-wrapper">
+                <div class="news-card">
+                    <img class="rounded-xl" src="../assets/newscard-1.png" alt="newscard1">
+                    <div>
+                        <p class="news-card-heading">How we built our native app
+                            <span class="timer"><i class="fa fa-clock-o"></i> 5 min</span> </p>
+                        <p class="news-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                            sapien auctor non amet fermentum in.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="news-card">
-                <img class="rounded-xl" src="../assets/newscard-2.png" alt="newscard2">
-                <div>
-                    <p class="news-card-heading">Travel Guide for 2021
-                        <span class="timer"><i class="fa fa-clock-o"></i> 5 min</span> </p>
-                    <p class="news-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
-                        sapien auctor non amet fermentum in.</p>
+                <div class="news-card">
+                    <img class="rounded-xl" src="../assets/newscard-2.png" alt="newscard2">
+                    <div>
+                        <p class="news-card-heading">Travel Guide for 2021
+                            <span class="timer"><i class="fa fa-clock-o"></i> 5 min</span> </p>
+                        <p class="news-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                            sapien auctor non amet fermentum in.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="news-card">
-                <img class="rounded-xl" src="../assets/newscard-3.png" alt="newscard3">
-                <div>
-                    <p class="news-card-heading">The best cuisines in Germany
-                        <span class="timer"><i class="fa fa-clock-o"></i> 5 min</span> </p>
-                    <p class="news-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
-                        sapien auctor non amet fermentum in.</p>
+                <div class="news-card">
+                    <img class="rounded-xl" src="../assets/newscard-3.png" alt="newscard3">
+                    <div>
+                        <p class="news-card-heading">The best cuisines in Germany
+                            <span class="timer"><i class="fa fa-clock-o"></i> 5 min</span> </p>
+                        <p class="news-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                            sapien auctor non amet fermentum in.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="news-card">
-                <img class="rounded-xl" src="../assets/newscard-4.png" alt="newscard4">
-                <div>
-                    <p class="news-card-heading">Music that soothes the mind
-                        <span class="timer"><i class="fa fa-clock-o"></i> 5 min</span> </p>
-                    <p class="news-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
-                        sapien auctor non amet fermentum in.</p>
+                <div class="news-card">
+                    <img class="rounded-xl" src="../assets/newscard-4.png" alt="newscard4">
+                    <div>
+                        <p class="news-card-heading">Music that soothes the mind
+                            <span class="timer"><i class="fa fa-clock-o"></i> 5 min</span> </p>
+                        <p class="news-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+                            sapien auctor non amet fermentum in.</p>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="footer">
         <div class="footer-content ">
-            <div class="flex mt-24 ml-20 w-1/2">
-                <div class="m-10">
+            <div class="flex mx-auto w-full sm:w-1/2">
+                <div class="mx-auto">
                     <p class="footer-heading">Explo</p>
                     <ul class="footer-list">
                         <li>Features</li>
@@ -247,7 +252,7 @@
                         <li>Privacy</li>
                     </ul>
                 </div>
-                <div class="m-10">
+                <div class="mx-auto">
                     <p class="footer-heading">Company</p>
                     <ul class="footer-list">
                         <li>About</li>
@@ -256,7 +261,7 @@
                         <li>Blogs</li>
                     </ul>
                 </div>
-                <div class="m-10">
+                <div class="mx-auto">
                     <p class="footer-heading">Download</p>
                     <ul class="footer-list">
                         <li>Android</li>
@@ -265,7 +270,7 @@
 
                     </ul>
                 </div>
-                <div class="m-10">
+                <div class="mx-auto">
                     <p class="footer-heading">Help</p>
                     <ul class="footer-list">
                         <li>Help Center</li>
@@ -273,16 +278,27 @@
                 </div>
 
             </div>
-            <div class="mt-32 w-1/2 mr-20">
+            <div class="sm:mx-auto ml-10 w-11/12 sm:w-1/2 mt-10 sm:mt-0">
                 <p class="footer-heading">Not in your area yet?</p>
-                <p class="footer-list">
+                <p class="footer-list w-10/12">
                     We’re working hard to cover as much ground as we can and introduce you to top-notch experiences
                     from top creators. Leave us your email to subscribe and stay updated.</p>
-
+                <form>
+                    <div class="input-group">
+                        <input class="input-box-footer" type="text" name="email" placeholder="Enter your email" />
+                        <span>
+                            <button class="subscribe-btn-footer" type="button"> <i style="font-size:1.25rem;color:#000"
+                                    class="fa">&#xf1d8;</i> </button>
+                        </span>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="footer-bottom">
-
+            <span class=" mx-1 sm:mx-12 my-2">2021 &copy; Explo</span>
+            <span class=" mx-1 sm:mx-12 my-2">Privacy Policy</span>
+            <span class=" mx-1 sm:mx-12 my-2">Terms of Service</span>
+            <span class=" mx-1 sm:mx-12 my-2">Cookie Policy</span>
         </div>
 
     </div>

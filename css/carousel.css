@@ -8,7 +8,7 @@
   align-items: center;
   display: flex;
   min-height: 400px;
-  margin: 8rem auto 4rem auto;
+  margin: 4rem auto 4rem auto;
   width: 100%;
   position: relative;
 }
@@ -208,5 +208,5 @@ border-radius: 25px;
 }
 
 .gallery-nav li.gallery-item-selected {
-  background: #00B686;
+  background: #07B3EB;;
 }
