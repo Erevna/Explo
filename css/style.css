@@ -17,6 +17,8 @@ html {
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+
   }
 
   /*Navbar */
@@ -85,7 +87,6 @@ html {
     cursor: pointer;   
     opacity: 0;
     z-index: 2;
-  -webkit-tap-highlight-color: transparent;
   } 
   
   .menuToggle span {
@@ -165,6 +166,16 @@ html {
     transform: scale(1, 1);
     opacity: 1;
     transition: 0.5s ease-out;
+  }
+
+  .ln-select{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+
+  .ln-select:focus{
+    outline:none;
   }
   
   @media only screen and (min-width: 425px){
@@ -288,7 +299,7 @@ height: 3.1rem;
 }
 @media only screen and (max-width: 425px) {
   .section1{
-    height: 70vh;
+    height: 65vh;
   }
   .text1{
     font-size: 3rem;
@@ -691,8 +702,8 @@ padding: 0.2rem;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
   letter-spacing: 0.4px;
   color: var(--color-dark);
 }
