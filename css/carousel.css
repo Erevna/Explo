@@ -62,7 +62,7 @@ color: rgba(19, 30, 45, 0.6);
 }
 
 .gallery-item.gallery-item-selected {
-  transition: all 0.2s ease-in-out;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) ;
   opacity: 1;
   left: 50%;
   transform: translateX(-50%);

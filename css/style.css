@@ -70,6 +70,11 @@ html {
     padding-right: 3vw ;
   } 
 
+  .links a:hover{
+    color: var(--color-light);
+    transition: all 0.3s ease-in-out;
+  }
+
   .menuToggle {
     display: block;
     position: absolute;
@@ -208,17 +213,13 @@ width: 100vw;
 height: 130vh;
 }
 
-.section1-content{
-  display: flex;
-}
-
 .text1{
 margin-left: 6.8vw;
 margin-top: 18%;
 font-family: 'Josefin Sans', sans-serif ;
 font-style: normal;
 font-weight: 300;
-font-size: 4.8rem;
+font-size: 4.8vw;
 line-height: 4.8rem;
 width: 50vw;
 height: auto;
@@ -234,7 +235,7 @@ color: var(--color-light);
   min-height: 4.1rem;
   font-size: 1.8rem;
 line-height: 120%;
-margin-top: 2rem;
+margin-top: 4.4vh;
 color: var(--color-dark);
 letter-spacing: 0.02em;
 }
@@ -242,8 +243,8 @@ letter-spacing: 0.02em;
 
 
 .mobile{
-  width: 30vw;
-  height: auto;
+  max-width: 30vw;
+  max-height: 85vh;
 margin-left: 5%;
 margin-right: 5%;
 margin-top: 8%;
@@ -258,7 +259,7 @@ font-size: 1rem;
 line-height: 1.5rem;
 letter-spacing: 0.25px;
 color: var(--color-dark);
-margin-top: 2rem;
+margin-top: 4.4vh;
 }
 
 .input-group{
@@ -319,7 +320,7 @@ height: 3.1rem;
   .mobile{
     width: 50rem;
     height: 30vh;
-    margin-top: 35%;
+    margin-top: 30%;
   }
 
   .input-box{
@@ -570,17 +571,15 @@ margin-left: 6.8vw;
   display: flex;
   justify-content: space-between;
   top: 4.75rem;
-  left: 5vw;
-  right: 5vw;
-  overflow-x: auto;
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+ 
 }
-
 
 .news-card{
   margin: 1.5rem;
   width: 19.4rem;
-  min-width: 18rem;
-  min-height: 23rem;
   background: #FFFFFF;
   border: 1px solid #EFEFEF;
   box-sizing: border-box;
@@ -593,14 +592,14 @@ margin-left: 6.8vw;
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5rem;
   letter-spacing: 0.5px;
   color: var(--color-dark);
 }
 
 .timer{
-  font-size: 0.87rem;
+  font-size: 0.8rem;
   color: rgba(19, 30, 45, 0.6);
 }
 .news-card-content{
@@ -613,6 +612,7 @@ margin-left: 6.8vw;
   color: rgba(19, 30, 45, 0.6); 
 }
 
+
 @media only screen and (max-width: 768px){
   .bg-vector3{
     width: 20rem;
@@ -620,15 +620,17 @@ margin-left: 6.8vw;
   }
   .news-card{
     margin: 1rem;
+    min-width: 18rem;
+    min-height: 23rem;
   }
   .news-card-wrapper{
    right: 0;
    left: 0;
    padding-left: 5vw;
+   overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
   }
-  .news-card-wrapper::-webkit-scrollbar {
-    width: 0%;
-  }
+  
 }
 
 @media only screen and (max-width: 425px){
