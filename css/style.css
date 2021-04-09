@@ -79,7 +79,7 @@ html {
   .menuToggle {
     display: block;
     position: absolute;
-    top: 2.5rem;
+    top: 2rem;
     right: 1.5rem;
     z-index: 1;  
    
@@ -176,6 +176,8 @@ html {
   }
 
   .ln-select{
+    font-size: 1.1rem;
+    line-height: 1.2rem;
     cursor: pointer;
     background: transparent;
     border: none;
@@ -203,6 +205,11 @@ html {
   
     .menu {
       display: none;
+    }
+    .ln-select{
+      font-size: 1.6rem;
+      line-height: 1.2rem; 
+      letter-spacing: 0.5px;
     }
 }
 
@@ -334,6 +341,7 @@ height: 3.1rem;
 /* Section 2 */
 
 .section2{
+  margin-top: 2rem;
   width: 100vw;
   display: flex;
   padding-right: 6.8vw;
