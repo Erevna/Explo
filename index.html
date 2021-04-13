@@ -16,7 +16,7 @@
 
 <body>
     <!--Section 1 -->
-    <div class="section1 ">
+    <div class="section1" id="home">
         <!--Navbar-->
         <nav role="navigation">
             <div class="pt-2">
@@ -28,23 +28,19 @@
                 <ul class="menu">
                     <span class="links">
                         <li>
-                            <a href="#">Features</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li>
-                            <a href="#">Download</a>
+                            <a href="#features">Features</a>
                         </li>
 
                         <li>
-                            <a href="#">Security</a>
+                            <a href="#news">News</a>
                         </li>
                         <li>
-                            <a href="#">Help Center</a>
+                            <a href="#download">Download</a>
                         </li>
-                        <li>
-                            <i style="font-size:22px" class="fa">&#xf0ac;</i> <select class="ln-select">
-                                <option value="english">En</option>
-                            </select>
-                        </li>
+
                     </span>
                 </ul>
 
@@ -59,23 +55,19 @@
 
                 <ul class="listmenu">
                     <li>
-                        <a href="#">Features</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#">Download</a>
+                        <a href="#features">Features</a>
                     </li>
 
                     <li>
-                        <a href="#">Security</a>
+                        <a href="#news">News</a>
                     </li>
                     <li>
-                        <a href="#">Help Center</a>
+                        <a href="#download">Download</a>
                     </li>
-                    <li>
-                        <i style="font-size:22px" class="fa">&#xf0ac;</i> <select class="ln-select">
-                            <option value="english">En</option>
-                        </select>
-                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -146,15 +138,17 @@
 
 
     <!-- Section 3 -->
-    <div class="section3">
+    <div class="section3" id="features">
         <div class="section3-header">
             <img src="./assets/bg-vector2.svg" class="bg-vector2" alt="bg-vector2">
             <p class="text6">What can you do with Explo?</p>
         </div>
-        <div class="flex justify-between">
-            <img src="./assets/mobile.svg" class="section3-mobile alt=" mobile_svg">
+        <div class="s3-content">
+            <div class="s3-mobile" data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.6">
+                <img src="./assets/Creator.png" class="s3-mobile-img" alt="mobile-content">
+            </div>
             <div class="card-list">
-                <div class="features-card">
+                <div class="features-card" id="Creator.png" data-tilt data-tilt-scale="1.08">
                     <img src="./assets/Creators exclusive.svg" class="card-img" alt="creators exclusive">
                     <div>
                         <p class="card-heading">Exclusive content creators</p>
@@ -162,7 +156,7 @@
                             invites to create digital experiences on Explo.</p>
                     </div>
                 </div>
-                <div class="features-card my-10">
+                <div class="features-card" id="experiences.png" data-tilt data-tilt-scale="1.08">
 
                     <img src="./assets/Experiences.svg" class="card-img" alt="experiences">
                     <div>
@@ -171,7 +165,7 @@
                             friends and family and save whatever you’d like to get back to! </p>
                     </div>
                 </div>
-                <div class="features-card ">
+                <div class="features-card" id="experiences.png" data-tilt data-tilt-scale="1.08">
                     <img src="./assets/view offline.svg" class="card-img" alt="view offline">
                     <div>
                         <p class="card-heading">Download and view trips offline</p>
@@ -188,14 +182,14 @@
 
 
     <!-- Section4 -->
-    <div class="section4">
+    <div class="section4" id="news">
         <div class="relative">
             <p class="text4 section4-header ">All the latest buzz</p>
             <img src="./assets/bg-vector3.svg" class="bg-vector3" alt="bg-vector3">
         </div>
         <!-- Section 4 image card -->
         <div class="s4-card">
-            <img src="./assets/travel-guide.png" class="s4-card-img" alt="travel-guide">
+            <img src="./assets/travel.png" class="s4-card-img" alt="travel-guide">
             <img src="./assets/logo-white.svg" class="logo-white" alt="logo">
             <div class="s4-card-content">
                 <p class="s4-card-heading">Travel Guide for 2021</p>
@@ -222,8 +216,10 @@
                     <div class="mx-auto">
                         <p class="footer-heading">Company</p>
                         <ul class="footer-list">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Get in touch</a></li>
+                            <li><a href="https://www.linkedin.com/company/exploapp
+                                ">About</a></li>
+                            <li><a href="mailto:contact@exploapp.com
+                                ">Get in touch</a></li>
                         </ul>
                     </div>
                     <div class="mx-auto">
@@ -239,10 +235,12 @@
                         <p class="footer-heading">Socials</p>
                         <ul class="footer-list">
                             <li class="flex">
-                                <a href="#"><img src="./assets/fb-icon.svg" class="footer-icons"
-                                        alt="facebook-icon"></a>
-                                <a href="#"><img src="./assets/insta-icon.svg" class="footer-icons"
-                                        alt="instagram-icon"></a>
+                                <a href="http://facebook.com/exploapp"><img src="./assets/fb-icon.svg"
+                                        class="footer-icons" alt="facebook"></a>
+                                <a href="https://www.instagram.com/exploapp/
+                                "><img src="./assets/insta-icon.svg" class="footer-icons" alt="instagram "></a>
+                                <a href="https://www.linkedin.com/company/exploapp
+                                "><img src="./assets/In-icon.svg" class="footer-icons" alt="Linked in"></a>
                             </li>
                         </ul>
                     </div>
@@ -262,6 +260,7 @@
                     </form>
                 </div>
             </div>
+            <div class="hr"></div>
             <div class="footer-bottom">
                 <span class="sm:mx-6 mx-3">2021 &copy; Explo</span>
                 <span class="sm:mx-6 mx-3">Privacy Policy</span>
@@ -272,6 +271,7 @@
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="./js/script.js"></script>
+            <script src="./js/vanilla-tilt.js"></script>
 </body>
 
 </html>
