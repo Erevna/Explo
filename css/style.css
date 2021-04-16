@@ -256,7 +256,6 @@ nav {
   background: url(../assets/bg-vector.svg) no-repeat;
   background-size: 100vw;
   width: 100vw;
-  padding-bottom: 8rem;
 }
 
 .text1 {
@@ -281,7 +280,7 @@ nav {
   min-height: 4.1rem;
   font-size: 1.8rem;
   line-height: 120%;
-  margin-top: 2rem;
+  margin-top: 2%;
   color: var(--color-dark);
   letter-spacing: 0.02em;
 }
@@ -289,9 +288,8 @@ nav {
 
 
 .mobile {
-  max-width: 30vw;
-  max-height: auto;
-  margin-left: 5%;
+  max-width: 18.5vw;
+  margin-left: 8%;
   margin-right: 5%;
   margin-top: 9%;
 
@@ -331,30 +329,12 @@ nav {
   :root {
     font-size: 90%;
   }
-
-  .mobile {
-    margin-top: 12%;
-  }
 }
 
 @media only screen and (max-width: 768px) {
-
-  .section1 {
-    padding-bottom: 5%;
-  }
-
-  .text1 {
-    margin-top: 25%;
-    line-height: 3.5rem;
-  }
-
   .mobile {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 9%;
+    margin-top: 12%;
   }
-
-
 }
 
 @media only screen and (max-width: 425px) {
