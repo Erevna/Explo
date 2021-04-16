@@ -65,7 +65,7 @@ button:active {
   margin-top: 0.3rem;
   margin-left: 6vw;
   width: 10.5rem;
-  height: 3.2rem;
+  height: 3.75rem;
 }
 
 nav {
@@ -73,7 +73,7 @@ nav {
   padding: 0%;
   z-index: 20;
   width: 100vw;
-  height: 4.5rem;
+  height: 5.5rem;
   margin-top: 1.5rem;
 }
 
@@ -82,6 +82,7 @@ nav {
   background-color: #fff;
   box-shadow: 0px 1px 13px -8px rgba(0, 0, 0, 0.49);
   margin: 0% !important;
+  height: 4.5rem;
 }
 
 .menu {
@@ -280,7 +281,7 @@ nav {
   min-height: 4.1rem;
   font-size: 1.8rem;
   line-height: 120%;
-  margin-top: 4.4vh;
+  margin-top: 2rem;
   color: var(--color-dark);
   letter-spacing: 0.02em;
 }
@@ -304,7 +305,7 @@ nav {
   line-height: 1.5rem;
   letter-spacing: 0.25px;
   color: var(--color-dark);
-  margin-top: 4.4vh;
+  margin-top: 2.5rem;
 }
 
 
@@ -371,7 +372,7 @@ nav {
 
   .mobile {
     width: 50rem;
-    height: 30vh;
+    height: auto;
     margin-top: 32%;
   }
 
@@ -631,12 +632,16 @@ nav {
   background: #FFFFFF;
   border: 0.2px solid rgb(236, 236, 236);
   box-sizing: border-box;
-  box-shadow: 0px 16px 40px rgba(191, 191, 191, 0.2);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08), 0px 1px 6px rgba(0, 0, 0, 0.06);
   border-radius: 25px;
   padding: 2rem;
   display: flex;
   cursor: pointer;
   margin-top: 2rem;
+}
+
+.features-card:hover {
+  box-shadow: 0px 9px 46px rgba(0, 0, 0, 0.12);
 }
 
 .card-img {
@@ -692,11 +697,10 @@ nav {
   }
 
   .s3-content {
-    flex-direction: column;
-
+    display: none;
   }
 
-  .s3-mobile {
+  /* .s3-mobile {
     margin: auto;
     margin-top: 4rem;
     width: 18rem;
@@ -717,7 +721,7 @@ nav {
     margin-left: 6.8vw;
     margin-top: 2rem;
     width: 85vw;
-  }
+  } */
 
 }
 
@@ -906,15 +910,14 @@ nav {
   font-size: 0.88rem;
   line-height: 1.1rem;
   letter-spacing: 0.4px;
-
 }
 
 .footer-list li {
   padding-top: 0.25rem;
 }
 
-.footer-list a:hover {
-  color: var(--color-light);
+.footer-list li:hover {
+  transform: scale(1.1);
 }
 
 .footer-icons {
@@ -924,7 +927,7 @@ nav {
 }
 
 .footer-icons:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .input-box-footer {
@@ -975,7 +978,7 @@ nav {
   }
 
   .input-box-footer {
-    width: 75%;
+    width: 70%;
   }
 
   .hr {

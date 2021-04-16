@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/carousel.css" type="text/css">
 
 
 </head>
@@ -21,7 +22,9 @@
         <nav role="navigation">
             <div class="pt-2">
                 <span>
-                    <img src="assets/logo.svg" alt="logo" class="logo" />
+                    <a href="#home">
+                        <img src="assets/logo.svg" alt="logo" class="logo" />
+                    </a>
                 </span>
 
 
@@ -176,6 +179,36 @@
                 </div>
             </div>
         </div>
+        <!-- Carousel for mobile-view -->
+        <div class="main-carousel" data-flickity='{ "autoPlay": true, "wrapAround": true, "prevNextButtons": false}'>
+            <div class="carousel-cell">
+                <img src="./assets/carousel-img1.svg" class="carousel-img" alt="creators exclusive">
+                <div>
+                    <p class="carousel-heading">Exclusive content creators</p>
+                    <p class="carousel-content">Only the most loved, popular and trusted creators are sent exclusive
+                        invites to create digital
+                        experiences on Explo.</p>
+                </div>
+
+            </div>
+            <div class="carousel-cell">
+                <img src="./assets/mobile.svg" class="carousel-img" alt="experiences">
+                <div>
+                    <p class="carousel-heading">Explore all around the world</p>
+                    <p class="carousel-content">Like experiences you enjoyed, share trips and experiences with friends
+                        and family and save
+                        whatever you’d like to get back to! </p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <img src="./assets/carousel-img1.svg" class="carousel-img" alt="creators exclusive">
+                <div>
+                    <p class="carousel-heading">Download and view offline</p>
+                    <p class="carousel-content">Internet poor where you’re headed? Downaload experiences and view them
+                        offline.</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -233,13 +266,13 @@
                     </div>
                     <div class="mx-auto">
                         <p class="footer-heading">Socials</p>
-                        <ul class="footer-list">
-                            <li class="flex">
+                        <ul class="footer-list flex">
+                            <li>
                                 <a href="http://facebook.com/exploapp"><img src="./assets/fb-icon.svg"
-                                        class="footer-icons" alt="facebook"></a>
-                                <a href="https://www.instagram.com/exploapp/
-                                "><img src="./assets/insta-icon.svg" class="footer-icons" alt="instagram "></a>
-                                <a href="https://www.linkedin.com/company/exploapp
+                                        class="footer-icons" alt="facebook"></a></li>
+                            <li> <a href="https://www.instagram.com/exploapp/
+                                "><img src="./assets/insta-icon.svg" class="footer-icons" alt="instagram "></a></li>
+                            <li> <a href="https://www.linkedin.com/company/exploapp
                                 "><img src="./assets/In-icon.svg" class="footer-icons" alt="Linked in"></a>
                             </li>
                         </ul>
@@ -272,6 +305,7 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <script src="./js/script.js"></script>
             <script src="./js/vanilla-tilt.js"></script>
+            <script src="./js/carousel.js"></script>
 </body>
 
 </html>
