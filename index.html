@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
 
 <head>
@@ -6,7 +7,7 @@
     </title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -19,13 +20,21 @@
     <link rel="icon" href="assets/logo.png" type="image/png">
 
     <!-- Mailchimp -->
-    <script
-        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/19f60118de1d9cc20ca59c0df/397fea909bd317d1e8954cb28.js");</script>
+    <script id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p)
+        }(document, "script",
+            "https://chimpstatic.com/mcjs-connected/js/users/19f60118de1d9cc20ca59c0df/397fea909bd317d1e8954cb28.js");
+    </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-51BMYCVR7V"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-51BMYCVR7V');
@@ -35,6 +44,7 @@
 <body>
     <!--Section 1 -->
     <div class="section1" id="home">
+        <img src="./assets/bg-vector1.svg" class="bg-vector1" alt="bg-vector1">
         <!--Navbar-->
         <nav role="navigation">
             <div class="pt-2">
@@ -101,30 +111,32 @@
                 <p class="text3">
                     Stop just viewing. Start experiencing </p>
 
-                <p class="subscribe-header">Not yet in your area? Sign up and never miss an update.</p>
+                <p class="subscribe-header">Subscribe to our newsletter and never miss an update</p>
                 <form
                     action="https://Exploapp.us1.list-manage.com/subscribe/post?u=19f60118de1d9cc20ca59c0df&amp;id=bd49d5eed9"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    novalidate>
-                    <div class="input-group">
-                        <input id="mce-EMAIL" class="input-box required email" type="email" name="EMAIL"
-                            placeholder="Enter your email" />
-                        <span>
-                            <button class="subscribe-btn" type="submit" name="subscribe"> <i
-                                    style="font-size:1.25rem;color:#fff" class="fa">&#xf1d8;</i> </button>
-                        </span>
-                        <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                name="b_19f60118de1d9cc20ca59c0df_bd49d5eed9" tabindex="-1" value=""></div>
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                    class="flex mt-4 validate" novalidate>
+                    <!-- <div class="flex mt-4"> -->
+                    <input id="mce-EMAIL" class="input-box required email" type="email" name="EMAIL"
+                        placeholder="Enter your email" />
+
+                    <button class="subscribe-btn" type="submit" name="subscribe">
+                        <img src="./assets/submit.svg" class="m-auto w-5 h-5" alt="send">
+                    </button>
+
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
                     </div>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_19f60118de1d9cc20ca59c0df_bd49d5eed9" tabindex="-1" value=""></div>
+                    <!-- </div> -->
                 </form>
+
 
             </div>
             <div class="mobile">
-                <img src="assets/mobile.png" class="w-full h-auto" alt="mobile-screen" data-tilt>
+                <img src="assets/mobile.png" class="h-auto w-auto" alt="mobile-screen" data-tilt>
             </div>
         </div>
     </div>
@@ -156,7 +168,6 @@
             <p class="text4 mt-32 max-w-2xl">Popular Creators from around the world</p>
             <p class="text5">Explore stunning and beautiful Tours while being virtually guided by your most loved
                 creators from:</p>
-
             <div class="flex justify-between mt-24 sm:w-11/12">
                 <img src="./assets/Instagram.svg" class="social-icon" alt="instagram">
                 <img src="./assets/Tiktok.svg" class="social-icon" alt="tiktok">
@@ -199,7 +210,7 @@
                             friends and family and save whatever you’d like to get back to! </p>
                     </div>
                 </div>
-                <div class="features-card" id="experiences.png">
+                <div class="features-card" id="mobile.png">
                     <img src="./assets/view offline.svg" class="card-img" alt="view offline">
                     <div>
                         <p class="card-heading">Download and view trips offline</p>
@@ -213,7 +224,7 @@
         <!-- Carousel for mobile-view -->
         <div class="main-carousel" data-flickity='{ "autoPlay": 6000, "wrapAround": true, "prevNextButtons": false}'>
             <div class="carousel-cell">
-                <img src="./assets/carousel-img1.svg" class="carousel-img" alt="creators exclusive">
+                <img src="./assets/carousel-img1.png" class="carousel-img" alt="creators exclusive">
                 <div>
                     <p class="carousel-heading">Exclusive content creators</p>
                     <p class="carousel-content">Only the most loved, popular and trusted creators are sent exclusive
@@ -223,7 +234,7 @@
 
             </div>
             <div class="carousel-cell">
-                <img src="./assets/mobile.svg" class="carousel-img" alt="experiences">
+                <img src="./assets/mobile.png" class="carousel-img" alt="experiences">
                 <div>
                     <p class="carousel-heading">Explore all around the world</p>
                     <p class="carousel-content">Like experiences you enjoyed, share trips and experiences with friends
@@ -232,7 +243,7 @@
                 </div>
             </div>
             <div class="carousel-cell">
-                <img src="./assets/carousel-img1.svg" class="carousel-img" alt="creators exclusive">
+                <img src="./assets/carousel-img1.png" class="carousel-img" alt="creators exclusive">
                 <div>
                     <p class="carousel-heading">Download and view offline</p>
                     <p class="carousel-content">Internet poor where you’re headed? Downaload experiences and view them
@@ -281,9 +292,9 @@
                         <p class="footer-heading">Company</p>
                         <ul class="footer-list">
                             <li><a href="https://www.linkedin.com/company/exploapp
-                                ">About</a></li>
+                            ">About</a></li>
                             <li><a href="mailto:contact@exploapp.com
-                                ">Get in touch</a></li>
+                            ">Get in touch</a></li>
                         </ul>
                     </div>
                     <div class="mx-auto">
@@ -300,32 +311,16 @@
                         <ul class="footer-list flex">
                             <li>
                                 <a href="http://facebook.com/exploapp"><img src="./assets/fb-icon.svg"
-                                        class="footer-icons" alt="facebook"></a>
-                            </li>
+                                        class="footer-icons" alt="facebook"></a></li>
                             <li> <a href="https://www.instagram.com/exploapp/
-                                "><img src="./assets/insta-icon.svg" class="footer-icons" alt="instagram "></a></li>
+                            "><img src="./assets/insta-icon.svg" class="footer-icons" alt="instagram "></a></li>
                             <li> <a href="https://www.linkedin.com/company/exploapp
-                                "><img src="./assets/In-icon.svg" class="footer-icons" alt="Linked in"></a>
+                            "><img src="./assets/In-icon.svg" class="footer-icons" alt="Linked in"></a>
                             </li>
                         </ul>
                     </div>
 
                 </div>
-                <!-- <div class="sm:mx-auto ml-10 w-11/12 sm:w-1/2 mt-10 sm:mt-0">
-                    <p class="footer-heading">Not in your area yet?</p>
-                    <p class="footer-list w-10/12">
-                        We’re working hard to cover as much ground as we can and introduce you to top-notch experiences
-                        from top creators. Leave us your email to subscribe and stay updated.</p>
-                    <form class="flex mt-4">
-
-                        <input class="input-box-footer" type="text" name="email" placeholder="Enter your email" />
-                        <button class="subscribe-btn-footer" type="button"> <i style="font-size:1.25rem;color:#000"
-                                class="fa">&#xf1d8;</i> </button>
-
-                    </form>
-                </div> -->
-                <!-- </div> -->
-
                 <div class="sm:mx-auto ml-10 w-11/12 sm:w-1/2 mt-10 sm:mt-0">
                     <p class="footer-heading">Not in your area yet?</p>
                     <p class="footer-list w-10/12">
@@ -333,22 +328,29 @@
                         from top creators. Leave us your email to subscribe and stay updated.</p>
                     <form
                         action="https://Exploapp.us1.list-manage.com/subscribe/post?u=19f60118de1d9cc20ca59c0df&amp;id=bd49d5eed9"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                        novalidate>
-                        <div class="input-group">
-                            <input id="mce-EMAIL" class="input-box-footer required email" type="email" name="EMAIL"
-                                placeholder="Enter your email" />
-                            <button class="subscribe-btn-footer" type="submit" name="subscribe"> <i
-                                    style="font-size:1.25rem;color:#000" class="fa">&#xf1d8;</i> </button>
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                    name="b_19f60118de1d9cc20ca59c0df_bd49d5eed9" tabindex="-1" value=""></div>
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                        class="flex mt-4 validate" novalidate>
+                        <!-- <div class=""> -->
+                        <input id="mce-EMAIL" class="input-box-footer required email" type="email" name="EMAIL"
+                            placeholder="Enter your email" />
+                        <button class="subscribe-btn-footer" type="submit" name="subscribe"> <i
+                                style="font-size:1.25rem;color:#000" class="fa">&#xf1d8;</i> </button>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                name="b_19f60118de1d9cc20ca59c0df_bd49d5eed9" tabindex="-1" value=""></div>
+                        <!-- </div> -->
                     </form>
                 </div>
+            </div>
+            <div class="hr"></div>
+            <div class="footer-bottom">
+                <span class="sm:mx-6 mx-3">2021 &copy; Explo</span>
+                <span class="sm:mx-6 mx-3">Privacy Policy</span>
+                <span class="sm:mx-6 mx-3">Terms of Service</span>
+                <span class="sm:mx-6 mx-3">Cookie Policy</span>
             </div>
 
 

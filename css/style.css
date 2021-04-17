@@ -14,7 +14,20 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+}
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -79,8 +92,8 @@ nav {
 
 .navbar-solid {
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
-  box-shadow: 0px 1px 13px -8px rgba(0, 0, 0, 0.49);
+  background-color: #EBF4FA;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08), 0px 1px 6px rgba(0, 0, 0, 0.06);
   margin: 0% !important;
   height: 4.5rem;
 }
@@ -253,9 +266,17 @@ nav {
 
 /* Section-1 */
 .section1 {
-  background: url(../assets/bg-vector.svg) no-repeat;
-  background-size: 100vw;
   width: 100vw;
+  position: relative;
+}
+
+.bg-vector1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 48vw;
+  height: auto;
+  z-index: -10;
 }
 
 .text1 {
@@ -280,7 +301,7 @@ nav {
   min-height: 4.1rem;
   font-size: 1.8rem;
   line-height: 120%;
-  margin-top: 2%;
+  margin-top: 4%;
   color: var(--color-dark);
   letter-spacing: 0.02em;
 }
@@ -289,6 +310,7 @@ nav {
 
 .mobile {
   max-width: 18.5vw;
+  max-height: 78vh;
   margin-left: 8%;
   margin-right: 5%;
   margin-top: 9%;
@@ -303,7 +325,7 @@ nav {
   line-height: 1.5rem;
   letter-spacing: 0.25px;
   color: var(--color-dark);
-  margin-top: 2.5rem;
+  margin-top: 5.5%;
 }
 
 
@@ -333,8 +355,12 @@ nav {
 
 @media only screen and (max-width: 768px) {
   .mobile {
-    margin-top: 12%;
+    margin-top: 11%;
+    max-height: 100%;
+    max-width: 20vw;
   }
+
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -369,6 +395,7 @@ nav {
   display: flex;
   padding-right: 6.8vw;
   /* position: relative; */
+  margin-top: 8.5rem;
 }
 
 .section2-content {
@@ -544,7 +571,7 @@ nav {
 
 /* Section 3 */
 .section3 {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .section3-header {
@@ -569,7 +596,7 @@ nav {
   font-weight: 300;
   font-size: 3.8rem;
   line-height: 3.8rem;
-  top: 5.5rem;
+  top: 6rem;
   left: 6.8vw;
   padding-right: 6.8vw;
 }
@@ -618,6 +645,7 @@ nav {
   display: flex;
   cursor: pointer;
   margin-top: 2rem;
+  transition: box-shadow 0.5s ease;
 }
 
 .features-card:hover {
