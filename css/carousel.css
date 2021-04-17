@@ -1,238 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Roboto:wght@400;500&display=swap');
+/*! Flickity v2.2.0
+https://flickity.metafizzy.co
+---------------------------------------------- */
 
-.gallery {
-  width: 100%;
+.main-carousel {
+    display: none;
+    margin-top: 5rem;
 }
 
-.gallery-container {
-  align-items: center;
-  display: flex;
-  min-height: 400px;
-  margin: 2rem auto 4rem auto;
-  width: 100%;
-  position: relative;
+@media only screen and (max-width: 425px) {
+    .main-carousel {
+        display: block;
+    }
 }
 
-
-.carousel-img{
-  margin: auto;
-  width: auto;
-  height: 50%;
-}
-
-.carousel-heading{
-  font-family: Josefin Sans;
-font-style: normal;
-font-weight: normal;
-text-align: center;
+.carousel-cell {
+    width: 100vw;
+    text-align: center;
 
 }
 
-.carousel-content{
-  font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-text-align: center;
-color: rgba(19, 30, 45, 0.6);
+.carousel-img {
+    width: 48vw;
+    height: auto;
+    margin: auto;
 }
 
-.gallery-item {
-  height: 22rem;
-  opacity: .4;
-  position: absolute;
-  transition: all 0.5s ease-in-out;
-  width: 16rem;
-  z-index: 0;
-  background: #FFFFFF;
-  border: 0.1px solid #eeeeee;
-  box-sizing: border-box;
-  box-shadow: 0px 16px 40px rgba(191, 191, 191, 0.2);
-  border-radius: 25px;
+.carousel-heading {
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-top: 1.9rem;
+    color: #131E2D;
 }
 
-.gallery-item>.carousel-img{
-  padding: 1.5rem;
-}
-.gallery-item>.carousel-heading{
-  font-size: 0.75rem;
-}
-.gallery-item>.carousel-content{
-  font-size: 00.625rem;
-  padding: 1rem;
-}
+.carousel-content {
+    width: 85vw;
+    margin: auto;
+    margin-top: 0.5rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: rgba(19, 30, 45, 0.6);
 
-.gallery-item.gallery-item-selected {
-  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) ;
-  opacity: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  width: 23rem;
-  height: 30rem;
-  background: #FFFFFF;
-  box-sizing: border-box;
-  box-shadow: 0px 16px 40px rgba(191, 191, 191, 0.2);
-  border-radius: 25px;
-}
-
-.gallery-item.gallery-item-selected>.carousel-img,
- .gallery-item.gallery-item.gallery-item-next>.carousel-img,
- .gallery-item.gallery-item.gallery-item-previous>.carousel-img{
-  padding: 3rem ;
-}
-
-.gallery-item.gallery-item-selected>.carousel-heading{
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.5px;
-}
-.gallery-item.gallery-item-selected>.carousel-content{
-  font-size: 0.875rem;
-line-height: 1.5rem;
-letter-spacing: 0.25px;
-padding: 1rem 2rem;
-}
-
-.gallery-item.gallery-item-previous,
-.gallery-item.gallery-item-next {
-  height: 25rem;
-  opacity: 0.8;
-  width: 18rem;
-  z-index: 1;
-  background: #FFFFFF;
-box-sizing: border-box;
-box-shadow: 0px 16px 40px rgba(191, 191, 191, 0.2);
-border-radius: 25px;
-transition: all 0.35s ease-in-out;
-}
-
-.gallery-item.gallery-item-previous>.carousel-heading,
-.gallery-item.gallery-item-next>.carousel-heading{
-  font-size: 1rem;
-  line-height: 1.2rem;
-}
-
-.gallery-item.gallery-item-previous>.carousel-content,
-.gallery-item.gallery-item-next>.carousel-content{
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.gallery-item.gallery-item-previous {
-  left: 30%;
-  transform: translateX(-50%);
-  transition: all 0.3s ease-in-out;
-
-}
-
-.gallery-item.gallery-item-next {
-  left: 70%;
-  transform: translateX(-50%);
-  transition: all 0.3s ease-in-out;
-
-}
-
-.gallery-item.gallery-item-first {
-  left: 15%;
-  transform: translateX(-50%);
-  transition: all 0.5s ease-in-out;
-
-}
-
-.gallery-item.gallery-item-last {
-  left: 85%;
-  transform: translateX(-50%);
-  transition: all 0.5s ease-in-out;
-}
-
-.gallery-controls {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
-}
-
-.gallery-controls button {
-  font-family:'Roboto', sans-serif;
-  border: 0;
-  cursor: pointer;
-  font-size: 1rem;
-  margin: 0 20px;
-  padding: 0 12px;
-  text-transform: capitalize;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.gallery-controls button:focus {
-  outline: none;
-}
-
-.gallery-controls-previous {
-  position: relative;
-}
-
-.gallery-controls-previous::before {
-  border: solid #000;
-  border-width: 0 2px 2px 0;
-  content: '';
-  display: inline-block;
-  height: 6px;
-  left: -10px;
-   padding: 2px; 
-  position: absolute;
-  top: 50%;
-  transform: rotate(135deg) translateY(3.5px);
-  transition: left 0.15s ease-in-out;
-  width: 6px;
 }
 
 
 
-
-.gallery-controls-next {
-  position: relative;
+.flickity-enabled {
+    position: relative;
 }
 
-.gallery-controls-previous:hover::before {
-  left: -18px;
+.flickity-enabled:focus {
+    outline: none;
 }
 
-.gallery-controls-next::before {
-  border: solid #000;
-  border-width: 0 2px 2px 0;
-  content: '';
-  display: inline-block;
-  height: 6px;
-  padding: 2px;
-  position: absolute;
-  right: -13px;
-  top: 65%;
-  transform: rotate(-45deg) translateY(-8px);
-  transition: right 0.15s ease-in-out;
-  width: 6px;
+.flickity-viewport {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
-.gallery-controls-next:hover::before {
-  right: -18px;
+.flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.gallery-nav {
-  bottom: -15px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  position: absolute;
-  width: 100%;
+/* draggable */
+
+.flickity-enabled.is-draggable {
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.gallery-nav li {
-  background: #ccc;
-  border-radius: 50%;
-  height: 10px;
-  margin: 0 16px;
-  width: 10px;
+.flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
 }
 
-.gallery-nav li.gallery-item-selected {
-  background: #07B3EB;;
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+    position: absolute;
+    background: hsla(0, 0%, 100%, 0.75);
+    border: none;
+    color: #333;
+}
+
+.flickity-button:hover {
+    background: white;
+    cursor: pointer;
+}
+
+.flickity-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+    opacity: 0.6;
+}
+
+.flickity-button:disabled {
+    opacity: 0.3;
+    cursor: auto;
+    /* prevent disabled button from capturing pointer up event. #716 */
+    pointer-events: none;
+}
+
+.flickity-button-icon {
+    fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* vertically center */
+    transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous {
+    left: 10px;
+}
+
+.flickity-prev-next-button.next {
+    right: 10px;
+}
+
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+    left: auto;
+    right: 10px;
+}
+
+.flickity-rtl .flickity-prev-next-button.next {
+    right: auto;
+    left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots {
+    direction: rtl;
+}
+
+.flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: #fff;
+    border: 1px solid #03A9F4;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+    background: linear-gradient(135deg, #1DE9B6 0%, #03A9F4 96.83%);
 }
