@@ -4,16 +4,18 @@
   --gradient: linear-gradient(135deg, #1DE9B6 0%, #03A9F4 96.83%);
   --color-dark: #131E2D;
   --color-light: #07B3EB;
-  --text5: #00B686;
   --grey: #717881;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none !important;
 }
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none !important;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -270,11 +272,25 @@ nav {
   position: relative;
 }
 
+.section1-content {
+  display: flex;
+  flex-direction: row;
+}
+
 .bg-vector1 {
   position: absolute;
   top: 0px;
   right: 0px;
   width: 48vw;
+  height: auto;
+  z-index: -10;
+}
+
+.bg-vector-mobile {
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
   height: auto;
   z-index: -10;
 }
@@ -286,10 +302,14 @@ nav {
   font-style: normal;
   font-weight: 300;
   font-size: 4.8vw;
-  line-height: 4.8rem;
+  line-height: 4.8vw;
   width: 50vw;
   height: auto;
   color: var(--color-dark);
+}
+
+.heading-top {
+  padding-right: 100%;
 }
 
 .text2 {
@@ -365,25 +385,64 @@ nav {
 
 @media only screen and (max-width: 425px) {
 
+  .section1-content {
+    flex-direction: column;
+  }
+
+  .bg-vector1 {
+    display: none;
+  }
+
+  .bg-vector-mobile {
+    display: block;
+  }
+
   .text1 {
-    font-size: 2.8rem;
-    line-height: 3.5rem;
-    margin-top: 38%;
+    width: 90vw;
+    margin: auto;
+    font-size: 43px;
+    line-height: 48px;
+    margin-top: 10rem;
+  }
+
+  .heading-top {
+    padding-right: 0px;
+  }
+
+  .text2 {
+    color: var(--color-dark);
   }
 
   .text3 {
-    margin-top: 5%;
-    font-size: 1.3rem;
+    font-size: 20px;
+    line-height: 24px;
   }
 
+
   .mobile {
-    width: 50rem;
+    max-width: 55vw;
+    margin: auto;
+    margin-top: 4.8rem;
+  }
+
+  .mobile img {
+    width: 100%;
     height: auto;
-    margin-top: 32%;
+  }
+
+  .subscribe-header {
+    margin-top: 3.5rem;
+    font-size: 13.5px;
+    line-height: 24px;
+  }
+
+  .input-box {
+    width: 75%;
+    font-size: 13.5px;
   }
 
   .subscribe-btn {
-    width: 8rem;
+    width: 5rem;
   }
 
 }
@@ -393,13 +452,15 @@ nav {
 .section2 {
   width: 100vw;
   display: flex;
-  padding-right: 6.8vw;
+  flex-direction: row;
   /* position: relative; */
   margin-top: 8.5rem;
 }
 
 .section2-content {
-  margin-left: 8rem;
+  width: 60%;
+  padding-left: 8vw;
+  padding-right: 6.8vw;
 }
 
 .text4 {
@@ -420,7 +481,7 @@ nav {
   font-size: 1.25rem;
   line-height: 180%;
   letter-spacing: 0.15px;
-  color: var(--text5);
+  color: rgba(19, 30, 45, 0.6);
 }
 
 .social-icon {
@@ -430,23 +491,20 @@ nav {
 }
 
 .network {
-  width: 45vw;
-  height: 45vw;
-}
-
-.elements {
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 50vw;
+  /* border: 1px solid black; */
   position: relative;
-
+  left: -4.8rem;
 }
 
 .network-bg {
   position: absolute;
-  top: 3.5vw;
-  left: -4.5vw;
-  width: 36vw;
-  height: 36vw;
+  top: 2vw;
+  left: 0px;
+  width: 38vw;
+  height: 38vw;
+  /* border: 1px solid black; */
 }
 
 .network-icons1 {
@@ -454,11 +512,11 @@ nav {
   animation: rotate-1 50s infinite;
   -webkit-animation-timing-function: cubic-bezier(.35, 0, .35, 1);
   animation-timing-function: cubic-bezier(.35, 0, .35, 1);
-  width: 42vw;
-  height: 42vw;
+  width: 42.2vw;
+  height: 42.2vw;
   position: absolute;
-  top: 0.3vw;
-  left: -7.3vw;
+  top: 0px;
+  left: -1.8rem;
   border-radius: 50%;
   /* border: 1px solid black; */
 }
@@ -469,10 +527,10 @@ nav {
   -webkit-animation-timing-function: cubic-bezier(.30, 0, .30, 1);
   animation-timing-function: cubic-bezier(.30, 0, .30, 1);
   position: absolute;
-  top: 5.3vw;
-  left: -2.8vw;
-  width: 32.5vw;
-  height: 32.5vw;
+  top: 3.5vw;
+  left: 1.5vw;
+  width: 35vw;
+  height: 35vw;
   border-radius: 50%;
   /* border: 1px solid black; */
 }
@@ -485,38 +543,71 @@ nav {
   /* border: 1px solid black; */
   position: absolute;
   border-radius: 50%;
-  top: 10.3vw;
-  left: 2.3vw;
+  top: 9.8vw;
+  left: 7.6vw;
   width: 22.5vw;
   height: 22.5vw;
 }
 
 
 @media only screen and (max-width: 425px) {
-  .network {
-    display: none;
-  }
 
   .section2 {
-    margin-top: 5rem;
-    padding-left: 6.8vw;
-    padding-right: 6.8vw;
-  }
-
-  .text4 {
-    font-size: 3rem;
-    width: 100%;
-    margin-top: 0%;
-  }
-
-  .text5 {
-    width: 20rem;
-    width: 100%;
-
+    flex-direction: column-reverse;
+    margin-top: 6rem;
   }
 
   .section2-content {
-    margin-left: 0%;
+    width: 100%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .text4 {
+    width: 100%;
+    margin-top: 0%;
+    font-size: 31px;
+    line-height: 40px;
+  }
+
+  .text5 {
+    margin-top: 2rem;
+    width: 20rem;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .network {
+    width: 100%;
+    margin-top: 28px;
+    left: 12vw;
+  }
+
+  .network-bg {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .network-icons1 {
+    width: 82vw;
+    height: 82vw;
+    top: -0.5rem;
+    left: -1.2rem;
+  }
+
+  .network-icons2 {
+    width: 70vw;
+    height: 70vw;
+    top: 4.2vw;
+    left: 2vw;
+  }
+
+  .network-icons3 {
+    width: 45vw;
+    height: 45vw;
+    top: 17vw;
+    left: 15vw;
   }
 
 }
@@ -645,11 +736,12 @@ nav {
   display: flex;
   cursor: pointer;
   margin-top: 2rem;
-  transition: box-shadow 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .features-card:hover {
   box-shadow: 0px 9px 46px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
 }
 
 .card-img {
@@ -700,12 +792,23 @@ nav {
 
 @media only screen and (max-width: 425px) {
 
+  .section3 {
+    margin-top: 10rem;
+  }
+
   .text6 {
-    font-size: 3rem;
+    font-size: 31px;
+    line-height: 40px;
   }
 
   .s3-content {
     display: none;
+  }
+
+  .bg-vector2 {
+    width: 148px;
+    height: 148px;
+    left: -48px;
   }
 
   /* .s3-mobile {
@@ -848,7 +951,8 @@ nav {
   }
 
   .bg-vector3 {
-    display: none;
+    height: 167px;
+    top: -4rem;
   }
 
 
@@ -888,6 +992,7 @@ nav {
   /* height: 21.5rem; */
   background-image: url(../assets/footer-bg.svg);
   background-size: cover;
+  background-position: center;
 }
 
 .footer-content {
@@ -981,6 +1086,10 @@ nav {
 }
 
 @media only screen and (max-width: 425px) {
+  .footer {
+    background-image: url(../assets/footer-bg-2.svg);
+  }
+
   .footer-content {
     flex-direction: column;
   }
