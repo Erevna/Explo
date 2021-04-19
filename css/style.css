@@ -868,15 +868,15 @@ nav {
   margin: auto;
   margin-top: 4rem;
   border-radius: 20px;
-  width: 86.4vw;
+  width: 85vw;
   height: 30vw;
   overflow: hidden;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 }
 
 .s4-card-img {
-  width: 87vw;
-  height: 37vw;
+  width: 85vw;
+  height: 40vw;
   transform: scale(1.15);
   filter: brightness(60%);
   -webkit-filter: brightness(60%);
@@ -963,7 +963,8 @@ nav {
 
 
   .s4-card {
-    height: 18rem;
+    width: 85vw;
+    height: auto;
   }
 
   .s4-card-content {
@@ -979,14 +980,14 @@ nav {
   }
 
   .s4-card-img {
-    height: 100%;
+    height: auto;
     width: 100%;
     border-radius: 20px;
     transform: scale(1.15);
   }
 
   .s4-card-img:hover {
-    transform: scale(1.15);
+    transform: scale(1);
   }
 }
 
@@ -1096,7 +1097,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2.5rem;
+  height: 3rem;
   margin-top: 10rem;
 }
 
