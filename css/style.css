@@ -127,9 +127,8 @@ nav {
 
 
 .menuToggle {
-  display: block;
+  top: 1.65rem;
   position: absolute;
-  top: 2rem;
   right: 1.5rem;
   z-index: 1;
 
@@ -148,9 +147,9 @@ nav {
 
 .menuToggle span {
   display: none;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
+  width: 28px;
+  height: 3px;
+  margin-bottom: 3px;
   position: relative;
 
   background: var(--color-dark);
@@ -398,7 +397,7 @@ nav {
   }
 
   .text1 {
-    width: 90vw;
+    width: 85vw;
     margin: auto;
     font-size: 43px;
     line-height: 48px;
@@ -549,6 +548,13 @@ nav {
   height: 22.5vw;
 }
 
+@media only screen and (max-width: 768px) {
+  .section2-content {
+    text-align: center;
+    width: 80%;
+  }
+}
+
 
 @media only screen and (max-width: 425px) {
 
@@ -559,8 +565,8 @@ nav {
 
   .section2-content {
     width: 100%;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 6.8vw;
+    padding-right: 6.8vw;
   }
 
   .text4 {
@@ -1083,6 +1089,15 @@ nav {
   line-height: 1.1rem;
   letter-spacing: 0.4px;
   color: #fff;
+}
+
+.footer-new {
+  background: var(--color-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  margin-top: 10rem;
 }
 
 @media only screen and (max-width: 425px) {

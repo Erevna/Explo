@@ -10,6 +10,10 @@ $(window).scroll(function () {
   }
 });
 
+if (window.matchMedia('(min-width: 769px)').matches){
+  VanillaTilt.init(document.querySelector(".mobile-img"));
+}
+
 // smooth scroll
 var $root = $('html, body');
 if (window.matchMedia('(min-width: 426px)').matches){
