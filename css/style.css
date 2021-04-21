@@ -590,7 +590,7 @@ nav {
 
   .network {
     width: 100%;
-    margin-top: 28px;
+    margin-top: 32px;
     left: 6.8vw;
   }
 
@@ -805,7 +805,7 @@ nav {
 @media only screen and (max-width: 425px) {
 
   .section3 {
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
 
   .text6 {
