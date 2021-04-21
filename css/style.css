@@ -122,7 +122,6 @@ nav {
 .links a:hover,
 .listmenu a:hover {
   color: var(--color-light);
-  transition: all 0.3s ease-in-out;
 }
 
 
@@ -193,7 +192,7 @@ nav {
   height: 150vh;
   margin: -100px 0 0 0;
   padding: 20px;
-  padding-top: 125px;
+  padding-top: 50px;
   right: -100px;
   opacity: 0.8;
   transition: 0.5s ease-in;
@@ -208,16 +207,17 @@ nav {
 }
 
 .listmenu li {
-  padding: 10px 0 10px 30px;
+  padding: 32px 0 10px 30px;
   margin: auto;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--color-dark);
+  letter-spacing: 0.02em;
 }
 
-.listmenu a {
-  font-size: 1.6rem;
-  line-height: 1.2rem;
-  letter-spacing: 0.5px;
-  color: var(--color-dark);
-}
 
 .menuToggle input:checked~ul {
   transform: scale(1, 1);
@@ -494,7 +494,7 @@ nav {
   height: 50vw;
   /* border: 1px solid black; */
   position: relative;
-  left: -4.8rem;
+  left: -4.8vw;
 }
 
 .network-bg {
@@ -507,22 +507,22 @@ nav {
 }
 
 .network-icons1 {
-  -webkit-animation: rotate-1 50s infinite;
-  animation: rotate-1 50s infinite;
+  -webkit-animation: rotate-1 30s infinite;
+  animation: rotate-1 30s infinite;
   -webkit-animation-timing-function: cubic-bezier(.35, 0, .35, 1);
   animation-timing-function: cubic-bezier(.35, 0, .35, 1);
   width: 42.2vw;
   height: 42.2vw;
   position: absolute;
   top: 0px;
-  left: -1.8rem;
+  left: -1.8vw;
   border-radius: 50%;
   /* border: 1px solid black; */
 }
 
 .network-icons2 {
-  -webkit-animation: rotate-2 40s infinite;
-  animation: rotate-2 40s infinite;
+  -webkit-animation: rotate-2 20s infinite;
+  animation: rotate-2 20s infinite;
   -webkit-animation-timing-function: cubic-bezier(.30, 0, .30, 1);
   animation-timing-function: cubic-bezier(.30, 0, .30, 1);
   position: absolute;
@@ -535,8 +535,8 @@ nav {
 }
 
 .network-icons3 {
-  -webkit-animation: rotate-3 30s infinite;
-  animation: rotate-3 30s infinite;
+  -webkit-animation: rotate-3 35s infinite;
+  animation: rotate-3 35s infinite;
   -webkit-animation-timing-function: cubic-bezier(.25, 0, .25, 1);
   animation-timing-function: cubic-bezier(.25, 0, .25, 1);
   /* border: 1px solid black; */
@@ -552,6 +552,10 @@ nav {
   .section2-content {
     text-align: center;
     width: 80%;
+  }
+
+  .network {
+    left: -3vw;
   }
 }
 
@@ -587,33 +591,35 @@ nav {
   .network {
     width: 100%;
     margin-top: 28px;
-    left: 12vw;
+    left: 6.8vw;
   }
 
   .network-bg {
-    width: 75vw;
-    height: 75vw;
+    width: 80vw;
+    height: 80vw;
   }
 
   .network-icons1 {
-    width: 82vw;
-    height: 82vw;
-    top: -0.5rem;
-    left: -1.2rem;
+    /* transform: rotate(-30deg); */
+    width: 90vw;
+    height: 90vw;
+    top: -1.2rem;
+    left: -1.6rem;
   }
 
   .network-icons2 {
-    width: 70vw;
-    height: 70vw;
-    top: 4.2vw;
-    left: 2vw;
+    /* transform: rotate(-30deg); */
+    width: 75vw;
+    height: 75vw;
+    top: 4.5vw;
+    left: 1.8vw;
   }
 
   .network-icons3 {
-    width: 45vw;
-    height: 45vw;
-    top: 17vw;
-    left: 15vw;
+    width: 48vw;
+    height: 48vw;
+    top: 18vw;
+    left: 16vw;
   }
 
 }
@@ -626,7 +632,7 @@ nav {
   }
 
   50% {
-    transform: rotate(-35deg);
+    transform: rotate(-25deg);
   }
 
   100% {
@@ -641,7 +647,7 @@ nav {
   }
 
   50% {
-    transform: rotate(-25deg);
+    transform: rotate(-20deg);
   }
 
   100% {
@@ -655,7 +661,7 @@ nav {
   }
 
   50% {
-    transform: rotate(28deg);
+    transform: rotate(18deg);
   }
 
   100% {
@@ -1101,6 +1107,12 @@ nav {
   margin-top: 10rem;
 }
 
+.footer-new-text {
+  color: #fff;
+  font-size: 14px;
+  font-family: Roboto;
+}
+
 @media only screen and (max-width: 425px) {
   .footer {
     background-image: url(../assets/footer-bg-2.svg);
@@ -1116,5 +1128,9 @@ nav {
 
   .hr {
     margin-top: 3rem;
+  }
+
+  .footer-new {
+    height: 4rem;
   }
 }
