@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 // Navbar transition transparent to solid
 $(window).scroll(function () {
@@ -8,6 +9,12 @@ $(window).scroll(function () {
     $("nav").removeClass("navbar-solid");
     $(".logo").css('height',3.75 + "rem");
   }
+});
+
+$(".navlink").click(function(){
+
+  $('#myCheckbox').prop('checked', false);
+  // console.log("done")
 });
 
 if (window.matchMedia('(min-width: 769px)').matches){

@@ -13,9 +13,6 @@ html {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none !important;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
 }
 
 ::-webkit-scrollbar {
