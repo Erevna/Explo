@@ -13,6 +13,9 @@ html {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none !important;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -33,7 +36,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -116,8 +119,7 @@ nav {
   padding-right: 4.5vw;
 }
 
-.links a:hover,
-.listmenu a:hover {
+.links a:hover {
   color: var(--color-light);
 }
 
@@ -193,7 +195,6 @@ nav {
   right: -100px;
   opacity: 0.8;
   transition: 0.5s ease-in;
-
   background: #f0f0f0;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -213,6 +214,10 @@ nav {
   line-height: 120%;
   color: var(--color-dark);
   letter-spacing: 0.02em;
+}
+
+.listmenu a:active {
+  color: var(--color-light);
 }
 
 
@@ -348,12 +353,17 @@ nav {
 .input-box {
   width: 28rem;
   height: 3.1rem;
+  line-height: normal;
   border: 1px solid #C9C9C9;
   border-radius: 5px 0px 0px 5px;
   font-family: Roboto;
   font-size: 0.88rem;
   margin-right: 0%;
   padding-left: 0.5rem;
+}
+
+input::-webkit-input-placeholder {
+  line-height: normal !important;
 }
 
 .subscribe-btn {
@@ -848,8 +858,9 @@ nav {
 /* Section 4 */
 
 .section4 {
-  margin-top: 5%;
+  padding-top: 5%;
   padding-top: 3.5%;
+  overflow-x: hidden;
 }
 
 .section4-header {
@@ -862,7 +873,7 @@ nav {
   width: 33.5rem;
   height: 23.9rem;
   right: -8rem;
-  top: -8rem;
+  top: -4rem;
   z-index: -1;
 }
 
