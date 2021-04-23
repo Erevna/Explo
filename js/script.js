@@ -12,7 +12,6 @@ $(window).scroll(function () {
 });
 
 $(".navlink").click(function(){
-  preventDefault();
   $('#myCheckbox').prop('checked', false);
   // console.log("done")
 });
