@@ -1,58 +1,78 @@
 
-$(document).ready(function(){
-// Navbar transition transparent to solid
-$(window).scroll(function () {
-  if ($(window).scrollTop() >= 50) {
-    $("nav").addClass("navbar-solid");
-    $(".logo").css('height',3.2 + "rem");
-  } else {
-    $("nav").removeClass("navbar-solid");
-    $(".logo").css('height',3.75 + "rem");
-  }
+//Content Transition
+
+$('#creator').on('click', function() {
+
+  $('#creator').addClass('active');
+  $('#explorer').removeClass('active');
+  $('.underline').addClass('switch-tab'); 
+
+  $('.slider').html("<div class=slider-text1>Digitally-guided tours</div> <div class=slider-text2> Gated content</div>  <div class=slider-text3> Ad partners </div>")
+
 });
 
-$(".navlink").click(function(){
-  $('#myCheckbox').prop('checked', false);
-  // console.log("done")
+
+
+$('#explorer').on('click', function() {
+
+  $('#creator').removeClass('active');
+  $('#explorer').addClass('active');
+  $('.underline').removeClass('switch-tab') 
+
+  $('.slider').html(" <div class=slider-text1> Live events.</div> <div class=slider-text2> Unique deals.</div>  <div class=slider-text3> Video-guided Experiences. </div>")
+ 
 });
 
-if (window.matchMedia('(min-width: 769px)').matches){
-  VanillaTilt.init(document.querySelector(".mobile-img"));
-}
 
-// smooth scroll
-var $root = $('html, body');
-if (window.matchMedia('(min-width: 426px)').matches){
-  $('a[href^="#"]').click(function() {
-    var href = $.attr(this, 'href');
-
-    $root.animate({
-        scrollTop: $(href).offset().top
-    }, 500, function () {
-        window.location.hash = href;
-    });
-
-    return false;
-});
-}
-
-
-// image Switch
-  $(".features-card").click(function(){
-      var imgId = "./assets/" + $(this).attr("id");
-      // console.log(imgId)
-      // Change src attribute of image
-      //  $(".s3-mobile-img").attr("src", imgId);
-
-       $('.s3-mobile-img').fadeOut(100, function(){
+$("#creator").click(function(){
   
-        $(this).attr('src',imgId).bind('onreadystatechange load', function(){
-              if (this.complete) $(this).fadeIn(100);
-        });
-      });
-      
-       
-  })   
-})
+    $("#heading").find("span")
+    .animate({opacity:0})
+    .queue(function(){
+         $(this).html("Turn Content Creation <br/> into Your Profession")
+                .dequeue()
 
+    })
+    .animate({opacity:1});  
+  
+ 
+});
+
+
+  $("#explorer").click(function(){
+  
+    $("#heading").find("span")
+    .animate({opacity:0})
+    .queue(function(){
+         $(this).html("Explore with <br /> your Favorite Creators ")
+                .dequeue()
+  
+    })
+    .animate({opacity:1});  
+  
+  
+  });
+
+  // SwiperJs cards slider
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    // spaceBetween: 56,
+  
+  });
+
+
+  // to reload 
+
+  var video= $('#video').get(0);   
+ 
+video.addEventListener('ended',function(){
+  $("#play").removeClass('onPlay');
+  video.load();         
+},false);
+
+$("#play").click(function(){
+  video.play();
+  $(this).addClass('onPlay');
+})  
 
