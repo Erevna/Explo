@@ -545,7 +545,7 @@ input::placeholder {
   animation-timing-function: ease-in-out;
   position: absolute;
   top: -2vw;
-  left: -4vw;
+  left: -4.3vw;
   width: 75vw;
   height: auto;
 }
