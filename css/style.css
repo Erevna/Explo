@@ -452,7 +452,7 @@ input::placeholder {
 
 
 .modal {
-  max-width: 90vw !important;
+  max-width: 100vw !important;
   max-height: 90vh !important;
   overflow-y: auto;
   overflow-x: hidden;
@@ -514,39 +514,39 @@ input::placeholder {
 }
 
 .network-icons1 {
-  -webkit-animation: rotate-1 50s infinite;
-  animation: rotate-1 50s infinite;
+  -webkit-animation: rotate-1 25s infinite;
+  animation: rotate-1 25 infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   position: absolute;
-  top: 14.5vw;
-  left: 11.5vw;
-  width: 43.5vw;
+  top: 15vw;
+  left: 12.5vw;
+  width: 42vw;
   height: auto;
 }
 
 
 .network-icons2 {
-  -webkit-animation: rotate-2 55s infinite;
-  animation: rotate-2 55s infinite;
+  -webkit-animation: rotate-2 30s infinite;
+  animation: rotate-2 30s infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   position: absolute;
-  top: 6.3vw;
-  left: 3vw;
-  width: 60vw;
+  top: 7vw;
+  left: 3.5vw;
+  width: 58vw;
   height: auto;
 }
 
 .network-icons3 {
-  -webkit-animation: rotate-3 60s infinite;
-  animation: rotate-3 60s infinite;
+  -webkit-animation: rotate-3 40s infinite;
+  animation: rotate-3 40s infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   position: absolute;
-  top: -4vw;
-  left: -7vw;
-  width: 80vw;
+  top: -2vw;
+  left: -4vw;
+  width: 75vw;
   height: auto;
 }
 
@@ -558,7 +558,7 @@ input::placeholder {
   }
 
   50% {
-    transform: rotate(100deg);
+    transform: rotate(-15deg);
   }
 
   100% {
@@ -573,7 +573,7 @@ input::placeholder {
   }
 
   50% {
-    transform: rotate(-120deg);
+    transform: rotate(20deg);
   }
 
   100% {
@@ -587,7 +587,7 @@ input::placeholder {
   }
 
   50% {
-    transform: rotate(80deg);
+    transform: rotate(-25deg);
   }
 
   100% {
@@ -653,7 +653,7 @@ input::placeholder {
   }
 
   .network-container {
-    top: 510px;
+    top: 530px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -662,26 +662,26 @@ input::placeholder {
   .network {
     width: 620px;
     height: 720px;
-    opacity: 0.2;
+    opacity: 0.3;
 
   }
 
   .network-icons1 {
-    width: 420px;
-    top: 150px;
-    left: 100px;
+    width: 400px;
+    top: 158px;
+    left: 115px;
   }
 
   .network-icons2 {
-    width: 570px;
-    top: 82px;
-    left: 22px;
+    width: 550px;
+    top: 80px;
+    left: 25px;
   }
 
   .network-icons3 {
-    width: 750px;
-    top: -16px;
-    left: -70px;
+    width: 710px;
+    top: -10px;
+    left: -50px;
   }
 }
 
@@ -711,6 +711,7 @@ input::placeholder {
     margin-top: 4rem;
     margin-right: 5vw;
     margin-left: 1rem;
+
   }
 
   .swiper-slide p {
