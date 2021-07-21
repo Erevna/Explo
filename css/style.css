@@ -21,6 +21,7 @@ body {
   overflow-x: hidden;
 }
 
+
 p {
   margin: 0%;
 }
@@ -29,7 +30,7 @@ p {
 
 .logo {
   width: fit-content;
-  margin: 2.5rem 0 0 5rem;
+  margin: 2.5rem 0 0 5vw;
   width: 10.7rem;
   height: auto;
   display: flex;
@@ -56,7 +57,7 @@ p {
 
 .navigation {
   width: fit-content;
-  margin: 4.25rem 0 0 5rem;
+  margin: 4.25rem 0 0 5vw;
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 600;
@@ -81,7 +82,7 @@ p {
 
 .underline {
   margin-top: 0.63rem;
-  margin-left: 5.6rem;
+  margin-left: 5.6vw;
   width: 4.2rem;
   height: 2px;
   background: #131e2d;
@@ -152,7 +153,7 @@ video::-webkit-media-controls-fullscreen-button {
 
 .heading {
   margin-top: 5.75rem;
-  margin-left: 5rem;
+  margin-left: 5vw;
 }
 
 .h1 {
@@ -176,7 +177,7 @@ video::-webkit-media-controls-fullscreen-button {
 /* Form-container */
 
 .form-container {
-  margin: 4.37rem 0 0 5rem;
+  margin: 4.37rem 0 0 5vw;
 }
 
 form {
@@ -285,6 +286,7 @@ input::placeholder {
 
 .slider-text1 {
   animation: slide 7s linear infinite;
+  -webkit-animation: slide 7s linear infinite;
 }
 
 
@@ -319,6 +321,36 @@ input::placeholder {
 }
 
 
+@keyframes slide2 {
+  0% {
+    margin-top: -150px;
+  }
+
+  5% {
+    margin-top: -100px;
+  }
+
+  33% {
+    margin-top: -100px;
+  }
+
+  38% {
+    margin-top: -50px;
+  }
+
+  66% {
+    margin-top: -50px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
 
 /* Supported by */
 
@@ -330,14 +362,13 @@ input::placeholder {
   line-height: 2rem;
   letter-spacing: 0.5px;
   color: #131E2D;
-  margin-left: 5rem;
+  margin-left: 5vw;
   margin-top: 6rem;
 }
 
 .swiper-container {
   margin-top: 2.9rem;
-  padding: 0.5rem 5rem;
-
+  padding: 0.5rem 5vw;
 }
 
 .swiper-slide {
@@ -383,13 +414,14 @@ input::placeholder {
 /* footer */
 
 .footer {
+  margin-top: 4rem;
+  padding: 0% 5vw;
   background: #131e2d;
   min-height: 4.6rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3.8rem;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -400,14 +432,11 @@ input::placeholder {
 }
 
 
-.footer-text {
-  margin-left: 5rem;
+.footer-text,
+.footer-links {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-text span {
-  margin-right: 3.5rem;
+  gap: 3.5rem;
 }
 
 .footer a {
@@ -416,8 +445,14 @@ input::placeholder {
 
 }
 
+.footer-links img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+
 .modal {
-  max-width: 80vw !important;
+  max-width: 90vw !important;
   max-height: 90vh !important;
   overflow-y: auto;
   overflow-x: hidden;
@@ -436,7 +471,7 @@ input::placeholder {
 
 .modal-content {
   padding: 1rem;
-  font-size: 16px;
+  font-size: 0.9rem;
 
 }
 
@@ -448,9 +483,6 @@ input::placeholder {
   z-index: 10 !important;
 }
 
-.footer-links img {
-  margin-right: 3.5rem;
-}
 
 .modal a.close-modal {
   display: none !important;
@@ -482,8 +514,8 @@ input::placeholder {
 }
 
 .network-icons1 {
-  -webkit-animation: rotate-1 30s infinite;
-  animation: rotate-1 30s infinite;
+  -webkit-animation: rotate-1 50s infinite;
+  animation: rotate-1 50s infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   position: absolute;
@@ -495,10 +527,10 @@ input::placeholder {
 
 
 .network-icons2 {
-  -webkit-animation: rotate-2 25s infinite;
-  animation: rotate-2 25s infinite;
-  -webkit-animation-timing-function: cubic-bezier(0, .2, .30, 1);
-  animation-timing-function: cubic-bezier(0, .2, .30, 1);
+  -webkit-animation: rotate-2 55s infinite;
+  animation: rotate-2 55s infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   position: absolute;
   top: 6.3vw;
   left: 3vw;
@@ -507,8 +539,8 @@ input::placeholder {
 }
 
 .network-icons3 {
-  -webkit-animation: rotate-3 35s infinite;
-  animation: rotate-3 35s infinite;
+  -webkit-animation: rotate-3 60s infinite;
+  animation: rotate-3 60s infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   position: absolute;
@@ -526,7 +558,7 @@ input::placeholder {
   }
 
   50% {
-    transform: rotate(-20deg);
+    transform: rotate(100deg);
   }
 
   100% {
@@ -541,7 +573,7 @@ input::placeholder {
   }
 
   50% {
-    transform: rotate(-15deg);
+    transform: rotate(-120deg);
   }
 
   100% {
@@ -555,7 +587,7 @@ input::placeholder {
   }
 
   50% {
-    transform: rotate(10deg);
+    transform: rotate(80deg);
   }
 
   100% {
@@ -566,35 +598,93 @@ input::placeholder {
 
 /* lets make our website Responsive */
 
+@media only screen and (min-width: 768px) and (orientation: landscape) {
 
-
-@media only screen and (min-width: 768px) {
-
-  ::-webkit-scrollbar {
-    width: 10px;
+  .main-content {
+    height: 100vh;
   }
 
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+  .heading {
+    margin-top: 14.7vh;
   }
 
-  ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: #131e2d;
+  .h1 {
+    margin-bottom: 4.4vh;
+  }
+
+  .form-container {
+    margin-top: 11.2vh;
   }
 
 }
 
-@media only screen and (max-width: 768px) {
-  .cursor {
-    display: none;
+
+@media only screen and (orientation: portrait) {
+  .main-content {
+    flex-direction: column;
+    min-height: auto;
   }
 
-  .cursor-inner {
-    display: none;
+  .heading {
+    margin-top: 4rem;
+  }
+
+  .h1 {
+    font-size: 3.8rem;
+    line-height: 4rem;
+  }
+
+  .form-container {
+    margin-top: 3.8rem;
+  }
+
+  .h3 {
+    margin-top: 12rem;
+  }
+
+  .mobile {
+    margin: 8rem auto !important;
+    margin-bottom: 0%;
+  }
+
+  .footer-text,
+  .footer-links {
+    gap: 1.8rem !important;
+  }
+
+  .network-container {
+    top: 510px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .network {
+    width: 620px;
+    height: 720px;
+    opacity: 0.2;
+
+  }
+
+  .network-icons1 {
+    width: 420px;
+    top: 150px;
+    left: 100px;
+  }
+
+  .network-icons2 {
+    width: 570px;
+    top: 82px;
+    left: 22px;
+  }
+
+  .network-icons3 {
+    width: 750px;
+    top: -16px;
+    left: -70px;
   }
 }
+
 
 @media only screen and (min-width: 1920px) {
   html {
@@ -608,29 +698,39 @@ input::placeholder {
   }
 }
 
-@media only screen and (max-width: 1007px) {
+@media only screen and (max-width: 1024px) {
   html {
-    font-size: 70%;
-  }
-
-  .underline {
-    margin-left: 6rem;
-  }
-
-  .switch-tab {
-    transform: translateX(8rem);
+    font-size: 90%;
   }
 
   .h1 {
-    margin-bottom: 0;
+    font-size: 3rem;
+  }
+
+  .mobile {
+    margin-top: 4rem;
+    margin-right: 5vw;
+    margin-left: 1rem;
+  }
+
+  .swiper-slide p {
+    width: 250px;
+  }
+
+  .footer-text,
+  .footer-links {
+    gap: 2.5rem;
+  }
+
+  .underline {
+    margin-left: 6.2vw;
   }
 
 }
 
 /* Mobile-view */
 
-@media (max-width: 600px),
-screen and (orientation: portrait) {
+@media (max-width: 480px) {
   .main-content {
     flex-direction: column;
     min-height: auto;
@@ -705,6 +805,8 @@ screen and (orientation: portrait) {
 
   .slider-text1 {
     animation: slide2 7s linear infinite;
+    -webkit-animation: slide2 7s linear infinite;
+
   }
 
   .form-container {
@@ -731,8 +833,6 @@ screen and (orientation: portrait) {
   }
 
   .mobile {
-    margin: 124px auto;
-    margin-bottom: 0%;
     width: 280px;
   }
 
@@ -766,6 +866,10 @@ screen and (orientation: portrait) {
     margin-top: 24px;
   }
 
+  .network-container {
+    top: 480px;
+  }
+
   .footer {
     font-size: 12px;
     padding: 24px 16px;
@@ -794,86 +898,5 @@ screen and (orientation: portrait) {
 
   .footer-links img {
     margin-right: 0;
-  }
-
-  .network-container {
-    top: 530px;
-    left: 50%;
-    transform: translateX(-50%);
-
-  }
-
-  .network {
-    width: 620px;
-    height: 720px;
-    opacity: 0.4;
-
-  }
-
-  .network-icons1 {
-    width: 420px;
-    top: 150px;
-    left: 100px;
-  }
-
-  .network-icons2 {
-    width: 570px;
-    top: 82px;
-    left: 22px;
-  }
-
-  .network-icons3 {
-    width: 750px;
-    top: -16px;
-    left: -70px;
-  }
-}
-
-@media only screen and (orientation: landscape) {
-  .main-content {
-    height: 100vh;
-  }
-
-  .heading {
-    margin-top: 14.7vh;
-  }
-
-  .h1 {
-    margin-bottom: 4.4vh;
-  }
-
-  .form-container {
-    margin-top: 11.2vh;
-  }
-
-}
-
-@keyframes slide2 {
-  0% {
-    margin-top: -150px;
-  }
-
-  5% {
-    margin-top: -100px;
-  }
-
-  33% {
-    margin-top: -100px;
-  }
-
-  38% {
-    margin-top: -50px;
-  }
-
-  66% {
-    margin-top: -50px;
-  }
-
-  71% {
-    margin-top: 0px;
-  }
-
-  100% {
-    margin-top: 0px;
   }
 }
