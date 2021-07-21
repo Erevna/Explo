@@ -601,19 +601,24 @@ input::placeholder {
 @media only screen and (min-width: 768px) and (orientation: landscape) {
 
   .main-content {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .heading {
-    margin-top: 14.7vh;
+    margin-top: 6.3vw;
   }
 
   .h1 {
-    margin-bottom: 4.4vh;
+    margin-bottom: 1.9vw;
   }
 
   .form-container {
-    margin-top: 11.2vh;
+    margin-top: 4.8vw;
+  }
+
+  .footer-links,
+  .footer-text {
+    gap: 1.8rem;
   }
 
 }
@@ -636,10 +641,6 @@ input::placeholder {
 
   .form-container {
     margin-top: 3.8rem;
-  }
-
-  .h3 {
-    margin-top: 12rem;
   }
 
   .mobile {
@@ -845,7 +846,7 @@ input::placeholder {
     font-size: 24px;
     line-height: 32px;
     margin-left: 16px;
-    margin-top: 90px;
+    margin-top: 24px;
   }
 
   .swiper-container {
