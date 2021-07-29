@@ -8,9 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 
@@ -19,780 +17,1089 @@
 
 <body>
 
+    <div class="Container">
+        <div class="main-content">
+            <div>
+                <div class="logo">
+                    <img alt="logo" src="./assets/logo.svg" />
+                    <span>Explo</span>
+                </div>
+                <div class="navigation">
+                    <span class="active" id="explorer">Explorer</span>
+                    <span id="creator">Creator</span>
+                    <div class="underline"></div>
+                </div>
 
-    <div class="main-content">
-        <div>
-            <div class="logo">
-                <img alt="logo" src="./assets/logo.svg" />
-                <span>Explo</span>
-            </div>
-            <div class="navigation">
-                <span class="active" id="explorer">Explorer</span>
-                <span id="creator">Creator</span>
-
-            </div>
-            <div class="underline"></div>
-            <div class="heading">
-                <p class="h1" id="heading"> <span> Explore with <br /> your Favorite Creators </span></p>
-                <div class="slider-wrapper">
-                    <span>with</span>
-                    <div class="slider">
-                        <div class="slider-text1">Live events.</div>
-                        <div class="slider-text2">Unique deals.</div>
-                        <div class="slider-text3">Video-guided Experiences. </div>
+                <div class="heading">
+                    <p class="h1" id="heading"> <span> Explore with <br /> your Favorite Creators </span></p>
+                    <div class="slider-wrapper">
+                        <span>in</span>
+                        <div class="slider">
+                            <div class="slider-text1">Live events.</div>
+                            <div class="slider-text2">Unique deals.</div>
+                            <div class="slider-text3">Video-guided Experiences. </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <p class="h3">( Get your first digital tour for only 2$)</p>
+                <a href="#book" rel="modal:open">
+                    <button class="btn" type="submit">Book Now</button>
+                </a>
 
-            <div class="form-container">
+                <div class="network-container">
+                    <div class="network">
+                        <img src="./assets/network-1.svg" class="network-icons1" alt="">
+                        <img src="./assets/network-2.svg" class="network-icons2" alt="">
+                        <img src="./assets/network-3.svg" class="network-icons3" alt="">
 
-                <form>
-                    <input type="text" name="email" placeholder="Your email" />
-                    <button class="btn" type="submit">SIGN UP</button>
-                </form>
-            </div>
-
-            <div class="network-container">
-                <div class="network">
-                    <img src="./assets/network-1.svg" class="network-icons1" alt="">
-                    <img src="./assets/network-2.svg" class="network-icons2" alt="">
-                    <img src="./assets/network-3.svg" class="network-icons3" alt="">
-
+                    </div>
                 </div>
+
             </div>
 
+
+            <div class="mobile">
+                <img src="./assets/play.svg" alt="play" id="play" class="onPlay">
+                <video poster="./assets/Splash screen.png" id="video" autoplay muted playsinline>
+                    <source src="./assets/Explo.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
         </div>
 
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-text">
+                <span>2021 &copy; Explo</span>
+                <span><a href="#policy" rel="modal:open">Privacy Policy</a></span>
+                <span><a href="#imprint" rel="modal:open">Imprint</a></span>
+            </div>
+            <div class="footer-links">
 
-        <div class="mobile">
-            <img src="./assets/play.svg" alt="play" id="play">
-            <video poster="./assets/Splash screen.png" id="video">
-                <source src="./assets/Explo.mp4" type="video/mp4">
-            </video>
+                <a href="https://www.instagram.com/exploapp/"> <img src="./assets/insta.svg" alt="instagram"></a>
+                <a href="http://facebook.com/exploapp"> <img src="./assets/fb.svg" alt="facebook"></a>
+                <a href="https://www.linkedin.com/company/exploapp"><img src="./assets/linkedin.svg" alt="linkedin"></a>
+                <a href="https://www.tiktok.com/@exploapp"><img src="./assets/Tiktok.svg" alt="tiktok"></a>
+            </div>
         </div>
-
 
     </div>
 
-    <!-- Supported by Section -->
-
-    <p class="h3">Supported by</p>
-    <div class="swiper-container mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./assets/image 1.png" alt="img1" class="swiper-img1">
-                <p>We believe that creativity, innovation and productive work are only possible with the right
-                    framework.
-                    Our goal is to create precisely these framework conditions and to adapt them to our tenants.</p>
-            </div>
-
-            <div class="swiper-slide">
-                <img src="./assets/image 2.png" alt="img2" class="swiper-img2">
-                <p>We believe that creativity, innovation and productive work are only possible with the right
-                    framework.
-                    Our goal is to create precisely these framework conditions and to adapt them to our tenants.</p>
-            </div>
-
-            <div class="swiper-slide ">
-
-                <img src="./assets/image 3.png" alt="img1" class="swiper-img3">
-
-
-                <p>We believe that creativity, innovation and productive work are only possible with the right
-                    framework.
-                    Our goal is to create precisely these framework conditions and to adapt them to our tenants.</p>
-            </div>
-            <div class="swiper-slide ">
-
-                <img src="./assets/image 4.png" alt="img2" class="swiper-img3">
-
-
-                <p>We believe that creativity, innovation and productive work are only possible with the right
-                    framework.
-                    Our goal is to create precisely these framework conditions and to adapt them to our tenants.</p>
-            </div>
-            <div class="swiper-slide ">
-
-                <img src="./assets/image 6.png" alt="img2" class="swiper-img3">
-
-
-                <p>We believe that creativity, innovation and productive work are only possible with the right
-                    framework.
-                    Our goal is to create precisely these framework conditions and to adapt them to our tenants.</p>
-            </div>
-
-
-
-        </div>
-    </div>
-
-
-
-    <!-- footer -->
-    <div class="footer">
-        <div class="footer-text">
-            <span>2021 &copy; Explo</span>
-            <span><a href="#policy" rel="modal:open">Privacy Policy</a></span>
-            <span><a href="#imprint" rel="modal:open">Imprint</a></span>
-        </div>
-        <div class="footer-links">
-
-            <a href="https://www.instagram.com/exploapp/"> <img src="./assets/insta.svg" alt="instagram"></a>
-            <a href="http://facebook.com/exploapp"> <img src="./assets/fb.svg" alt="facebook"></a>
-            <a href="https://www.linkedin.com/company/exploapp"><img src="./assets/linkedin.svg" alt="linkedin"></a>
-            <a href="https://www.tiktok.com/@exploapp"><img src="./assets/Tiktok.svg" alt="tiktok"></a>
-        </div>
-    </div>
 
     <!-- Imprint modal -->
     <div id="imprint" class="modal">
-        <a href="#" rel="modal:close" class="close">
-            <img src="./assets/close-icon.svg" alt="close" />
-        </a>
 
         <div class="modal-content">
-            <p>Impressum Angaben gem&auml;&szlig; &sect; 5 TMG</p>
-
-            <p>Tim Gro&szlig;mann Finkenweg 5 72218 Wildberg</p>
-
-            <p>Vertreten durch: Tim Gro&szlig;mann</p>
-
-            <p>Kontakt: Telefon: %2B49-15128288055 E-Mail: contact.timgrossmann@gmail.com</p>
-
-            <p>Umsatzsteuer-ID: Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;27a Umsatzsteuergesetz:
-                62937085178</p>
-
-            <p>Wirtschafts-ID:</p>
-
-            <p> Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV: Tim Gro&szlig;mann Finkenweg 5 72218
-                Wildberg
-            </p>
-
-            <p>Haftungsausschluss:</p>
-
+            <p>Impressum</p>
+            <p>Angaben gem&auml;&szlig; &sect; 5 TMG</p>
+            <p>&nbsp;</p>
+            <p>Tim Gro&szlig;mann&nbsp;</p>
+            <p>Finkenweg 5</p>
+            <p>72218 Wildberg&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>Vertreten durch:&nbsp;</p>
+            <p>Tim Gro&szlig;mann</p>
+            <p>&nbsp;</p>
+            <p>Kontakt:&nbsp;</p>
+            <p>Telefon: %2B49-15128288055</p>
+            <p>E-Mail: contact.timgrossmann@gmail.com</p>
+            <p>&nbsp;</p>
+            <p>Umsatzsteuer-ID:&nbsp;</p>
+            <p>Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect;27a
+                Umsatzsteuergesetz: 62937085178</p>
+            <p>&nbsp;</p>
+            <p>Wirtschafts-ID:&nbsp;</p>
+            <p><br /><br /></p>
+            <p>Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV:</p>
+            <p>Tim Gro&szlig;mann&nbsp;</p>
+            <p>Finkenweg 5</p>
+            <p>72218 Wildberg&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>Haftungsausschluss:&nbsp;</p>
+            <p>&nbsp;</p>
             <p>Haftung f&uuml;r Inhalte</p>
-
-            <p>Die Inhalte unserer Seiten wurden mit gr&ouml;&szlig;ter Sorgfalt erstellt. F&uuml;r die Richtigkeit,
-                Vollst&auml;ndigkeit und Aktualit&auml;t der Inhalte k&ouml;nnen wir jedoch keine Gew&auml;hr
-                &uuml;bernehmen. Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene
-                Inhalte
-                auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8 bis 10 TMG sind wir
-                als
-                Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu
-                &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit
-                hinweisen.
-                Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen
-                bleiben hiervon unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der
-                Kenntnis einer konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden
-                Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
-
+            <p>&nbsp;</p>
+            <p>Die Inhalte unserer Seiten wurden mit gr&ouml;&szlig;ter Sorgfalt
+                erstellt. F&uuml;r die Richtigkeit, Vollst&auml;ndigkeit und Aktualit&auml;t der Inhalte k&ouml;nnen
+                wir jedoch keine Gew&auml;hr &uuml;bernehmen. Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7
+                Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+                Nach &sect;&sect; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet,
+                &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden
+                zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen. Verpflichtungen zur Entfernung
+                oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon
+                unber&uuml;hrt. Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer
+                konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen
+                werden wir diese Inhalte umgehend entfernen.</p>
+            <p>&nbsp;</p>
             <p>Haftung f&uuml;r Links</p>
-
-            <p>Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss
-                haben.
-                Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen. F&uuml;r
-                die
-                Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
-                Die
-                verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e
-                &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine
-                permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer
-                Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links
-                umgehend entfernen.</p>
-
+            <p>&nbsp;</p>
+            <p>Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren
+                Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine
+                Gew&auml;hr &uuml;bernehmen. F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige
+                Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der
+                Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte
+                waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der
+                verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
+                Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+            <p>&nbsp;</p>
             <p>Urheberrecht</p>
-
-            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
-                Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung
-                au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen
-                Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht
-                kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt
-                wurden,
-                werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche
-                gekennzeichnet.
-                Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
-                entsprechenden
-                Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
-
+            <p>&nbsp;</p>
+            <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
+                Seiten unterliegen dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung
+                und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der
+                schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite
+                sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf
+                dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet.
+                Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
+                Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
+                Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+            <p>&nbsp;</p>
             <p>Datenschutz</p>
-
-            <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten m&ouml;glich. Soweit
-                auf
-                unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben
-                werden,
-                erfolgt dies, soweit m&ouml;glich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre
-                ausdr&uuml;ckliche Zustimmung nicht an Dritte weitergegeben. Wir weisen darauf hin, dass die
-                Daten&uuml;bertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken
-                aufweisen
-                kann. Ein l&uuml;ckenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht m&ouml;glich. Der
-                Nutzung
-                von im Rahmen der Impressumspflicht ver&ouml;ffentlichten Kontaktdaten durch Dritte zur &Uuml;bersendung
-                von
-                nicht ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdr&uuml;cklich
-                widersprochen. Die Betreiber der Seiten behalten sich ausdr&uuml;cklich rechtliche Schritte im Falle der
-                unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.</p>
-
-            <p> Google Analytics</p>
-
-            <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google
-                Analytics
-                verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse
-                der
-                Benutzung der Website durch Sie erm&ouml;glicht. Die durch den Cookie erzeugten Informationen &uuml;ber
-                Ihre
-                Benutzung dieser Website (einschlie&szlig;lich Ihrer IP-Adresse) wird an einen Server von Google in den
-                USA
-                &uuml;bertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der
-                Website
+            <p>&nbsp;</p>
+            <p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe
+                personenbezogener Daten m&ouml;glich. Soweit auf unseren Seiten personenbezogene Daten
+                (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit
+                m&ouml;glich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdr&uuml;ckliche
+                Zustimmung nicht an Dritte weitergegeben.&nbsp;</p>
+            <p>Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet (z.B.
+                bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz
+                der Daten vor dem Zugriff durch Dritte ist nicht m&ouml;glich.&nbsp;</p>
+            <p>Der Nutzung von im Rahmen der Impressumspflicht ver&ouml;ffentlichten
+                Kontaktdaten durch Dritte zur &Uuml;bersendung von nicht ausdr&uuml;cklich angeforderter Werbung und
+                Informationsmaterialien wird hiermit ausdr&uuml;cklich widersprochen. Die Betreiber der Seiten
+                behalten sich ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten Zusendung von
+                Werbeinformationen, etwa durch Spam-Mails, vor.</p>
+            <p><br /><br /></p>
+            <p>Google Analytics</p>
+            <p>&nbsp;</p>
+            <p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google
+                Inc. (''Google''). Google Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer
+                gespeichert werden und die eine Analyse der Benutzung der Website durch Sie erm&ouml;glicht. Die
+                durch den Cookie erzeugten Informationen &uuml;ber Ihre Benutzung dieser Website
+                (einschlie&szlig;lich Ihrer IP-Adresse) wird an einen Server von Google in den USA &uuml;bertragen
+                und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website
                 auszuwerten, um Reports &uuml;ber die Websiteaktivit&auml;ten f&uuml;r die Websitebetreiber
                 zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene
-                Dienstleistungen
-                zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte &uuml;bertragen, sofern dies
-                gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird
-                in
-                keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie k&ouml;nnen die
-                Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir
-                weisen
-                Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht s&auml;mtliche Funktionen dieser
-                Website
-                voll umf&auml;nglich nutzen k&ouml;nnen. Durch die Nutzung dieser Website erkl&auml;ren Sie sich mit der
-                Bearbeitung der &uuml;ber Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und
-                zu
-                dem zuvor benannten Zweck einverstanden.</p>
-
-            <p> Impressum vom Impressum Generator der Kanzlei Hasselbach, Rechtsanw&auml;lte f&uuml;r Arbeitsrecht und
-                Familienrecht</p>
-
+                Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte
+                &uuml;bertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von
+                Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in
+                Verbindung bringen. Sie k&ouml;nnen die Installation der Cookies durch eine entsprechende
+                Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem
+                Fall gegebenenfalls nicht s&auml;mtliche Funktionen dieser Website voll umf&auml;nglich nutzen
+                k&ouml;nnen. Durch die Nutzung dieser Website erkl&auml;ren Sie sich mit der Bearbeitung der
+                &uuml;ber Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor
+                benannten Zweck einverstanden.</p>
+            <p><br /><br /></p>
+            <p>Impressum vom Impressum Generator der Kanzlei Hasselbach,
+                Rechtsanw&auml;lte f&uuml;r Arbeitsrecht und Familienrecht</p>
+            <p>&nbsp;</p>
         </div>
 
     </div>
 
     <!-- Privacy Policy modal -->
     <div id="policy" class="modal">
-        <a href="#" rel="modal:close" class="close">
-            <img src="./assets/close-icon.svg" alt="close" />
-        </a>
 
         <div class="modal-content">
-            <p>Privacy Policy</p>
-            <p> Personal data (usually referred to just as &quot;data&quot; below) will only be processed by us to the
-                extent necessary and for the purpose of providing a functional and user-friendly website, including its
-                contents, and the services offered there. Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General
-                Data Protection Regulation (hereinafter referred to as the &quot;GDPR&quot;), &quot;processing&quot;
-                refers to any operation or set of operations such as collection, recording, organization, structuring,
-                storage, adaptation, alteration, retrieval, consultation, use, disclosure by transmission,
-                dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or
-                destruction performed on personal data, whether by automated means or not. The following privacy policy
-                is intended to inform you in particular about the type, scope, purpose, duration, and legal basis for
-                the processing of such data either under our own control or in conjunction with others. We also inform
-                you below about the third-party components we use to optimize our website and improve the user
-                experience which may result in said third parties also processing data they collect and control. Our
-                privacy policy is structured as follows: I. Information about us as controllers of your data II. The
-                rights of users and data subjects III. Information about the data processing I. Information about us as
-                controllers of your data The party responsible for this website (the &quot;controller&quot;) for
-                purposes of data protection law is: Tim Grossmann Finkenweg 5 72218 Wildberg Germany Telephone:
-                +4915128288055 Email: contact.timgrossmann@gmail.com II. The rights of users and data subjects With
-                regard to the data processing to be described in more detail below, users and data subjects have the
-                right to confirmation of whether data concerning them is being processed, information about the data
-                being processed, further information about the nature of the data processing, and copies of the data
-                (cf. also Art. 15 GDPR); to correct or complete incorrect or incomplete data (cf. also Art. 16 GDPR); to
-                the immediate deletion of data concerning them (cf. also Art. 17 DSGVO), or, alternatively, if further
-                processing is necessary as stipulated in Art. 17 Para. 3 GDPR, to restrict said processing per Art. 18
-                GDPR; to receive copies of the data concerning them and/or provided by them and to have the same
-                transmitted to other providers/controllers (cf. also Art. 20 GDPR); to file complaints with the
-                supervisory authority if they believe that data concerning them is being processed by the controller in
-                breach of data protection provisions (see also Art. 77 GDPR). In addition, the controller is obliged to
-                inform all recipients to whom it discloses data of any such corrections, deletions, or restrictions
-                placed on processing the same per Art. 16, 17 Para. 1, 18 GDPR. However, this obligation does not apply
-                if such notification is impossible or involves a disproportionate effort. Nevertheless, users have a
-                right to information about these recipients. Likewise, under Art. 21 GDPR, users and data subjects have
-                the right to object to the controller's future processing of their data pursuant to Art. 6 Para. 1 lit.
-                f) GDPR. In particular, an objection to data processing for the purpose of direct advertising is
-                permissible. III. Information about the data processing Your data processed when using our website will
-                be deleted or blocked as soon as the purpose for its storage ceases to apply, provided the deletion of
-                the same is not in breach of any statutory storage obligations or unless otherwise stipulated below.
-                Server data For technical reasons, the following data sent by your internet browser to us or to our
-                server provider will be collected, especially to ensure a secure and stable website: These server log
-                files record the type and version of your browser, operating system, the website from which you came
-                (referrer URL), the webpages on our site visited, the date and time of your visit, as well as the IP
-                address from which you visited our site. The data thus collected will be temporarily stored, but not in
-                association with any other of your data. The basis for this storage is Art. 6 Para. 1 lit. f) GDPR. Our
-                legitimate interest lies in the improvement, stability, functionality, and security of our website. The
-                data will be deleted within no more than seven days, unless continued storage is required for
-                evidentiary purposes. In which case, all or part of the data will be excluded from deletion until the
-                investigation of the relevant incident is finally resolved. Cookies a) Session cookies We use cookies on
-                our website. Cookies are small text files or other storage technologies stored on your computer by your
-                browser. These cookies process certain specific information about you, such as your browser, location
-                data, or IP address. This processing makes our website more user-friendly, efficient, and secure,
-                allowing us, for example, to display our website in different languages or to offer a shopping cart
-                function. The legal basis for such processing is Art. 6 Para. 1 lit. b) GDPR, insofar as these cookies
-                are used to collect data to initiate or process contractual relationships. If the processing does not
-                serve to initiate or process a contract, our legitimate interest lies in improving the functionality of
-                our website. The legal basis is then Art. 6 Para. 1 lit. f) GDPR. When you close your browser, these
-                session cookies are deleted. b) Third-party cookies If necessary, our website may also use cookies from
-                companies with whom we cooperate for the purpose of advertising, analyzing, or improving the features of
-                our website. Please refer to the following information for details, in particular for the legal basis
-                and purpose of such third-party collection and processing of data collected through cookies. c)
-                Disabling cookies You can refuse the use of cookies by changing the settings on your browser. Likewise,
-                you can use the browser to delete cookies that have already been stored. However, the steps and measures
-                required vary, depending on the browser you use. If you have any questions, please use the help function
-                or consult the documentation for your browser or contact its maker for support. Browser settings cannot
-                prevent so-called flash cookies from being set. Instead, you will need to change the setting of your
-                Flash player. The steps and measures required for this also depend on the Flash player you are using. If
-                you have any questions, please use the help function or consult the documentation for your Flash player
-                or contact its maker for support. If you prevent or restrict the installation of cookies, not all of the
-                functions on our site may be fully usable. Newsletter If you register for our free newsletter, the data
-                requested from you for this purpose, i.e. your email address and, optionally, your name and address,
-                will be sent to us. We also store the IP address of your computer and the date and time of your
-                registration. During the registration process, we will obtain your consent to receive this newsletter
-                and the type of content it will offer, with reference made to this privacy policy. The data collected
-                will be used exclusively to send the newsletter and will not be passed on to third parties. The legal
-                basis for this is Art. 6 Para. 1 lit. a) GDPR. You may revoke your prior consent to receive this
-                newsletter under Art. 7 Para. 3 GDPR with future effect. All you have to do is inform us that you are
-                revoking your consent or click on the unsubscribe link contained in each newsletter. LinkedIn We
-                maintain an online presence on LinkedIn to present our company and our services and to communicate with
+            <h2>Privacy Policy</h2>
+            <p>Personal data (usually referred to just as "data" below) will only be processed by us to the extent
+                necessary
+                and for the purpose of providing a functional and user-friendly website, including its contents, and the
+                services offered there.</p>
+            <p>Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter
+                referred to as the "GDPR"), "processing" refers to any operation or set of operations such as
+                collection,
+                recording, organization, structuring, storage, adaptation, alteration, retrieval, consultation, use,
+                disclosure by transmission, dissemination, or otherwise making available, alignment, or combination,
+                restriction, erasure, or destruction performed on personal data, whether by automated means or not.</p>
+            <p>The following privacy policy is intended to inform you in particular about the type, scope, purpose,
+                duration, and legal basis for the processing of such data either under our own control or in conjunction
+                with others. We also inform you below about the third-party components we use to optimize our website
+                and
+                improve the user experience which may result in said third parties also processing data they collect and
+                control.</p>
+            <p>Our privacy policy is structured as follows:</p>
+            <ol>
+                <li> Information about us as controllers of your data</li>
+                <li> The rights of users and data subjects</li>
+            </ol>
+            <p>III. Information about the data processing</p>
+            <h3><strong>I. Information about us as controllers of your data</strong></h3>
+            <p>The party responsible for this website (the "controller") for purposes of data protection law is:</p>
+            <p>Tim Grossmann</p>
+            <p>Finkenweg 5</p>
+            <p>72218 Wildberg</p>
+            <p>Germany</p>
+            <p>Telephone: +4915128288055</p>
+            <p>Email: contact.timgrossmann@gmail.com</p>
+            <h3><strong>II. The rights of users and data subjects</strong></h3>
+            <p>With regard to the data processing to be described in more detail below, users and data subjects have the
+                right</p>
+            <ul>
+                <li>to confirmation of whether data concerning them is being processed, information about the data being
+                    processed, further information about the nature of the data processing, and copies of the data (cf.
+                    also
+                    Art. 15 GDPR);</li>
+                <li>to correct or complete incorrect or incomplete data (cf. also Art. 16 GDPR);</li>
+                <li>to the immediate deletion of data concerning them (cf. also Art. 17 DSGVO), or, alternatively, if
+                    further processing is necessary as stipulated in Art. 17 Para. 3 GDPR, to restrict said processing
+                    per
+                    Art. 18 GDPR;</li>
+                <li>to receive copies of the data concerning them and/or provided by them and to have the same
+                    transmitted
+                    to other providers/controllers (cf. also Art. 20 GDPR);</li>
+                <li>to file complaints with the supervisory authority if they believe that data concerning them is being
+                    processed by the controller in breach of data protection provisions (see also Art. 77 GDPR).</li>
+            </ul>
+            <p>In addition, the controller is obliged to inform all recipients to whom it discloses data of any such
+                corrections, deletions, or restrictions placed on processing the same per Art. 16, 17 Para. 1, 18 GDPR.
+                However, this obligation does not apply if such notification is impossible or involves a
+                disproportionate
+                effort. Nevertheless, users have a right to information about these recipients.</p>
+            <p><strong>Likewise, under Art. 21 GDPR, users and data subjects have the right to object to the
+                    controller's
+                    future processing of their data pursuant to Art. 6 Para. 1 lit. f) GDPR. In particular, an objection
+                    to
+                    data processing for the purpose of direct advertising is permissible.</strong></p>
+            <h3><strong>III. Information about the data processing</strong></h3>
+            <p>Your data processed when using our website will be deleted or blocked as soon as the purpose for its
+                storage
+                ceases to apply, provided the deletion of the same is not in breach of any statutory storage obligations
+                or
+                unless otherwise stipulated below.</p>
+            <h3><strong>Server data</strong></h3>
+            <p>For technical reasons, the following data sent by your internet browser to us or to our server provider
+                will
+                be collected, especially to ensure a secure and stable website: These server log files record the type
+                and
+                version of your browser, operating system, the website from which you came (referrer URL), the webpages
+                on
+                our site visited, the date and time of your visit, as well as the IP address from which you visited our
+                site.</p>
+            <p>The data thus collected will be temporarily stored, but not in association with any other of your data.
+            </p>
+            <p>The basis for this storage is Art. 6 Para. 1 lit. f) GDPR. Our legitimate interest lies in the
+                improvement,
+                stability, functionality, and security of our website.</p>
+            <p>The data will be deleted within no more than seven days, unless continued storage is required for
+                evidentiary
+                purposes. In which case, all or part of the data will be excluded from deletion until the investigation
+                of
+                the relevant incident is finally resolved.</p>
+            <h3><strong>Cookies</strong></h3>
+            <h3><strong>a) Session cookies</strong></h3>
+            <p>We use cookies on our website. Cookies are small text files or other storage technologies stored on your
+                computer by your browser. These cookies process certain specific information about you, such as your
+                browser, location data, or IP address.&nbsp;&nbsp;</p>
+            <p>This processing makes our website more user-friendly, efficient, and secure, allowing us, for example, to
+                display our website in different languages or to offer a shopping cart function.</p>
+            <p>The legal basis for such processing is Art. 6 Para. 1 lit. b) GDPR, insofar as these cookies are used to
+                collect data to initiate or process contractual relationships.</p>
+            <p>If the processing does not serve to initiate or process a contract, our legitimate interest lies in
+                improving
+                the functionality of our website. The legal basis is then Art. 6 Para. 1 lit. f) GDPR.</p>
+            <p>When you close your browser, these session cookies are deleted.</p>
+            <h3><strong>b) Third-party cookies</strong></h3>
+            <p>If necessary, our website may also use cookies from companies with whom we cooperate for the purpose of
+                advertising, analyzing, or improving the features of our website.</p>
+            <p>Please refer to the following information for details, in particular for the legal basis and purpose of
+                such
+                third-party collection and processing of data collected through cookies.</p>
+            <h3><strong>c) Disabling cookies</strong></h3>
+            <p>You can refuse the use of cookies by changing the settings on your browser. Likewise, you can use the
+                browser
+                to delete cookies that have already been stored. However, the steps and measures required vary,
+                depending on
+                the browser you use. If you have any questions, please use the help function or consult the
+                documentation
+                for your browser or contact its maker for support. Browser settings cannot prevent so-called flash
+                cookies
+                from being set. Instead, you will need to change the setting of your Flash player. The steps and
+                measures
+                required for this also depend on the Flash player you are using. If you have any questions, please use
+                the
+                help function or consult the documentation for your Flash player or contact its maker for support.</p>
+            <p>If you prevent or restrict the installation of cookies, not all of the functions on our site may be fully
+                usable.</p>
+            <h3><strong>Newsletter</strong></h3>
+            <p>If you register for our free newsletter, the data requested from you for this purpose, i.e. your email
+                address and, optionally, your name and address, will be sent to us. We also store the IP address of your
+                computer and the date and time of your registration. During the registration process, we will obtain
+                your
+                consent to receive this newsletter and the type of content it will offer, with reference made to this
+                privacy policy. The data collected will be used exclusively to send the newsletter and will not be
+                passed on
+                to third parties.</p>
+            <p>The legal basis for this is Art. 6 Para. 1 lit. a) GDPR.</p>
+            <p>You may revoke your prior consent to receive this newsletter under Art. 7 Para. 3 GDPR with future
+                effect.
+                All you have to do is inform us that you are revoking your consent or click on the unsubscribe link
+                contained in each newsletter.</p>
+            <h3><strong>LinkedIn</strong></h3>
+            <p>We maintain an online presence on LinkedIn to present our company and our services and to communicate
+                with
                 customers/prospects. LinkedIn is a service of LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton
                 Place, Dublin 2, Irland, a subsidiary of LinkedIn Corporation, 1000 W. Maude Avenue, Sunnyvale, CA
-                94085, USA. We would like to point out that this might cause user data to be processed outside the
-                European Union, particularly in the United States. This may increase risks for users that, for example,
-                may make subsequent access to the user data more difficult. We also do not have access to this user
-                data. Access is only available to LinkedIn. The LinkedIn privacy policy can be found here:
-                https://www.linkedin.com/legal/privacy-policy Facebook To advertise our products and services as well as
-                to communicate with interested parties or customers, we have a presence on the Facebook platform. On
-                this social media platform, we are jointly responsible with Facebook Ireland Ltd., 4 Grand Canal Square,
-                Grand Canal Harbor, Dublin 2, Ireland. The data protection officer of Facebook can be reached via this
-                contact form: https://www.facebook.com/help/contact/540977946302970 We have defined the joint
-                responsibility in an agreement regarding the respective obligations within the meaning of the GDPR. This
-                agreement, which sets out the reciprocal obligations, is available at the following link:
-                https://www.facebook.com/legal/terms/page_controller_addendum The legal basis for the processing of the
-                resulting and subsequently disclosed personal data is Art. 6 para. 1 lit. f GDPR. Our legitimate
-                interest lies in the analysis, communication, sales, and promotion of our products and services. The
-                legal basis may also be your consent per Art. 6 para. 1 lit. a GDPR granted to the platform operator.
-                Per Art. 7 para. 3 GDPR, you may revoke this consent with the platform operator at any time with future
-                effect. When accessing our online presence on the Facebook platform, Facebook Ireland Ltd. as the
-                operator of the platform in the EU will process your data (e.g. personal information, IP address, etc.).
-                This data of the user is used for statistical information on the use of our company presence on
-                Facebook. Facebook Ireland Ltd. uses this data for market research and advertising purposes as well as
-                for the creation of user profiles. Based on these profiles, Facebook Ireland Ltd. can provide
-                advertising both within and outside of Facebook based on your interests. If you are logged into Facebook
-                at the time you access our site, Facebook Ireland Ltd. will also link this data to your user account. If
-                you contact us via Facebook, the personal data your provide at that time will be used to process the
+                94085,
+                USA.</p>
+            <p>We would like to point out that this might cause user data to be processed outside the European Union,
+                particularly in the United States. This may increase risks for users that, for example, may make
+                subsequent
+                access to the user data more difficult. We also do not have access to this user data. Access is only
+                available to LinkedIn.</p>
+            <p>The LinkedIn privacy policy can be found here:</p>
+            <p><a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a>
+            </p>
+            <h3><strong>Facebook</strong></h3>
+            <p>To advertise our products and services as well as to communicate with interested parties or customers, we
+                have a presence on the Facebook platform.</p>
+            <p>On this social media platform, we are jointly responsible with Facebook Ireland Ltd., 4 Grand Canal
+                Square,
+                Grand Canal Harbor, Dublin 2, Ireland.</p>
+            <p>The data protection officer of Facebook can be reached via this contact form:</p>
+            <p><a
+                    href="https://www.facebook.com/help/contact/540977946302970">https://www.facebook.com/help/contact/540977946302970</a>
+            </p>
+            <p>We have defined the joint responsibility in an agreement regarding the respective obligations within the
+                meaning of the GDPR. This agreement, which sets out the reciprocal obligations, is available at the
+                following link:</p>
+            <p><a
+                    href="https://www.facebook.com/legal/terms/page_controller_addendum">https://www.facebook.com/legal/terms/page_controller_addendum</a>
+            </p>
+            <p>The legal basis for the processing of the resulting and subsequently disclosed personal data is Art. 6
+                para.
+                1 lit. f GDPR. Our legitimate interest lies in the analysis, communication, sales, and promotion of our
+                products and services.</p>
+            <p>The legal basis may also be your consent per Art. 6 para. 1 lit. a GDPR granted to the platform operator.
+                Per
+                Art. 7 para. 3 GDPR, you may revoke this consent with the platform operator at any time with future
+                effect.
+            </p>
+            <p>When accessing our online presence on the Facebook platform, Facebook Ireland Ltd. as the operator of the
+                platform in the EU will process your data (e.g. personal information, IP address, etc.).</p>
+            <p>This data of the user is used for statistical information on the use of our company presence on Facebook.
+                Facebook Ireland Ltd. uses this data for market research and advertising purposes as well as for the
+                creation of user profiles. Based on these profiles, Facebook Ireland Ltd. can provide advertising both
+                within and outside of Facebook based on your interests. If you are logged into Facebook at the time you
+                access our site, Facebook Ireland Ltd. will also link this data to your user account.</p>
+            <p>If you contact us via Facebook, the personal data your provide at that time will be used to process the
                 request. We will delete this data once we have completely responded to your query, unless there are
-                legal obligations to retain the data, such as for subsequent fulfillment of contracts. Facebook Ireland
-                Ltd. might also set cookies when processing your data. If you do not agree to this processing, you have
-                the option of preventing the installation of cookies by making the appropriate settings in your browser.
-                Cookies that have already been saved can be deleted at any time. The instructions to do this depend on
-                the browser and system being used. For Flash cookies, the processing cannot be prevented by the settings
-                in your browser, but instead by making the appropriate settings in your Flash player. If you prevent or
-                restrict the installation of cookies, not all of the functions of Facebook may be fully usable. Details
-                on the processing activities, their suppression, and the deletion of the data processed by Facebook can
-                be found in its privacy policy: https://www.facebook.com/privacy/explanation It cannot be excluded that
-                the processing by Facebook Ireland Ltd. will also take place in the United States by Facebook Inc., 1601
-                Willow Road, Menlo Park, California 94025. Instagram To advertise our products and services as well as
-                to communicate with interested parties or customers, we have a presence on the Instagram platform. On
-                this social media platform, we are jointly responsible with Facebook Ireland Ltd., 4 Grand Canal Square,
-                Grand Canal Harbour, Dublin 2 Ireland. The data protection officer of Instagram can be reached via this
-                contact form: https://www.facebook.com/help/contact/540977946302970 We have defined the joint
-                responsibility in an agreement regarding the respective obligations within the meaning of the GDPR. This
-                agreement, which sets out the reciprocal obligations, is available at the following link:
-                https://www.facebook.com/legal/terms/page_controller_addendum The legal basis for the processing of the
-                resulting and subsequently disclosed personal data is Art. 6 para. 1 lit. f GDPR. Our legitimate
-                interest lies in the analysis, communication, sales, and promotion of our products and services. The
-                legal basis may also be your consent per Art. 6 para. 1 lit. a GDPR granted to the platform operator.
-                Per Art. 7 para. 3 GDPR, you may revoke this consent with the platform operator at any time with future
-                effect. When accessing our online presence on the Instagram platform, Facebook Ireland Ltd. as the
-                operator of the platform in the EU will process your data (e.g. personal information, IP address, etc.).
-                This data of the user is used for statistical information on the use of our company presence on
-                Instagram. Facebook Ireland Ltd. uses this data for market research and advertising purposes as well as
-                for the creation of user profiles. Based on these profiles, Facebook Ireland Ltd. can provide
-                advertising both within and outside of Instagram based on your interests. If you are logged into
-                Instagram at the time you access our site, Facebook Ireland Ltd. will also link this data to your user
-                account. If you contact us via Instagram, the personal data your provide at that time will be used to
-                process the request. We will delete this data once we have completely responded to your query, unless
-                there are legal obligations to retain the data, such as for subsequent fulfillment of contracts.
-                Facebook Ireland Ltd. might also set cookies when processing your data. If you do not agree to this
-                processing, you have the option of preventing the installation of cookies by making the appropriate
-                settings in your browser. Cookies that have already been saved can be deleted at any time. The
-                instructions to do this depend on the browser and system being used. For Flash cookies, the processing
-                cannot be prevented by the settings in your browser, but instead by making the appropriate settings in
-                your Flash player. If you prevent or restrict the installation of cookies, not all of the functions of
-                Instagram may be fully usable. Details on the processing activities, their suppression, and the deletion
-                of the data processed by Instagram can be found in its privacy policy:
-                https://help.instagram.com/519522125107875 It cannot be excluded that the processing by Facebook Ireland
-                Ltd. will also take place in the United States by Facebook Inc., 1601 Willow Road, Menlo Park,
-                California 94025. Social media links via graphics We also integrate the following social media sites
-                into our website. The integration takes place via a linked graphic of the respective site. The use of
-                these graphics stored on our own servers prevents the automatic connection to the servers of these
-                networks for their display. Only by clicking on the corresponding graphic will you be forwarded to the
-                service of the respective social network. Once you click, that network may record information about you
-                and your visit to our site. It cannot be ruled out that such data will be processed in the United
-                States. Initially, this data includes such things as your IP address, the date and time of your visit,
-                and the page visited. If you are logged into your user account on that network, however, the network
-                operator might assign the information collected about your visit to our site to your personal account.
-                If you interact by clicking Like, Share, etc., this information can be stored your personal user account
-                and possibly posted on the respective network. To prevent this, you need to log out of your social media
-                account before clicking on the graphic. The various social media networks also offer settings that you
-                can configure accordingly. The following social networks are integrated into our site by linked
-                graphics: Facebook Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland, a subsidiary of
-                Facebook Inc., 1601 S. California Ave., Palo Alto, CA 94304, USA. Privacy Policy:
-                https://www.facebook.com/policy.php YouTube Google Ireland Limited, Gordon House, Barrow Street, Dublin
-                4, Irland, a subsidiary of Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043 USA Privacy
-                Policy: https://policies.google.com/privacy LinkedIn LinkedIn Ireland Unlimited Company, Wilton Plaza,
-                Wilton Place, Dublin 2, Irland, a subsidiary of LinkedIn Corporation, 1000 W. Maude Avenue, Sunnyvale,
-                CA 94085 USA. Privacy Policy: https://www.linkedin.com/legal/privacy-policy Instagram Facebook Ireland
-                Limited, 4 Grand Canal Square, Dublin 2, Ireland, a subsidiary of Facebook Inc., 1601 S. California
-                Ave., Palo Alto, CA 94304, USA. Privacy Policy: https://help.instagram.com/519522125107875 Google
-                Analytics We use Google Analytics on our website. This is a web analytics service provided by Google
-                Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (hereinafter: Google). The Google
-                Analytics service is used to analyze how our website is used. The legal basis is Art. 6 Para. 1 lit. f)
-                GDPR. Our legitimate interest lies in the analysis, optimization, and economic operation of our site.
-                Usage and user-related information, such as IP address, place, time, or frequency of your visits to our
+                legal
+                obligations to retain the data, such as for subsequent fulfillment of contracts.</p>
+            <p>Facebook Ireland Ltd. might also set cookies when processing your data.</p>
+            <p>If you do not agree to this processing, you have the option of preventing the installation of cookies by
+                making the appropriate settings in your browser. Cookies that have already been saved can be deleted at
+                any
+                time. The instructions to do this depend on the browser and system being used. For Flash cookies, the
+                processing cannot be prevented by the settings in your browser, but instead by making the appropriate
+                settings in your Flash player. If you prevent or restrict the installation of cookies, not all of the
+                functions of Facebook may be fully usable.</p>
+            <p>Details on the processing activities, their suppression, and the deletion of the data processed by
+                Facebook
+                can be found in its privacy policy:</p>
+            <p><a href="https://www.facebook.com/privacy/explanation">https://www.facebook.com/privacy/explanation</a>
+            </p>
+            <p>It cannot be excluded that the processing by Facebook Ireland Ltd. will also take place in the United
+                States
+                by Facebook Inc., 1601 Willow Road, Menlo Park, California 94025.</p>
+            <h3><strong>Instagram</strong></h3>
+            <p>To advertise our products and services as well as to communicate with interested parties or customers, we
+                have a presence on the Instagram platform.</p>
+            <p>On this social media platform, we are jointly responsible with Facebook Ireland Ltd., 4 Grand Canal
+                Square,
+                Grand Canal Harbour, Dublin 2 Ireland.</p>
+            <p>The data protection officer of Instagram can be reached via this contact form:</p>
+            <p><a
+                    href="https://www.facebook.com/help/contact/540977946302970">https://www.facebook.com/help/contact/540977946302970</a>
+            </p>
+            <p>We have defined the joint responsibility in an agreement regarding the respective obligations within the
+                meaning of the GDPR. This agreement, which sets out the reciprocal obligations, is available at the
+                following link:</p>
+            <p><a
+                    href="https://www.facebook.com/legal/terms/page_controller_addendum">https://www.facebook.com/legal/terms/page_controller_addendum</a>
+            </p>
+            <p>The legal basis for the processing of the resulting and subsequently disclosed personal data is Art. 6
+                para.
+                1 lit. f GDPR. Our legitimate interest lies in the analysis, communication, sales, and promotion of our
+                products and services.</p>
+            <p>The legal basis may also be your consent per Art. 6 para. 1 lit. a GDPR granted to the platform operator.
+                Per
+                Art. 7 para. 3 GDPR, you may revoke this consent with the platform operator at any time with future
+                effect.
+            </p>
+            <p>When accessing our online presence on the Instagram platform, Facebook Ireland Ltd. as the operator of
+                the
+                platform in the EU will process your data (e.g. personal information, IP address, etc.).</p>
+            <p>This data of the user is used for statistical information on the use of our company presence on
+                Instagram.
+                Facebook Ireland Ltd. uses this data for market research and advertising purposes as well as for the
+                creation of user profiles. Based on these profiles, Facebook Ireland Ltd. can provide advertising both
+                within and outside of Instagram based on your interests. If you are logged into Instagram at the time
+                you
+                access our site, Facebook Ireland Ltd. will also link this data to your user account.</p>
+            <p>If you contact us via Instagram, the personal data your provide at that time will be used to process the
+                request. We will delete this data once we have completely responded to your query, unless there are
+                legal
+                obligations to retain the data, such as for subsequent fulfillment of contracts.</p>
+            <p>Facebook Ireland Ltd. might also set cookies when processing your data.</p>
+            <p>If you do not agree to this processing, you have the option of preventing the installation of cookies by
+                making the appropriate settings in your browser. Cookies that have already been saved can be deleted at
+                any
+                time. The instructions to do this depend on the browser and system being used. For Flash cookies, the
+                processing cannot be prevented by the settings in your browser, but instead by making the appropriate
+                settings in your Flash player. If you prevent or restrict the installation of cookies, not all of the
+                functions of Instagram may be fully usable.</p>
+            <p>Details on the processing activities, their suppression, and the deletion of the data processed by
+                Instagram
+                can be found in its privacy policy:</p>
+            <p><a href="https://help.instagram.com/519522125107875">https://help.instagram.com/519522125107875</a></p>
+            <p>It cannot be excluded that the processing by Facebook Ireland Ltd. will also take place in the United
+                States
+                by Facebook Inc., 1601 Willow Road, Menlo Park, California 94025.</p>
+            <h3><strong>Social media links via graphics</strong></h3>
+            <p>We also integrate the following social media sites into our website. The integration takes place via a
+                linked
+                graphic of the respective site. The use of these graphics stored on our own servers prevents the
+                automatic
+                connection to the servers of these networks for their display. Only by clicking on the corresponding
+                graphic
+                will you be forwarded to the service of the respective social network.</p>
+            <p>Once you click, that network may record information about you and your visit to our site. It cannot be
+                ruled
+                out that such data will be processed in the United States.</p>
+            <p>Initially, this data includes such things as your IP address, the date and time of your visit, and the
+                page
+                visited. If you are logged into your user account on that network, however, the network operator might
+                assign the information collected about your visit to our site to your personal account. If you interact
+                by
+                clicking Like, Share, etc., this information can be stored your personal user account and possibly
+                posted on
+                the respective network. To prevent this, you need to log out of your social media account before
+                clicking on
+                the graphic. The various social media networks also offer settings that you can configure accordingly.
+            </p>
+            <p>The following social networks are integrated into our site by linked graphics:</p>
+            <h3><strong>Facebook</strong></h3>
+            <p>Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland, a subsidiary of Facebook Inc., 1601 S.
+                California Ave., Palo Alto, CA 94304, USA.</p>
+            <p>Privacy Policy: <a href="https://www.facebook.com/policy.php">https://www.facebook.com/policy.php</a></p>
+            <h3><strong>YouTube</strong></h3>
+            <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, a subsidiary of Google LLC, 1600
+                Amphitheatre Parkway, Mountain View, CA 94043 USA</p>
+            <p>Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+            <h3><strong>LinkedIn</strong></h3>
+            <p>LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Irland, a subsidiary of
+                LinkedIn
+                Corporation, 1000 W. Maude Avenue, Sunnyvale, CA 94085 USA.</p>
+            <p>Privacy Policy: <a
+                    href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a>
+            </p>
+            <h3><strong>Instagram</strong></h3>
+            <p>Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland, a subsidiary of Facebook Inc., 1601 S.
+                California Ave., Palo Alto, CA 94304, USA.</p>
+            <p>Privacy Policy: <a
+                    href="https://help.instagram.com/519522125107875">https://help.instagram.com/519522125107875</a></p>
+            <h3><strong>Google Analytics</strong></h3>
+            <p>We use Google Analytics on our website. This is a web analytics service provided by Google Ireland
+                Limited,
+                Gordon House, Barrow Street, Dublin 4, Irland (hereinafter: Google).</p>
+            <p>The Google Analytics service is used to analyze how our website is used. The legal basis is Art. 6 Para.
+                1
+                lit. f) GDPR. Our legitimate interest lies in the analysis, optimization, and economic operation of our
+                site.</p>
+            <p>Usage and user-related information, such as IP address, place, time, or frequency of your visits to our
                 website will be transmitted to a Google server in the United States and stored there. However, we use
-                Google Analytics with the so-called anonymization function, whereby Google truncates the IP address
-                within the EU or the EEA before it is transmitted to the US. The data collected in this way is in turn
-                used by Google to provide us with an evaluation of visits to our website and what visitors do once
-                there. This data can also be used to provide other services related to the use of our website and of the
-                internet in general. Google states that it will not connect your IP address to other data. In addition,
-                Google provides further information with regard to its data protection practices at
-                https://www.google.com/intl/de/policies/privacy/partners, including options you can exercise to prevent
-                such use of your data. In addition, Google offers an opt-out add-on at
-                https://tools.google.com/dlpage/gaoptout?hl=en in addition with further information. This add-on can be
-                installed on the most popular browsers and offers you further control over the data that Google collects
-                when you visit our website. The add-on informs Google Analytics' JavaScript (ga.js) that no information
-                about the website visit should be transmitted to Google Analytics. However, this does not prevent
-                information from being transmitted to us or to other web analytics services we may use as detailed
-                herein. Cookiebot We use Cookiebot to display cookie banners. Cookiebot is a product of Cybot A/S,
-                Havnegade 39, 1058 Copenhagen, Denmark, hereinafter &quot;Cybot.&quot;</p>
-
+                Google
+                Analytics with the so-called anonymization function, whereby Google truncates the IP address within the
+                EU
+                or the EEA before it is transmitted to the US.</p>
+            <p>The data collected in this way is in turn used by Google to provide us with an evaluation of visits to
+                our
+                website and what visitors do once there. This data can also be used to provide other services related to
+                the
+                use of our website and of the internet in general.</p>
+            <p>Google states that it will not connect your IP address to other data. In addition, Google provides
+                further
+                information with regard to its data protection practices at</p>
+            <p><a
+                    href="https://www.google.com/intl/de/policies/privacy/partners">https://www.google.com/intl/de/policies/privacy/partners,</a>
+            </p>
+            <p>including options you can exercise to prevent such use of your data.</p>
+            <p>In addition, Google offers an opt-out add-on at</p>
+            <p><a
+                    href="https://tools.google.com/dlpage/gaoptout?hl=de">https://tools.google.com/dlpage/gaoptout?hl=en</a>
+            </p>
+            <p>in addition with further information. This add-on can be installed on the most popular browsers and
+                offers
+                you further control over the data that Google collects when you visit our website. The add-on informs
+                Google
+                Analytics' JavaScript (ga.js) that no information about the website visit should be transmitted to
+                Google
+                Analytics. However, this does not prevent information from being transmitted to us or to other web
+                analytics
+                services we may use as detailed herein.</p>
+            <h3><strong>Cookiebot</strong></h3>
+            <p>We use Cookiebot to display cookie banners. Cookiebot is a product of Cybot A/S, Havnegade 39, 1058
+                Copenhagen, Denmark, hereinafter "Cybot."&nbsp;</p>
+            <p>&nbsp;</p>
             <p>Cookiebot informs you about the use of cookies on the website and allows you to make a decision about
-                their use.</p>
-
+                their
+                use.&nbsp;</p>
+            <p>&nbsp;</p>
             <p>If you agree to the use of cookies, the following data will be automatically recorded by Cybot:</p>
-
-            <p>&bull; your anonymized IP address; &bull; the date and time of your consent; &bull; the user agent of
-                your browser; &bull; the provider's URL; &bull; an anonymous, random, and encrypted key. &bull; your
-                cookie status which serves as proof of consent.</p>
-
+            <p>&nbsp;</p>
+            <ul>
+                <li> your anonymized IP address;</li>
+                <li> the date and time of your consent;</li>
+                <li> the user agent of your browser;</li>
+                <li> the provider's URL;</li>
+                <li> an anonymous, random, and encrypted key.</li>
+                <li> your cookie status which serves as proof of consent.</li>
+            </ul>
+            <p>&nbsp;</p>
             <p>The encrypted key and cookie status are stored by means of a cookie on your device to enable the
                 corresponding cookie status to be restored when you return to our site. This cookie automatically
-                deletes after 12 months.</p>
-
-            <p>The legal basis for this processing of data is Art. 6 para. 1 lit. f GDPR. Our legitimate interest is in
-                the user-friendliness of the website and the fulfillment of the statutory requirements of GDPR.</p>
-
+                deletes
+                after 12 months.&nbsp;&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>The legal basis for this processing of data is <a href="http://dejure.org/gesetze/DSGVO/6.html">Art. 6
+                    para.
+                    1 lit. f GDPR</a>. Our legitimate interest is in the user-friendliness of the website and the
+                fulfillment of the statutory requirements of GDPR.</p>
+            <p>&nbsp;</p>
             <p>You can prevent cookies from being installed and/or delete this cookie by adjusting the settings on your
-                internet browser. Go to this link to read the Cybot privacy policy:</p>
-
-            <p>https://www.cookiebot.com/de/privacy-policy/ MailChimp - Newsletter We offer you the opportunity to
-                register for our free newsletter via our website. We use MailChimp, a service of The Rocket Science
-                Group, LLC, 512 Means Street, Suite 404, Atlanta, GA 30318, USA, hereinafter referred to as &quot;The
-                Rocket Science Group&quot;. In addition, the Rocket Science Group offers further information about its
-                data protection practices at http://mailchimp.com/legal/privacy/ If you register for our free
-                newsletter, the data requested from you for this purpose, i.e. your email address and, optionally, your
-                name and address, will be processed by The Rocket Science Group. In addition, your IP address and the
-                date and time of your registration will be saved. During the registration process, your consent to
-                receive this newsletter will be obtained together with a concrete description of the type of content it
-                will offer and reference made to this privacy policy. The newsletter then sent out by The Rocket Science
-                Group will also contain a tracking pixel called a web beacon. This pixel helps us evaluate whether and
-                when you have read our newsletter and whether you have clicked any links contained therein. In addition
-                to further technical data, such as data about your computer hardware and your IP address, the data
-                processed will be stored so that we can optimize our newsletter and respond to the wishes of our
-                readers. The data will therefore increase the quality and attractiveness of our newsletter. The legal
-                basis for sending the newsletter and the analysis is Art. 6 Para. 1 lit. a) GDPR. You may revoke your
-                prior consent to receive this newsletter under Art. 7 Para. 3 GDPR with future effect. All you have to
-                do is inform us that you are revoking your consent or click on the unsubscribe link contained in each
-                newsletter. Model Data Protection Statement for Anwaltskanzlei Wei&szlig; &amp; Partner</p>
-
-            <p> Datenschutzerkl&auml;rung Personenbezogene Daten (nachfolgend zumeist nur &#8222;Daten&ldquo; genannt)
-                werden von uns nur im Rahmen der Erforderlichkeit sowie zum Zwecke der Bereitstellung eines
-                funktionsf&auml;higen und nutzerfreundlichen Internetauftritts, inklusive seiner Inhalte und der dort
-                angebotenen Leistungen, verarbeitet. Gem&auml;&szlig; Art. 4 Ziffer 1. der Verordnung (EU) 2016/679,
-                also der Datenschutz-Grundverordnung (nachfolgend nur &#8222;DSGVO&ldquo; genannt), gilt als
-                &#8222;Verarbeitung&ldquo; jeder mit oder ohne Hilfe automatisierter Verfahren ausgef&uuml;hrter Vorgang
-                oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten, wie das Erheben, das
-                Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Ver&auml;nderung, das
-                Auslesen, das Abfragen, die Verwendung, die Offenlegung durch &Uuml;bermittlung, Verbreitung oder eine
-                andere Form der Bereitstellung, den Abgleich oder die Verkn&uuml;pfung, die Einschr&auml;nkung, das
-                L&ouml;schen oder die Vernichtung. Mit der nachfolgenden Datenschutzerkl&auml;rung informieren wir Sie
-                insbesondere &uuml;ber Art, Umfang, Zweck, Dauer und Rechtsgrundlage der Verarbeitung personenbezogener
-                Daten, soweit wir entweder allein oder gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der
-                Verarbeitung entscheiden. Zudem informieren wir Sie nachfolgend &uuml;ber die von uns zu
-                Optimierungszwecken sowie zur Steigerung der Nutzungsqualit&auml;t eingesetzten Fremdkomponenten, soweit
-                hierdurch Dritte Daten in wiederum eigener Verantwortung verarbeiten. Unsere Datenschutzerkl&auml;rung
-                ist wie folgt gegliedert: I. Informationen &uuml;ber uns als Verantwortliche II. Rechte der Nutzer und
-                Betroffenen III. Informationen zur Datenverarbeitung I. Informationen &uuml;ber uns als Verantwortliche
-                Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist: Tim Grossmann
-                Finkenweg 5 72218 Wildberg Germany Telephone: +4915128288055 Email: contact.timgrossmann@gmail.com II.
-                Rechte der Nutzer und Betroffenen Mit Blick auf die nachfolgend noch n&auml;her beschriebene
-                Datenverarbeitung haben die Nutzer und Betroffenen das Recht auf Best&auml;tigung, ob sie betreffende
-                Daten verarbeitet werden, auf Auskunft &uuml;ber die verarbeiteten Daten, auf weitere Informationen
-                &uuml;ber die Datenverarbeitung sowie auf Kopien der Daten (vgl. auch Art. 15 DSGVO); auf Berichtigung
-                oder Vervollst&auml;ndigung unrichtiger bzw. unvollst&auml;ndiger Daten (vgl. auch Art. 16 DSGVO); auf
-                unverz&uuml;gliche L&ouml;schung der sie betreffenden Daten (vgl. auch Art. 17 DSGVO), oder, alternativ,
-                soweit eine weitere Verarbeitung gem&auml;&szlig; Art. 17 Abs. 3 DSGVO erforderlich ist, auf
-                Einschr&auml;nkung der Verarbeitung nach Ma&szlig;gabe von Art. 18 DSGVO; auf Erhalt der sie
-                betreffenden und von ihnen bereitgestellten Daten und auf &Uuml;bermittlung dieser Daten an andere
-                Anbieter/Verantwortliche (vgl. auch Art. 20 DSGVO); auf Beschwerde gegen&uuml;ber der
-                Aufsichtsbeh&ouml;rde, sofern sie der Ansicht sind, dass die sie betreffenden Daten durch den Anbieter
-                unter Versto&szlig; gegen datenschutzrechtliche Bestimmungen verarbeitet werden (vgl. auch Art. 77
-                DSGVO). Dar&uuml;ber hinaus ist der Anbieter dazu verpflichtet, alle Empf&auml;nger, denen
-                gegen&uuml;ber Daten durch den Anbieter offengelegt worden sind, &uuml;ber jedwede Berichtigung oder
-                L&ouml;schung von Daten oder die Einschr&auml;nkung der Verarbeitung, die aufgrund der Artikel 16, 17
-                Abs. 1, 18 DSGVO erfolgt, zu unterrichten. Diese Verpflichtung besteht jedoch nicht, soweit diese
-                Mitteilung unm&ouml;glich oder mit einem unverh&auml;ltnism&auml;&szlig;igen Aufwand verbunden ist.
-                Unbeschadet dessen hat der Nutzer ein Recht auf Auskunft &uuml;ber diese Empf&auml;nger. Ebenfalls haben
-                die Nutzer und Betroffenen nach Art. 21 DSGVO das Recht auf Widerspruch gegen die k&uuml;nftige
-                Verarbeitung der sie betreffenden Daten, sofern die Daten durch den Anbieter nach Ma&szlig;gabe von Art.
-                6 Abs. 1 lit. f) DSGVO verarbeitet werden. Insbesondere ist ein Widerspruch gegen die Datenverarbeitung
-                zum Zwecke der Direktwerbung statthaft. III. Informationen zur Datenverarbeitung Ihre bei Nutzung
-                unseres Internetauftritts verarbeiteten Daten werden gel&ouml;scht oder gesperrt, sobald der Zweck der
-                Speicherung entf&auml;llt, der L&ouml;schung der Daten keine gesetzlichen Aufbewahrungspflichten
+                internet browser.</p>
+            <p>Go to this link to read the Cybot privacy policy:</p>
+            <p>&nbsp;</p>
+            <p><a href="https://www.cookiebot.com/de/privacy-policy/">https://www.cookiebot.com/de/privacy-policy/</a>
+            </p>
+            <h3><strong>MailChimp - Newsletter</strong></h3>
+            <p>We offer you the opportunity to register for our free newsletter via our website.</p>
+            <p>We use MailChimp, a service of The Rocket Science Group, LLC, 512 Means Street, Suite 404, Atlanta, GA
+                30318,
+                USA, hereinafter referred to as "The Rocket Science Group".</p>
+            <p>In addition, the Rocket Science Group offers further information about its data protection practices at
+            </p>
+            <p><a href="http://mailchimp.com/legal/privacy/">http://mailchimp.com/legal/privacy/</a></p>
+            <p>If you register for our free newsletter, the data requested from you for this purpose, i.e. your email
+                address and, optionally, your name and address, will be processed by The Rocket Science Group. In
+                addition,
+                your IP address and the date and time of your registration will be saved. During the registration
+                process,
+                your consent to receive this newsletter will be obtained together with a concrete description of the
+                type of
+                content it will offer and reference made to this privacy policy.</p>
+            <p>The newsletter then sent out by The Rocket Science Group will also contain a tracking pixel called a web
+                beacon. This pixel helps us evaluate whether and when you have read our newsletter and whether you have
+                clicked any links contained therein. In addition to further technical data, such as data about your
+                computer
+                hardware and your IP address, the data processed will be stored so that we can optimize our newsletter
+                and
+                respond to the wishes of our readers. The data will therefore increase the quality and attractiveness of
+                our
+                newsletter.</p>
+            <p>The legal basis for sending the newsletter and the analysis is Art. 6 Para. 1 lit. a) GDPR.</p>
+            <p>You may revoke your prior consent to receive this newsletter under Art. 7 Para. 3 GDPR with future
+                effect.
+                All you have to do is inform us that you are revoking your consent or click on the unsubscribe link
+                contained in each newsletter.</p>
+            <p><a href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html">Model Data Protection
+                    Statement</a> for <a href="https://www.ratgeberrecht.eu/">Anwaltskanzlei Wei&szlig; &amp;
+                    Partner</a>
+            </p>
+            <p><br /><br /></p>
+            <h2>Datenschutzerkl&auml;rung</h2>
+            <p>Personenbezogene Daten (nachfolgend zumeist nur &bdquo;Daten&ldquo; genannt) werden von uns nur im Rahmen
+                der
+                Erforderlichkeit sowie zum Zwecke der Bereitstellung eines funktionsf&auml;higen und nutzerfreundlichen
+                Internetauftritts, inklusive seiner Inhalte und der dort angebotenen Leistungen, verarbeitet.</p>
+            <p>Gem&auml;&szlig; Art. 4 Ziffer 1. der Verordnung (EU) 2016/679, also der Datenschutz-Grundverordnung
+                (nachfolgend nur &bdquo;DSGVO&ldquo; genannt), gilt als &bdquo;Verarbeitung&ldquo; jeder mit oder ohne
+                Hilfe
+                automatisierter Verfahren ausgef&uuml;hrter Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit
+                personenbezogenen Daten, wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung,
+                die
+                Anpassung oder Ver&auml;nderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch
+                &Uuml;bermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die
+                Verkn&uuml;pfung, die Einschr&auml;nkung, das L&ouml;schen oder die Vernichtung.</p>
+            <p>Mit der nachfolgenden Datenschutzerkl&auml;rung informieren wir Sie insbesondere &uuml;ber Art, Umfang,
+                Zweck, Dauer und Rechtsgrundlage der Verarbeitung personenbezogener Daten, soweit wir entweder allein
+                oder
+                gemeinsam mit anderen &uuml;ber die Zwecke und Mittel der Verarbeitung entscheiden. Zudem informieren
+                wir
+                Sie nachfolgend &uuml;ber die von uns zu Optimierungszwecken sowie zur Steigerung der
+                Nutzungsqualit&auml;t
+                eingesetzten Fremdkomponenten, soweit hierdurch Dritte Daten in wiederum eigener Verantwortung
+                verarbeiten.
+            </p>
+            <p>Unsere Datenschutzerkl&auml;rung ist wie folgt gegliedert:</p>
+            <ol>
+                <li> Informationen &uuml;ber uns als Verantwortliche</li>
+                <li> Rechte der Nutzer und Betroffenen</li>
+            </ol>
+            <p>III. Informationen zur Datenverarbeitung</p>
+            <h3><strong>I. Informationen &uuml;ber uns als Verantwortliche</strong></h3>
+            <p>Verantwortlicher Anbieter dieses Internetauftritts im datenschutzrechtlichen Sinne ist:</p>
+            <p>Tim Grossmann</p>
+            <p>Finkenweg 5</p>
+            <p>72218 Wildberg</p>
+            <p>Germany</p>
+            <p>Telephone: +4915128288055</p>
+            <p>Email: contact.timgrossmann@gmail.com</p>
+            <h3><strong>II. Rechte der Nutzer und Betroffenen</strong></h3>
+            <p>Mit Blick auf die nachfolgend noch n&auml;her beschriebene Datenverarbeitung haben die Nutzer und
+                Betroffenen
+                das Recht</p>
+            <ul>
+                <li>auf Best&auml;tigung, ob sie betreffende Daten verarbeitet werden, auf Auskunft &uuml;ber die
+                    verarbeiteten Daten, auf weitere Informationen &uuml;ber die Datenverarbeitung sowie auf Kopien der
+                    Daten (vgl. auch Art. 15 DSGVO);</li>
+                <li>auf Berichtigung oder Vervollst&auml;ndigung unrichtiger bzw. unvollst&auml;ndiger Daten (vgl. auch
+                    Art.
+                    16 DSGVO);</li>
+                <li>auf unverz&uuml;gliche L&ouml;schung der sie betreffenden Daten (vgl. auch Art. 17 DSGVO), oder,
+                    alternativ, soweit eine weitere Verarbeitung gem&auml;&szlig; Art. 17 Abs. 3 DSGVO erforderlich ist,
+                    auf
+                    Einschr&auml;nkung der Verarbeitung nach Ma&szlig;gabe von Art. 18 DSGVO;</li>
+                <li>auf Erhalt der sie betreffenden und von ihnen bereitgestellten Daten und auf &Uuml;bermittlung
+                    dieser
+                    Daten an andere Anbieter/Verantwortliche (vgl. auch Art. 20 DSGVO);</li>
+                <li>auf Beschwerde gegen&uuml;ber der Aufsichtsbeh&ouml;rde, sofern sie der Ansicht sind, dass die sie
+                    betreffenden Daten durch den Anbieter unter Versto&szlig; gegen datenschutzrechtliche Bestimmungen
+                    verarbeitet werden (vgl. auch Art. 77 DSGVO).</li>
+            </ul>
+            <p>Dar&uuml;ber hinaus ist der Anbieter dazu verpflichtet, alle Empf&auml;nger, denen gegen&uuml;ber Daten
+                durch
+                den Anbieter offengelegt worden sind, &uuml;ber jedwede Berichtigung oder L&ouml;schung von Daten oder
+                die
+                Einschr&auml;nkung der Verarbeitung, die aufgrund der Artikel 16, 17 Abs. 1, 18 DSGVO erfolgt, zu
+                unterrichten. Diese Verpflichtung besteht jedoch nicht, soweit diese Mitteilung unm&ouml;glich oder mit
+                einem unverh&auml;ltnism&auml;&szlig;igen Aufwand verbunden ist. Unbeschadet dessen hat der Nutzer ein
+                Recht
+                auf Auskunft &uuml;ber diese Empf&auml;nger.</p>
+            <p><strong>Ebenfalls haben die Nutzer und Betroffenen nach Art. 21 DSGVO das Recht auf Widerspruch gegen die
+                    k&uuml;nftige Verarbeitung der sie betreffenden Daten, sofern die Daten durch den Anbieter nach
+                    Ma&szlig;gabe von Art. 6 Abs. 1 lit. f) DSGVO verarbeitet werden. Insbesondere ist ein Widerspruch
+                    gegen
+                    die Datenverarbeitung zum Zwecke der Direktwerbung statthaft.</strong></p>
+            <h3><strong>III. Informationen zur Datenverarbeitung</strong></h3>
+            <p>Ihre bei Nutzung unseres Internetauftritts verarbeiteten Daten werden gel&ouml;scht oder gesperrt, sobald
+                der
+                Zweck der Speicherung entf&auml;llt, der L&ouml;schung der Daten keine gesetzlichen
+                Aufbewahrungspflichten
                 entgegenstehen und nachfolgend keine anderslautenden Angaben zu einzelnen Verarbeitungsverfahren gemacht
-                werden. Serverdaten Aus technischen Gr&uuml;nden, insbesondere zur Gew&auml;hrleistung eines sicheren
-                und stabilen Internetauftritts, werden Daten durch Ihren Internet-Browser an uns bzw. an unseren
-                Webspace-Provider &uuml;bermittelt. Mit diesen sog. Server-Logfiles werden u.a. Typ und Version Ihres
-                Internetbrowsers, das Betriebssystem, die Website, von der aus Sie auf unseren Internetauftritt
-                gewechselt haben (Referrer URL), die Website(s) unseres Internetauftritts, die Sie besuchen, Datum und
-                Uhrzeit des jeweiligen Zugriffs sowie die IP-Adresse des Internetanschlusses, von dem aus die Nutzung
-                unseres Internetauftritts erfolgt, erhoben. Diese so erhobenen Daten werden vorr&uuml;bergehend
-                gespeichert, dies jedoch nicht gemeinsam mit anderen Daten von Ihnen. Diese Speicherung erfolgt auf der
-                Rechtsgrundlage von Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Verbesserung,
-                Stabilit&auml;t, Funktionalit&auml;t und Sicherheit unseres Internetauftritts. Die Daten werden
-                sp&auml;testens nach sieben Tage wieder gel&ouml;scht, soweit keine weitere Aufbewahrung zu
+                werden.</p>
+            <h3><strong>Serverdaten</strong></h3>
+            <p>Aus technischen Gr&uuml;nden, insbesondere zur Gew&auml;hrleistung eines sicheren und stabilen
+                Internetauftritts, werden Daten durch Ihren Internet-Browser an uns bzw. an unseren Webspace-Provider
+                &uuml;bermittelt. Mit diesen sog. Server-Logfiles werden u.a. Typ und Version Ihres Internetbrowsers,
+                das
+                Betriebssystem, die Website, von der aus Sie auf unseren Internetauftritt gewechselt haben (Referrer
+                URL),
+                die Website(s) unseres Internetauftritts, die Sie besuchen, Datum und Uhrzeit des jeweiligen Zugriffs
+                sowie
+                die IP-Adresse des Internetanschlusses, von dem aus die Nutzung unseres Internetauftritts erfolgt,
+                erhoben.
+            </p>
+            <p>Diese so erhobenen Daten werden vorr&uuml;bergehend gespeichert, dies jedoch nicht gemeinsam mit anderen
+                Daten von Ihnen.</p>
+            <p>Diese Speicherung erfolgt auf der Rechtsgrundlage von Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes
+                Interesse liegt in der Verbesserung, Stabilit&auml;t, Funktionalit&auml;t und Sicherheit unseres
+                Internetauftritts.</p>
+            <p>Die Daten werden sp&auml;testens nach sieben Tage wieder gel&ouml;scht, soweit keine weitere Aufbewahrung
+                zu
                 Beweiszwecken erforderlich ist. Andernfalls sind die Daten bis zur endg&uuml;ltigen Kl&auml;rung eines
-                Vorfalls ganz oder teilweise von der L&ouml;schung ausgenommen. Cookies a)
-                Sitzungs-Cookies/Session-Cookies Wir verwenden mit unserem Internetauftritt sog. Cookies. Cookies sind
-                kleine Textdateien oder andere Speichertechnologien, die durch den von Ihnen eingesetzten
-                Internet-Browser auf Ihrem Endger&auml;t ablegt und gespeichert werden. Durch diese Cookies werden im
-                individuellen Umfang bestimmte Informationen von Ihnen, wie beispielsweise Ihre Browser- oder
-                Standortdaten oder Ihre IP-Adresse, verarbeitet. Durch diese Verarbeitung wird unser Internetauftritt
-                benutzerfreundlicher, effektiver und sicherer, da die Verarbeitung bspw. die Wiedergabe unseres
-                Internetauftritts in unterschiedlichen Sprachen oder das Angebot einer Warenkorbfunktion
-                erm&ouml;glicht. Rechtsgrundlage dieser Verarbeitung ist Art. 6 Abs. 1 lit b.) DSGVO, sofern diese
-                Cookies Daten zur Vertragsanbahnung oder Vertragsabwicklung verarbeitet werden. Falls die Verarbeitung
-                nicht der Vertragsanbahnung oder Vertragsabwicklung dient, liegt unser berechtigtes Interesse in der
-                Verbesserung der Funktionalit&auml;t unseres Internetauftritts. Rechtsgrundlage ist in dann Art. 6 Abs.
-                1 lit. f) DSGVO. Mit Schlie&szlig;en Ihres Internet-Browsers werden diese Session-Cookies gel&ouml;scht.
-                b) Drittanbieter-Cookies Gegebenenfalls werden mit unserem Internetauftritt auch Cookies von
-                Partnerunternehmen, mit denen wir zum Zwecke der Werbung, der Analyse oder der Funktionalit&auml;ten
-                unseres Internetauftritts zusammenarbeiten, verwendet. Die Einzelheiten hierzu, insbesondere zu den
-                Zwecken und den Rechtsgrundlagen der Verarbeitung solcher Drittanbieter-Cookies, entnehmen Sie bitte den
-                nachfolgenden Informationen. c) Beseitigungsm&ouml;glichkeit Sie k&ouml;nnen die Installation der
-                Cookies durch eine Einstellung Ihres Internet-Browsers verhindern oder einschr&auml;nken. Ebenfalls
-                k&ouml;nnen Sie bereits gespeicherte Cookies jederzeit l&ouml;schen. Die hierf&uuml;r erforderlichen
-                Schritte und Ma&szlig;nahmen h&auml;ngen jedoch von Ihrem konkret genutzten Internet-Browser ab. Bei
-                Fragen benutzen Sie daher bitte die Hilfefunktion oder Dokumentation Ihres Internet-Browsers oder wenden
-                sich an dessen Hersteller bzw. Support. Bei sog. Flash-Cookies kann die Verarbeitung allerdings nicht
-                &uuml;ber die Einstellungen des Browsers unterbunden werden. Stattdessen m&uuml;ssen Sie insoweit die
-                Einstellung Ihres Flash-Players &auml;ndern. Auch die hierf&uuml;r erforderlichen Schritte und
-                Ma&szlig;nahmen h&auml;ngen von Ihrem konkret genutzten Flash-Player ab. Bei Fragen benutzen Sie daher
-                bitte ebenso die Hilfefunktion oder Dokumentation Ihres Flash-Players oder wenden sich an den Hersteller
-                bzw. Benutzer-Support. Sollten Sie die Installation der Cookies verhindern oder einschr&auml;nken, kann
-                dies allerdings dazu f&uuml;hren, dass nicht s&auml;mtliche Funktionen unseres Internetauftritts
-                vollumf&auml;nglich nutzbar sind. Newsletter Falls Sie sich f&uuml;r unseren kostenlosen Newsletter
-                anmelden, werden die von Ihnen hierzu abgefragten Daten, also Ihre E-Mail-Adresse sowie - optional - Ihr
-                Name und Ihre Anschrift, an uns &uuml;bermittelt. Gleichzeitig speichern wir die IP-Adresse des
-                Internetanschlusses von dem aus Sie auf unseren Internetauftritt zugreifen sowie Datum und Uhrzeit Ihrer
-                Anmeldung. Im Rahmen des weiteren Anmeldevorgangs werden wir Ihre Einwilligung in die &Uuml;bersendung
-                des Newsletters einholen, den Inhalt konkret beschreiben und auf diese Datenschutzerkl&auml;rung
-                verwiesen. Die dabei erhobenen Daten verwenden wir ausschlie&szlig;lich f&uuml;r den Newsletter-Versand
-                &ndash; sie werden deshalb insbesondere auch nicht an Dritte weitergegeben. Rechtsgrundlage hierbei ist
-                Art. 6 Abs. 1 lit. a) DSGVO. Die Einwilligung in den Newsletter-Versand k&ouml;nnen Sie gem&auml;&szlig;
-                Art. 7 Abs. 3 DSGVO jederzeit mit Wirkung f&uuml;r die Zukunft widerrufen. Hierzu m&uuml;ssen Sie uns
-                lediglich &uuml;ber Ihren Widerruf in Kenntnis setzen oder den in jedem Newsletter enthaltenen
-                Abmeldelink bet&auml;tigen. LinkedIn Wir unterhalten bei LinkedIn eine Onlinepr&auml;senz um unser
-                Unternehmen sowie unsere Leistungen zu pr&auml;sentieren und mit Kunden/Interessenten zu kommunizieren.
-                LinkedIn ist ein Service der LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2,
-                Irland, ein Tochterunternehmen der LinkedIn Corporation, 1000 W. Maude Avenue, Sunnyvale, CA 94085, USA.
-                Insofern weisen wir darauf hin, dass die M&ouml;glichkeit besteht, dass Daten der Nutzer au&szlig;erhalb
-                der Europ&auml;ischen Union, insbesondere in den USA, verarbeitet werden. Hierdurch k&ouml;nnen
-                gesteigerte Risiken f&uuml;r die Nutzer insofern bestehen, als dass z.B. der sp&auml;tere Zugriff auf
-                die Nutzerdaten erschwert werden kann. Auch haben wir keinen Zugriff auf diese Nutzerdaten. Die
-                Zugriffsm&ouml;glichkeit liegt ausschlie&szlig;lich bei LinkedIn. Die Datenschutzhinweise von LinkedIn
-                finden Sie unter https://www.linkedin.com/legal/privacy-policy Facebook Zur Bewerbung unserer Produkte
-                und Leistungen sowie zur Kommunikation mit Interessenten oder Kunden betreiben wir eine
-                Firmenpr&auml;senz auf der Plattform Facebook. Auf dieser Social-Media-Plattform sind wir gemeinsam mit
-                der Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2 Ireland, verantwortlich.
-                Der Datenschutzbeauftragte von Facebook kann &uuml;ber ein Kontaktformular erreicht werden:
-                https://www.facebook.com/help/contact/540977946302970 Die gemeinsame Verantwortlichkeit haben wir in
-                einer Vereinbarung bez&uuml;glich der jeweiligen Verpflichtungen im Sinne der DSGVO geregelt. Diese
-                Vereinbarung, aus der sich die gegenseitigen Verpflichtungen ergeben, ist unter dem folgenden Link
-                abrufbar: https://www.facebook.com/legal/terms/page_controller_addendum Rechtsgrundlage f&uuml;r die
-                dadurch erfolgende und nachfolgend wiedergegebene Verarbeitung von personenbezogenen Daten ist Art. 6
-                Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht an der Analyse, der Kommunikation sowie dem
-                Absatz und der Bewerbung unserer Produkte und Leistungen. Rechtsgrundlage kann auch eine Einwilligung
-                des Nutzers gem&auml;&szlig; Art. 6 Abs. 1 lit. a DSGVO gegen&uuml;ber dem Plattformbetreiber sein. Die
-                Einwilligung hierzu kann der Nutzer nach Art. 7 Abs. 3 DSGVO jederzeit durch eine Mitteilung an den
-                Plattformbetreiber f&uuml;r die Zukunft widerrufen. Bei dem Aufruf unseres Onlineauftritts auf der
-                Plattform Facebook werden von der Facebook Ireland Ltd. als Betreiberin der Plattform in der EU Daten
-                des Nutzers (z.B. pers&ouml;nliche Informationen, IP-Adresse etc.) verarbeitet. Diese Daten des Nutzers
-                dienen zu statistischen Informationen &uuml;ber die Inanspruchnahme unserer Firmenpr&auml;senz auf
-                Facebook. Die Facebook Ireland Ltd. nutzt diese Daten zu Marktforschungs- und Werbezwecken sowie zur
-                Erstellung von Profilen der Nutzer. Anhand dieser Profile ist es der Facebook Ireland Ltd.
-                beispielsweise m&ouml;glich, die Nutzer innerhalb und au&szlig;erhalb von Facebook interessenbezogen zu
+                Vorfalls ganz oder teilweise von der L&ouml;schung ausgenommen.</p>
+            <h3><strong>Cookies</strong></h3>
+            <h3><strong>a) Sitzungs-Cookies/Session-Cookies</strong></h3>
+            <p>Wir verwenden mit unserem Internetauftritt sog. Cookies. Cookies sind kleine Textdateien oder andere
+                Speichertechnologien, die durch den von Ihnen eingesetzten Internet-Browser auf Ihrem Endger&auml;t
+                ablegt
+                und gespeichert werden. Durch diese Cookies werden im individuellen Umfang bestimmte Informationen von
+                Ihnen, wie beispielsweise Ihre Browser- oder Standortdaten oder Ihre IP-Adresse,
+                verarbeitet.&nbsp;&nbsp;
+            </p>
+            <p>Durch diese Verarbeitung wird unser Internetauftritt benutzerfreundlicher, effektiver und sicherer, da
+                die
+                Verarbeitung bspw. die Wiedergabe unseres Internetauftritts in unterschiedlichen Sprachen oder das
+                Angebot
+                einer Warenkorbfunktion erm&ouml;glicht.</p>
+            <p>Rechtsgrundlage dieser Verarbeitung ist Art. 6 Abs. 1 lit b.) DSGVO, sofern diese Cookies Daten zur
+                Vertragsanbahnung oder Vertragsabwicklung verarbeitet werden.</p>
+            <p>Falls die Verarbeitung nicht der Vertragsanbahnung oder Vertragsabwicklung dient, liegt unser
+                berechtigtes
+                Interesse in der Verbesserung der Funktionalit&auml;t unseres Internetauftritts. Rechtsgrundlage ist in
+                dann
+                Art. 6 Abs. 1 lit. f) DSGVO.</p>
+            <p>Mit Schlie&szlig;en Ihres Internet-Browsers werden diese Session-Cookies gel&ouml;scht.</p>
+            <h3><strong>b) Drittanbieter-Cookies</strong></h3>
+            <p>Gegebenenfalls werden mit unserem Internetauftritt auch Cookies von Partnerunternehmen, mit denen wir zum
+                Zwecke der Werbung, der Analyse oder der Funktionalit&auml;ten unseres Internetauftritts
+                zusammenarbeiten,
+                verwendet.</p>
+            <p>Die Einzelheiten hierzu, insbesondere zu den Zwecken und den Rechtsgrundlagen der Verarbeitung solcher
+                Drittanbieter-Cookies, entnehmen Sie bitte den nachfolgenden Informationen.</p>
+            <h3><strong>c) Beseitigungsm&ouml;glichkeit</strong></h3>
+            <p>Sie k&ouml;nnen die Installation der Cookies durch eine Einstellung Ihres Internet-Browsers verhindern
+                oder
+                einschr&auml;nken. Ebenfalls k&ouml;nnen Sie bereits gespeicherte Cookies jederzeit l&ouml;schen. Die
+                hierf&uuml;r erforderlichen Schritte und Ma&szlig;nahmen h&auml;ngen jedoch von Ihrem konkret genutzten
+                Internet-Browser ab. Bei Fragen benutzen Sie daher bitte die Hilfefunktion oder Dokumentation Ihres
+                Internet-Browsers oder wenden sich an dessen Hersteller bzw. Support. Bei sog. Flash-Cookies kann die
+                Verarbeitung allerdings nicht &uuml;ber die Einstellungen des Browsers unterbunden werden. Stattdessen
+                m&uuml;ssen Sie insoweit die Einstellung Ihres Flash-Players &auml;ndern. Auch die hierf&uuml;r
+                erforderlichen Schritte und Ma&szlig;nahmen h&auml;ngen von Ihrem konkret genutzten Flash-Player ab. Bei
+                Fragen benutzen Sie daher bitte ebenso die Hilfefunktion oder Dokumentation Ihres Flash-Players oder
+                wenden
+                sich an den Hersteller bzw. Benutzer-Support.</p>
+            <p>Sollten Sie die Installation der Cookies verhindern oder einschr&auml;nken, kann dies allerdings dazu
+                f&uuml;hren, dass nicht s&auml;mtliche Funktionen unseres Internetauftritts vollumf&auml;nglich nutzbar
+                sind.</p>
+            <h3><strong>Newsletter</strong></h3>
+            <p>Falls Sie sich f&uuml;r unseren kostenlosen Newsletter anmelden, werden die von Ihnen hierzu abgefragten
+                Daten, also Ihre E-Mail-Adresse sowie - optional - Ihr Name und Ihre Anschrift, an uns &uuml;bermittelt.
+                Gleichzeitig speichern wir die IP-Adresse des Internetanschlusses von dem aus Sie auf unseren
+                Internetauftritt zugreifen sowie Datum und Uhrzeit Ihrer Anmeldung. Im Rahmen des weiteren
+                Anmeldevorgangs
+                werden wir Ihre Einwilligung in die &Uuml;bersendung des Newsletters einholen, den Inhalt konkret
+                beschreiben und auf diese Datenschutzerkl&auml;rung verwiesen. Die dabei erhobenen Daten verwenden wir
+                ausschlie&szlig;lich f&uuml;r den Newsletter-Versand &ndash; sie werden deshalb insbesondere auch nicht
+                an
+                Dritte weitergegeben.</p>
+            <p>Rechtsgrundlage hierbei ist Art. 6 Abs. 1 lit. a) DSGVO.</p>
+            <p>Die Einwilligung in den Newsletter-Versand k&ouml;nnen Sie gem&auml;&szlig; Art. 7 Abs. 3 DSGVO jederzeit
+                mit
+                Wirkung f&uuml;r die Zukunft widerrufen. Hierzu m&uuml;ssen Sie uns lediglich &uuml;ber Ihren Widerruf
+                in
+                Kenntnis setzen oder den in jedem Newsletter enthaltenen Abmeldelink bet&auml;tigen.</p>
+            <h3><strong>LinkedIn</strong></h3>
+            <p>Wir unterhalten bei LinkedIn eine Onlinepr&auml;senz um unser Unternehmen sowie unsere Leistungen zu
+                pr&auml;sentieren und mit Kunden/Interessenten zu kommunizieren. LinkedIn ist ein Service der LinkedIn
+                Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Irland, ein Tochterunternehmen der
+                LinkedIn
+                Corporation, 1000 W. Maude Avenue, Sunnyvale, CA 94085, USA.</p>
+            <p>Insofern weisen wir darauf hin, dass die M&ouml;glichkeit besteht, dass Daten der Nutzer au&szlig;erhalb
+                der
+                Europ&auml;ischen Union, insbesondere in den USA, verarbeitet werden. Hierdurch k&ouml;nnen gesteigerte
+                Risiken f&uuml;r die Nutzer insofern bestehen, als dass z.B. der sp&auml;tere Zugriff auf die
+                Nutzerdaten
+                erschwert werden kann. Auch haben wir keinen Zugriff auf diese Nutzerdaten. Die Zugriffsm&ouml;glichkeit
+                liegt ausschlie&szlig;lich bei LinkedIn.</p>
+            <p>Die Datenschutzhinweise von LinkedIn finden Sie unter</p>
+            <p><a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a>
+            </p>
+            <h3><strong>Facebook</strong></h3>
+            <p>Zur Bewerbung unserer Produkte und Leistungen sowie zur Kommunikation mit Interessenten oder Kunden
+                betreiben
+                wir eine Firmenpr&auml;senz auf der Plattform Facebook.</p>
+            <p>Auf dieser Social-Media-Plattform sind wir gemeinsam mit der Facebook Ireland Ltd., 4 Grand Canal Square,
+                Grand Canal Harbour, Dublin 2 Ireland, verantwortlich.</p>
+            <p>Der Datenschutzbeauftragte von Facebook kann &uuml;ber ein Kontaktformular erreicht werden:</p>
+            <p><a
+                    href="https://www.facebook.com/help/contact/540977946302970">https://www.facebook.com/help/contact/540977946302970</a>
+            </p>
+            <p>Die gemeinsame Verantwortlichkeit haben wir in einer Vereinbarung bez&uuml;glich der jeweiligen
+                Verpflichtungen im Sinne der DSGVO geregelt. Diese Vereinbarung, aus der sich die gegenseitigen
+                Verpflichtungen ergeben, ist unter dem folgenden Link abrufbar:</p>
+            <p><a
+                    href="https://www.facebook.com/legal/terms/page_controller_addendum">https://www.facebook.com/legal/terms/page_controller_addendum</a>
+            </p>
+            <p>Rechtsgrundlage f&uuml;r die dadurch erfolgende und nachfolgend wiedergegebene Verarbeitung von
+                personenbezogenen Daten ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht an der
+                Analyse,
+                der Kommunikation sowie dem Absatz und der Bewerbung unserer Produkte und Leistungen.</p>
+            <p>Rechtsgrundlage kann auch eine Einwilligung des Nutzers gem&auml;&szlig; Art. 6 Abs. 1 lit. a DSGVO
+                gegen&uuml;ber dem Plattformbetreiber sein. Die Einwilligung hierzu kann der Nutzer nach Art. 7 Abs. 3
+                DSGVO
+                jederzeit durch eine Mitteilung an den Plattformbetreiber f&uuml;r die Zukunft widerrufen.</p>
+            <p>Bei dem Aufruf unseres Onlineauftritts auf der Plattform Facebook werden von der Facebook Ireland Ltd.
+                als
+                Betreiberin der Plattform in der EU Daten des Nutzers (z.B. pers&ouml;nliche Informationen, IP-Adresse
+                etc.)
+                verarbeitet.</p>
+            <p>Diese Daten des Nutzers dienen zu statistischen Informationen &uuml;ber die Inanspruchnahme unserer
+                Firmenpr&auml;senz auf Facebook. Die Facebook Ireland Ltd. nutzt diese Daten zu Marktforschungs- und
+                Werbezwecken sowie zur Erstellung von Profilen der Nutzer. Anhand dieser Profile ist es der Facebook
+                Ireland
+                Ltd. beispielsweise m&ouml;glich, die Nutzer innerhalb und au&szlig;erhalb von Facebook
+                interessenbezogen zu
                 bewerben. Ist der Nutzer zum Zeitpunkt des Aufrufes in seinem Account auf Facebook eingeloggt, kann die
-                Facebook Ireland Ltd. zudem die Daten mit dem jeweiligen Nutzerkonto verkn&uuml;pfen. Im Falle einer
-                Kontaktaufnahme des Nutzers &uuml;ber Facebook werden die bei dieser Gelegenheit eingegebenen
+                Facebook Ireland Ltd. zudem die Daten mit dem jeweiligen Nutzerkonto verkn&uuml;pfen.</p>
+            <p>Im Falle einer Kontaktaufnahme des Nutzers &uuml;ber Facebook werden die bei dieser Gelegenheit
+                eingegebenen
                 personenbezogenen Daten des Nutzers zur Bearbeitung der Anfrage genutzt. Die Daten des Nutzers werden
-                bei uns gel&ouml;scht, sofern die Anfrage des Nutzers abschlie&szlig;end beantwortet wurde und keine
+                bei
+                uns gel&ouml;scht, sofern die Anfrage des Nutzers abschlie&szlig;end beantwortet wurde und keine
                 gesetzlichen Aufbewahrungspflichten, wie z.B. bei einer anschlie&szlig;enden Vertragsabwicklung,
-                entgegenstehen. Zur Verarbeitung der Daten werden von der Facebook Ireland Ltd. ggf. auch Cookies
-                gesetzt. Sollte der Nutzer mit dieser Verarbeitung nicht einverstanden sein, so besteht die
-                M&ouml;glichkeit, die Installation der Cookies durch eine entsprechende Einstellung des Browsers zu
-                verhindern. Bereits gespeicherte Cookies k&ouml;nnen ebenfalls jederzeit gel&ouml;scht werden. Die
-                Einstellungen hierzu sind vom jeweiligen Browser abh&auml;ngig. Bei Flash-Cookies l&auml;sst sich die
-                Verarbeitung nicht &uuml;ber die Einstellungen des Browsers unterbinden, sondern durch die entsprechende
-                Einstellung des Flash-Players. Sollte der Nutzer die Installation der Cookies verhindern oder
-                einschr&auml;nken, kann dies dazu f&uuml;hren, dass nicht s&auml;mtliche Funktionen von Facebook
-                vollumf&auml;nglich nutzbar sind. N&auml;heres zu den Verarbeitungst&auml;tigkeiten, deren Unterbindung
-                und zur L&ouml;schung der von Facebook verarbeiteten Daten finden sich in der Datenrichtlinie von
-                Facebook: https://www.facebook.com/privacy/explanation Es ist nicht ausgeschlossen, dass die
-                Verarbeitung durch die Facebook Ireland Ltd. auch &uuml;ber die Facebook Inc., 1601 Willow Road, Menlo
-                Park, California 94025 in den USA erfolgt. Instagram Zur Bewerbung unserer Produkte und Leistungen sowie
-                zur Kommunikation mit Interessenten oder Kunden betreiben wir eine Firmenpr&auml;senz auf der Plattform
-                Instagram. Auf dieser Social-Media-Plattform sind wir gemeinsam mit der Facebook Ireland Ltd., 4 Grand
-                Canal Square, Grand Canal Harbour, Dublin 2 Ireland, verantwortlich. Der Datenschutzbeauftragte von
-                Instagram kann &uuml;ber ein Kontaktformular erreicht werden:
-                https://www.facebook.com/help/contact/540977946302970 Die gemeinsame Verantwortlichkeit haben wir in
-                einer Vereinbarung bez&uuml;glich der jeweiligen Verpflichtungen im Sinne der DSGVO geregelt. Diese
-                Vereinbarung, aus der sich die gegenseitigen Verpflichtungen ergeben, ist unter dem folgenden Link
-                abrufbar: https://www.facebook.com/legal/terms/page_controller_addendum Rechtsgrundlage f&uuml;r die
-                dadurch erfolgende und nachfolgend wiedergegebene Verarbeitung von personenbezogenen Daten ist Art. 6
-                Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht an der Analyse, der Kommunikation sowie dem
-                Absatz und der Bewerbung unserer Produkte und Leistungen. Rechtsgrundlage kann auch eine Einwilligung
-                des Nutzers gem&auml;&szlig; Art. 6 Abs. 1 lit. a DSGVO gegen&uuml;ber dem Plattformbetreiber sein. Die
-                Einwilligung hierzu kann der Nutzer nach Art. 7 Abs. 3 DSGVO jederzeit durch eine Mitteilung an den
-                Plattformbetreiber f&uuml;r die Zukunft widerrufen. Bei dem Aufruf unseres Onlineauftritts auf der
-                Plattform Instagram werden von der Facebook Ireland Ltd. als Betreiberin der Plattform in der EU Daten
-                des Nutzers (z.B. pers&ouml;nliche Informationen, IP-Adresse etc.) verarbeitet. Diese Daten des Nutzers
-                dienen zu statistischen Informationen &uuml;ber die Inanspruchnahme unserer Firmenpr&auml;senz auf
-                Instagram. Die Facebook Ireland Ltd. nutzt diese Daten zu Marktforschungs- und Werbezwecken sowie zur
-                Erstellung von Profilen der Nutzer. Anhand dieser Profile ist es der Facebook Ireland Ltd.
-                beispielsweise m&ouml;glich, die Nutzer innerhalb und au&szlig;erhalb von Instagram interessenbezogen zu
-                bewerben. Ist der Nutzer zum Zeitpunkt des Aufrufes in seinem Account auf Instagram eingeloggt, kann die
-                Facebook Ireland Ltd. zudem die Daten mit dem jeweiligen Nutzerkonto verkn&uuml;pfen. Im Falle einer
-                Kontaktaufnahme des Nutzers &uuml;ber Instagram werden die bei dieser Gelegenheit eingegebenen
+                entgegenstehen.</p>
+            <p>Zur Verarbeitung der Daten werden von der Facebook Ireland Ltd. ggf. auch Cookies gesetzt.</p>
+            <p>Sollte der Nutzer mit dieser Verarbeitung nicht einverstanden sein, so besteht die M&ouml;glichkeit, die
+                Installation der Cookies durch eine entsprechende Einstellung des Browsers zu verhindern. Bereits
+                gespeicherte Cookies k&ouml;nnen ebenfalls jederzeit gel&ouml;scht werden. Die Einstellungen hierzu sind
+                vom
+                jeweiligen Browser abh&auml;ngig. Bei Flash-Cookies l&auml;sst sich die Verarbeitung nicht &uuml;ber die
+                Einstellungen des Browsers unterbinden, sondern durch die entsprechende Einstellung des Flash-Players.
+                Sollte der Nutzer die Installation der Cookies verhindern oder einschr&auml;nken, kann dies dazu
+                f&uuml;hren, dass nicht s&auml;mtliche Funktionen von Facebook vollumf&auml;nglich nutzbar sind.</p>
+            <p>N&auml;heres zu den Verarbeitungst&auml;tigkeiten, deren Unterbindung und zur L&ouml;schung der von
+                Facebook
+                verarbeiteten Daten finden sich in der Datenrichtlinie von Facebook:</p>
+            <p><a href="https://www.facebook.com/privacy/explanation">https://www.facebook.com/privacy/explanation</a>
+            </p>
+            <p>Es ist nicht ausgeschlossen, dass die Verarbeitung durch die Facebook Ireland Ltd. auch &uuml;ber die
+                Facebook Inc., 1601 Willow Road, Menlo Park, California 94025 in den USA erfolgt.</p>
+            <h3><strong>Instagram</strong></h3>
+            <p>Zur Bewerbung unserer Produkte und Leistungen sowie zur Kommunikation mit Interessenten oder Kunden
+                betreiben
+                wir eine Firmenpr&auml;senz auf der Plattform Instagram.</p>
+            <p>Auf dieser Social-Media-Plattform sind wir gemeinsam mit der Facebook Ireland Ltd., 4 Grand Canal Square,
+                Grand Canal Harbour, Dublin 2 Ireland, verantwortlich.</p>
+            <p>Der Datenschutzbeauftragte von Instagram kann &uuml;ber ein Kontaktformular erreicht werden:</p>
+            <p><a
+                    href="https://www.facebook.com/help/contact/540977946302970">https://www.facebook.com/help/contact/540977946302970</a>
+            </p>
+            <p>Die gemeinsame Verantwortlichkeit haben wir in einer Vereinbarung bez&uuml;glich der jeweiligen
+                Verpflichtungen im Sinne der DSGVO geregelt. Diese Vereinbarung, aus der sich die gegenseitigen
+                Verpflichtungen ergeben, ist unter dem folgenden Link abrufbar:</p>
+            <p><a
+                    href="https://www.facebook.com/legal/terms/page_controller_addendum">https://www.facebook.com/legal/terms/page_controller_addendum</a>
+            </p>
+            <p>Rechtsgrundlage f&uuml;r die dadurch erfolgende und nachfolgend wiedergegebene Verarbeitung von
+                personenbezogenen Daten ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht an der
+                Analyse,
+                der Kommunikation sowie dem Absatz und der Bewerbung unserer Produkte und Leistungen.</p>
+            <p>Rechtsgrundlage kann auch eine Einwilligung des Nutzers gem&auml;&szlig; Art. 6 Abs. 1 lit. a DSGVO
+                gegen&uuml;ber dem Plattformbetreiber sein. Die Einwilligung hierzu kann der Nutzer nach Art. 7 Abs. 3
+                DSGVO
+                jederzeit durch eine Mitteilung an den Plattformbetreiber f&uuml;r die Zukunft widerrufen.</p>
+            <p>Bei dem Aufruf unseres Onlineauftritts auf der Plattform Instagram werden von der Facebook Ireland Ltd.
+                als
+                Betreiberin der Plattform in der EU Daten des Nutzers (z.B. pers&ouml;nliche Informationen, IP-Adresse
+                etc.)
+                verarbeitet.</p>
+            <p>Diese Daten des Nutzers dienen zu statistischen Informationen &uuml;ber die Inanspruchnahme unserer
+                Firmenpr&auml;senz auf Instagram. Die Facebook Ireland Ltd. nutzt diese Daten zu Marktforschungs- und
+                Werbezwecken sowie zur Erstellung von Profilen der Nutzer. Anhand dieser Profile ist es der Facebook
+                Ireland
+                Ltd. beispielsweise m&ouml;glich, die Nutzer innerhalb und au&szlig;erhalb von Instagram
+                interessenbezogen
+                zu bewerben. Ist der Nutzer zum Zeitpunkt des Aufrufes in seinem Account auf Instagram eingeloggt, kann
+                die
+                Facebook Ireland Ltd. zudem die Daten mit dem jeweiligen Nutzerkonto verkn&uuml;pfen.</p>
+            <p>Im Falle einer Kontaktaufnahme des Nutzers &uuml;ber Instagram werden die bei dieser Gelegenheit
+                eingegebenen
                 personenbezogenen Daten des Nutzers zur Bearbeitung der Anfrage genutzt. Die Daten des Nutzers werden
-                bei uns gel&ouml;scht, sofern die Anfrage des Nutzers abschlie&szlig;end beantwortet wurde und keine
+                bei
+                uns gel&ouml;scht, sofern die Anfrage des Nutzers abschlie&szlig;end beantwortet wurde und keine
                 gesetzlichen Aufbewahrungspflichten, wie z.B. bei einer anschlie&szlig;enden Vertragsabwicklung,
-                entgegenstehen. Zur Verarbeitung der Daten werden von der Facebook Ireland Ltd. ggf. auch Cookies
-                gesetzt. Sollte der Nutzer mit dieser Verarbeitung nicht einverstanden sein, so besteht die
-                M&ouml;glichkeit, die Installation der Cookies durch eine entsprechende Einstellung des Browsers zu
-                verhindern. Bereits gespeicherte Cookies k&ouml;nnen ebenfalls jederzeit gel&ouml;scht werden. Die
-                Einstellungen hierzu sind vom jeweiligen Browser abh&auml;ngig. Bei Flash-Cookies l&auml;sst sich die
-                Verarbeitung nicht &uuml;ber die Einstellungen des Browsers unterbinden, sondern durch die entsprechende
-                Einstellung des Flash-Players. Sollte der Nutzer die Installation der Cookies verhindern oder
-                einschr&auml;nken, kann dies dazu f&uuml;hren, dass nicht s&auml;mtliche Funktionen von Facebook
-                vollumf&auml;nglich nutzbar sind. N&auml;heres zu den Verarbeitungst&auml;tigkeiten, deren Unterbindung
-                und zur L&ouml;schung der von Instagram verarbeiteten Daten finden sich in der Datenrichtlinie von
-                Instagram: https://help.instagram.com/519522125107875 Es ist nicht ausgeschlossen, dass die Verarbeitung
-                durch die Facebook Ireland Ltd. auch &uuml;ber die Facebook Inc., 1601 Willow Road, Menlo Park,
-                California 94025 in den USA erfolgt. Verlinkung Social-Media &uuml;ber Grafik oder Textlink Wir bewerben
-                auf unserer Webseite auch Pr&auml;senzen auf den nachstehend aufgef&uuml;hrten sozialen Netzwerken. Die
-                Einbindung erfolgt dabei &uuml;ber eine verlinkte Grafik des jeweiligen Netzwerks. Durch den Einsatz
-                dieser verlinkten Grafik wird verhindert, dass es bei dem Aufruf einer Website, die &uuml;ber eine
+                entgegenstehen.</p>
+            <p>Zur Verarbeitung der Daten werden von der Facebook Ireland Ltd. ggf. auch Cookies gesetzt.</p>
+            <p>Sollte der Nutzer mit dieser Verarbeitung nicht einverstanden sein, so besteht die M&ouml;glichkeit, die
+                Installation der Cookies durch eine entsprechende Einstellung des Browsers zu verhindern. Bereits
+                gespeicherte Cookies k&ouml;nnen ebenfalls jederzeit gel&ouml;scht werden. Die Einstellungen hierzu sind
+                vom
+                jeweiligen Browser abh&auml;ngig. Bei Flash-Cookies l&auml;sst sich die Verarbeitung nicht &uuml;ber die
+                Einstellungen des Browsers unterbinden, sondern durch die entsprechende Einstellung des Flash-Players.
+                Sollte der Nutzer die Installation der Cookies verhindern oder einschr&auml;nken, kann dies dazu
+                f&uuml;hren, dass nicht s&auml;mtliche Funktionen von Facebook vollumf&auml;nglich nutzbar sind.</p>
+            <p>N&auml;heres zu den Verarbeitungst&auml;tigkeiten, deren Unterbindung und zur L&ouml;schung der von
+                Instagram
+                verarbeiteten Daten finden sich in der Datenrichtlinie von Instagram:</p>
+            <p><a href="https://help.instagram.com/519522125107875">https://help.instagram.com/519522125107875</a></p>
+            <p>Es ist nicht ausgeschlossen, dass die Verarbeitung durch die Facebook Ireland Ltd. auch &uuml;ber die
+                Facebook Inc., 1601 Willow Road, Menlo Park, California 94025 in den USA erfolgt.</p>
+            <h3><strong>Verlinkung Social-Media &uuml;ber Grafik oder Textlink</strong></h3>
+            <p>Wir bewerben auf unserer Webseite auch Pr&auml;senzen auf den nachstehend aufgef&uuml;hrten sozialen
+                Netzwerken. Die Einbindung erfolgt dabei &uuml;ber eine verlinkte Grafik des jeweiligen Netzwerks. Durch
+                den
+                Einsatz dieser verlinkten Grafik wird verhindert, dass es bei dem Aufruf einer Website, die &uuml;ber
+                eine
                 Social-Media-Bewerbung verf&uuml;gt, automatisch zu einem Verbindungsaufbau zum jeweiligen Server des
                 sozialen Netzwerks kommt, um eine Grafik des jeweiligen Netzwerkes selbst darzustellen. Erst durch einen
                 Klick auf die entsprechende Grafik wird der Nutzer zu dem Dienst des jeweiligen sozialen Netzwerks
-                weitergeleitet. Nach der Weiterleitung des Nutzers werden durch das jeweilige Netzwerk Informationen
-                &uuml;ber den Nutzer erfasst. Es kann hierbei nicht ausgeschlossen werden, dass eine Verarbeitung der so
-                erhobenen Daten in den USA stattfindet. Dies sind zun&auml;chst Daten wie IP-Adresse, Datum, Uhrzeit und
-                besuchte Seite. Ist der Nutzer w&auml;hrenddessen in seinem Benutzerkonto des jeweiligen Netzwerks
-                eingeloggt, kann der Netzwerk-Betreiber ggf. die gesammelten Informationen des konkreten Besuchs des
-                Nutzers dem pers&ouml;nlichen Account des Nutzers zuordnen. Interagiert der Nutzer &uuml;ber einen
-                &#8222;Teilen&ldquo;-Button des jeweiligen Netzwerks, k&ouml;nnen diese Informationen in dem
-                pers&ouml;nlichen Benutzerkonto des Nutzers gespeichert und ggf. ver&ouml;ffentlicht werden. Will der
-                Nutzer verhindern, dass die gesammelten Informationen unmittelbar seinem Benutzerkonto zugeordnet
-                werden, muss er sich vor dem Anklicken der Grafik ausloggen. Zudem besteht die M&ouml;glichkeit, das
-                jeweilige Benutzerkonto entsprechend zu konfigurieren. Folgende soziale Netzwerke werden in unsere Seite
-                durch Verlinkung eingebunden: facebook Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2,
-                Ireland, ein Tochterunternehmen der Facebook Inc., 1601 S. California Ave., Palo Alto, CA 94304, USA.
-                Datenschutzerkl&auml;rung: https://www.facebook.com/policy.php YouTube Google Ireland Limited, Gordon
-                House, Barrow Street, Dublin 4, Irland, ein Tochterunternehmen der Google LLC, 1600 Amphitheatre
-                Parkway, Mountain View, CA 94043 USA Datenschutzerkl&auml;rung: https://policies.google.com/privacy
-                LinkedIn LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Irland, ein
-                Tochterunternehmen der LinkedIn Corporation, 1000 W. Maude Avenue, Sunnyvale, CA 94085 USA.
-                Datenschutzerkl&auml;rung: https://www.linkedin.com/legal/privacy-policy Instagram Facebook Ireland
-                Limited, 4 Grand Canal Square, Dublin 2, Ireland, ein Tochterunternehmen der Facebook Inc., 1601 S.
-                California Ave., Palo Alto, CA 94304, USA. Datenschutzerkl&auml;rung:
-                https://help.instagram.com/519522125107875 Google Analytics In unserem Internetauftritt setzen wir
-                Google Analytics ein. Hierbei handelt es sich um einen Webanalysedienst der Google Ireland Limited,
-                Gordon House, Barrow Street, Dublin 4, Irland, nachfolgend nur &#8222;Google&ldquo; genannt. Der Dienst
-                Google Analytics dient zur Analyse des Nutzungsverhaltens unseres Internetauftritts. Rechtsgrundlage ist
-                Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Analyse, Optimierung und dem
-                wirtschaftlichen Betrieb unseres Internetauftritts. Nutzungs- und nutzerbezogene Informationen, wie
-                bspw. IP-Adresse, Ort, Zeit oder H&auml;ufigkeit des Besuchs unseres Internetauftritts, werden dabei an
-                einen Server von Google in den USA &uuml;bertragen und dort gespeichert. Allerdings nutzen wir Google
-                Analytics mit der sog. Anonymisierungsfunktion. Durch diese Funktion k&uuml;rzt Google die IP-Adresse
-                schon innerhalb der EU bzw. des EWR. Die so erhobenen Daten werden wiederum von Google genutzt, um uns
-                eine Auswertung &uuml;ber den Besuch unseres Internetauftritts sowie &uuml;ber die dortigen
-                Nutzungsaktivit&auml;ten zur Verf&uuml;gung zu stellen. Auch k&ouml;nnen diese Daten genutzt werden, um
-                weitere Dienstleistungen zu erbringen, die mit der Nutzung unseres Internetauftritts und der Nutzung des
-                Internets zusammenh&auml;ngen. Google gibt an, Ihre IP-Adresse nicht mit anderen Daten zu verbinden.
-                Zudem h&auml;lt Google unter https://www.google.com/intl/de/policies/privacy/partners weitere
-                datenschutzrechtliche Informationen f&uuml;r Sie bereit, so bspw. auch zu den M&ouml;glichkeiten, die
-                Datennutzung zu unterbinden. Zudem bietet Google unter https://tools.google.com/dlpage/gaoptout?hl=de
-                ein sog. Deaktivierungs-Add-on nebst weiteren Informationen hierzu an. Dieses Add-on l&auml;sst sich mit
-                den g&auml;ngigen Internet-Browsern installieren und bietet Ihnen weitergehende Kontrollm&ouml;glichkeit
+                weitergeleitet.</p>
+            <p>Nach der Weiterleitung des Nutzers werden durch das jeweilige Netzwerk Informationen &uuml;ber den Nutzer
+                erfasst. Es kann hierbei nicht ausgeschlossen werden, dass eine Verarbeitung der so erhobenen&nbsp;
+                Daten in
+                den USA stattfindet.</p>
+            <p>Dies sind zun&auml;chst Daten wie IP-Adresse, Datum, Uhrzeit und besuchte Seite. Ist der Nutzer
+                w&auml;hrenddessen in seinem Benutzerkonto des jeweiligen Netzwerks eingeloggt, kann der
+                Netzwerk-Betreiber
+                ggf. die gesammelten Informationen des konkreten Besuchs des Nutzers dem pers&ouml;nlichen Account des
+                Nutzers zuordnen. Interagiert der Nutzer &uuml;ber einen &bdquo;Teilen&ldquo;-Button des jeweiligen
+                Netzwerks, k&ouml;nnen diese Informationen in dem pers&ouml;nlichen Benutzerkonto des Nutzers
+                gespeichert
+                und ggf. ver&ouml;ffentlicht werden. Will der Nutzer verhindern, dass die gesammelten Informationen
+                unmittelbar seinem Benutzerkonto zugeordnet werden, muss er sich vor dem Anklicken der Grafik ausloggen.
+                Zudem besteht die M&ouml;glichkeit, das jeweilige Benutzerkonto entsprechend zu konfigurieren.</p>
+            <p>Folgende soziale Netzwerke werden in unsere Seite durch Verlinkung eingebunden:</p>
+            <h3><strong>facebook</strong></h3>
+            <p>Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland, ein Tochterunternehmen der Facebook
+                Inc.,
+                1601 S. California Ave., Palo Alto, CA 94304, USA.</p>
+            <p>Datenschutzerkl&auml;rung: <a
+                    href="https://www.facebook.com/policy.php">https://www.facebook.com/policy.php</a></p>
+            <h3><strong>YouTube</strong></h3>
+            <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, ein Tochterunternehmen der Google
+                LLC,
+                1600 Amphitheatre Parkway, Mountain View, CA 94043 USA</p>
+            <p>Datenschutzerkl&auml;rung: <a
+                    href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+            <h3><strong>LinkedIn</strong></h3>
+            <p>LinkedIn Ireland Unlimited Company, Wilton Plaza, Wilton Place, Dublin 2, Irland, ein Tochterunternehmen
+                der
+                LinkedIn Corporation, 1000 W. Maude Avenue, Sunnyvale, CA 94085 USA.</p>
+            <p>Datenschutzerkl&auml;rung: <a
+                    href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a>
+            </p>
+            <h3><strong>Instagram</strong></h3>
+            <p>Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland, ein Tochterunternehmen der Facebook
+                Inc.,
+                1601 S. California Ave., Palo Alto, CA 94304, USA.</p>
+            <p>Datenschutzerkl&auml;rung: <a
+                    href="https://help.instagram.com/519522125107875">https://help.instagram.com/519522125107875</a></p>
+            <h3><strong>Google Analytics</strong></h3>
+            <p>In unserem Internetauftritt setzen wir Google Analytics ein. Hierbei handelt es sich um einen
+                Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, nachfolgend
+                nur
+                &bdquo;Google&ldquo; genannt.</p>
+            <p>Der Dienst Google Analytics dient zur Analyse des Nutzungsverhaltens unseres Internetauftritts.
+                Rechtsgrundlage ist Art. 6 Abs. 1 lit. f) DSGVO. Unser berechtigtes Interesse liegt in der Analyse,
+                Optimierung und dem wirtschaftlichen Betrieb unseres Internetauftritts.</p>
+            <p>Nutzungs- und nutzerbezogene Informationen, wie bspw. IP-Adresse, Ort, Zeit oder H&auml;ufigkeit des
+                Besuchs
+                unseres Internetauftritts, werden dabei an einen Server von Google in den USA &uuml;bertragen und dort
+                gespeichert. Allerdings nutzen wir Google Analytics mit der sog. Anonymisierungsfunktion. Durch diese
+                Funktion k&uuml;rzt Google die IP-Adresse schon innerhalb der EU bzw. des EWR.</p>
+            <p>Die so erhobenen Daten werden wiederum von Google genutzt, um uns eine Auswertung &uuml;ber den Besuch
+                unseres Internetauftritts sowie &uuml;ber die dortigen Nutzungsaktivit&auml;ten zur Verf&uuml;gung zu
+                stellen. Auch k&ouml;nnen diese Daten genutzt werden, um weitere Dienstleistungen zu erbringen, die mit
+                der
+                Nutzung unseres Internetauftritts und der Nutzung des Internets zusammenh&auml;ngen.</p>
+            <p>Google gibt an, Ihre IP-Adresse nicht mit anderen Daten zu verbinden. Zudem h&auml;lt Google unter</p>
+            <p><a
+                    href="https://www.google.com/intl/de/policies/privacy/partners">https://www.google.com/intl/de/policies/privacy/partners</a>
+            </p>
+            <p>weitere datenschutzrechtliche Informationen f&uuml;r Sie bereit, so bspw. auch zu den M&ouml;glichkeiten,
+                die
+                Datennutzung zu unterbinden.</p>
+            <p>Zudem bietet Google unter</p>
+            <p><a
+                    href="https://tools.google.com/dlpage/gaoptout?hl=de">https://tools.google.com/dlpage/gaoptout?hl=de</a>
+            </p>
+            <p>ein sog. Deaktivierungs-Add-on nebst weiteren Informationen hierzu an. Dieses Add-on l&auml;sst sich mit
+                den
+                g&auml;ngigen Internet-Browsern installieren und bietet Ihnen weitergehende Kontrollm&ouml;glichkeit
                 &uuml;ber die Daten, die Google bei Aufruf unseres Internetauftritts erfasst. Dabei teilt das Add-on dem
                 JavaScript (ga.js) von Google Analytics mit, dass Informationen zum Besuch unseres Internetauftritts
-                nicht an Google Analytics &uuml;bermittelt werden sollen. Dies verhindert aber nicht, dass Informationen
-                an uns oder an andere Webanalysedienste &uuml;bermittelt werden. Ob und welche weiteren
-                Webanalysedienste von uns eingesetzt werden, erfahren Sie nat&uuml;rlich ebenfalls in dieser
-                Datenschutzerkl&auml;rung. Cookiebot Als &#8222;Cookie-Banner&ldquo; setzen wir &#8222;Cookiebot&ldquo;
-                ein. &#8222;Cookiebot&ldquo; ist ein Produkt der Cybot A/S, Havnegade 39, 1058 Kopenhagen,
-                D&auml;nemark, nachfolgend &#8222;Cybot&ldquo;.</p>
-
-            <p>Durch die Funktion &#8222;Cookiebot&ldquo; informieren wir den Nutzer &uuml;ber die Verwendung von
-                Cookies auf der Website und erm&ouml;glichen es dem Nutzer eine Entscheidung &uuml;ber deren Nutzung zu
-                treffen.</p>
-
+                nicht
+                an Google Analytics &uuml;bermittelt werden sollen. Dies verhindert aber nicht, dass Informationen an
+                uns
+                oder an andere Webanalysedienste &uuml;bermittelt werden. Ob und welche weiteren Webanalysedienste von
+                uns
+                eingesetzt werden, erfahren Sie nat&uuml;rlich ebenfalls in dieser Datenschutzerkl&auml;rung.</p>
+            <h3><strong>Cookiebot</strong></h3>
+            <p>Als &bdquo;Cookie-Banner&ldquo; setzen wir &bdquo;Cookiebot&ldquo; ein. &bdquo;Cookiebot&ldquo; ist ein
+                Produkt der Cybot A/S, Havnegade 39, 1058 Kopenhagen, D&auml;nemark, nachfolgend
+                &bdquo;Cybot&ldquo;.&nbsp;
+            </p>
+            <p>&nbsp;</p>
+            <p>Durch die Funktion &bdquo;Cookiebot&ldquo; informieren wir den Nutzer &uuml;ber die Verwendung von
+                Cookies
+                auf der Website und erm&ouml;glichen es dem Nutzer eine Entscheidung &uuml;ber deren Nutzung zu
+                treffen.&nbsp;</p>
+            <p>&nbsp;</p>
             <p>Gibt der Nutzer seine Zustimmung zu der Verwendung der Cookies, werden die folgenden Daten automatisch
-                bei Cybot protokolliert:</p>
-
-            <p>&bull; Die anonymisierte IP-Nummer des Nutzers; &bull; Datum und Uhrzeit der Zustimmung; &bull;
-                Benutzeragent des Browsers des Endnutzers; &bull; Die URL des Anbieters; &bull; Ein anonymer,
-                zuf&auml;lliger und verschl&uuml;sselter Key. &bull; Die zugelassenen Cookies des Nutzers
-                (Cookie-Status), der als Nachweis der Zustimmung dient.</p>
-
+                bei
+                Cybot protokolliert:</p>
+            <p>&nbsp;</p>
+            <ul>
+                <li>Die anonymisierte IP-Nummer des Nutzers;</li>
+                <li>Datum und Uhrzeit der Zustimmung;</li>
+                <li>Benutzeragent des Browsers des Endnutzers;</li>
+                <li>Die URL des Anbieters;</li>
+                <li>Ein anonymer, zuf&auml;lliger und verschl&uuml;sselter Key.</li>
+                <li>Die zugelassenen Cookies des Nutzers (Cookie-Status), der als Nachweis der Zustimmung dient.</li>
+            </ul>
+            <p>&nbsp;</p>
             <p>Der verschl&uuml;sselte Key und der Cookie-Status werden anhand eines Cookies auf dem Endger&auml;t des
                 Nutzers gespeichert, um bei zuk&uuml;nftigen Seitenaufrufen den entsprechenden Cookie-Status
-                herzustellen. Dieses Cookie l&ouml;scht sich automatisch nach 12 Monaten.</p>
-
-            <p>Rechtsgrundlage ist hierbei Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht in der
-                Anwenderfreundlichkeit der Website sowie in der Erf&uuml;llung der gesetzlichen Vorgaben der DSGVO.</p>
-
+                herzustellen.
+                Dieses Cookie l&ouml;scht sich automatisch nach 12 Monaten.&nbsp;&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>Rechtsgrundlage ist hierbei <a href="http://dejure.org/gesetze/DSGVO/6.html">Art. 6 Abs. 1 lit. f
+                    DSGVO</a>.
+                Unser berechtigtes Interesse besteht in der Anwenderfreundlichkeit der Website sowie in der
+                Erf&uuml;llung
+                der gesetzlichen Vorgaben der DSGVO.</p>
+            <p>&nbsp;</p>
             <p>Die Installation des Cookies sowie dessen Speicherung, und damit seine Cookie-Zustimmung, kann der Nutzer
-                durch Einstellungen seines Browsers jederzeit verhindern bzw. beenden. Weitergehende Informationen zum
-                Thema Datenschutz bietet Cybot unter den nachfolgenden Links an:</p>
-
-            <p>https://www.cookiebot.com/de/privacy-policy/ MailChimp - Newsletter Wir bieten Ihnen die M&ouml;glichkeit
-                an, sich bei uns &uuml;ber unseren Internetauftritt f&uuml;r unsere kostenlosen Newsletter anmelden zu
-                k&ouml;nnen. Zum Newsletterversand setzen wir MailChimp, einen Dienst der The Rocket Science Group, LLC,
-                512 Means Street, Suite 404, Atlanta, GA 30318, USA, nachfolgend nur &#8222;The Rocket Science
-                Group&ldquo; genannt, ein. Zudem bietet The Rocket Science Group unter
-                http://mailchimp.com/legal/privacy/ weitergehende Datenschutzinformationen an. Falls Sie sich zu unserem
-                Newsletter-Versand anmelden, werden die w&auml;hrend des Anmeldevorgangs abgefragten Daten, wie Ihre
-                E-Mail-Adresse sowie, optional, Ihr Name nebst Anschrift, durch The Rocket Science Group verarbeitet.
-                Zudem werden Ihre IP-Adresse sowie das Datum Ihrer Anmeldung nebst Uhrzeit gespeichert. Im Rahmen des
-                weiteren Anmeldevorgangs wird Ihre Einwilligung in die &Uuml;bersendung des Newsletters eingeholt, der
-                Inhalt konkret beschreiben und auf diese Datenschutzerkl&auml;rung verwiesen. Der anschlie&szlig;end
-                &uuml;ber The Rocket Science Group versandte Newsletter enth&auml;lt zudem einen sog. Z&auml;hlpixel,
-                auch Web Beacon genannt&ldquo;. Mit Hilfe dieses Z&auml;hlpixels k&ouml;nnen wir auswerten, ob und wann
-                Sie unseren Newsletter gelesen haben und ob Sie den in dem Newsletter etwaig enthaltenen
+                durch Einstellungen seines Browsers jederzeit verhindern bzw. beenden.</p>
+            <p>Weitergehende Informationen zum Thema Datenschutz bietet Cybot unter den nachfolgenden Links an:</p>
+            <p>&nbsp;</p>
+            <p><a href="https://www.cookiebot.com/de/privacy-policy/">https://www.cookiebot.com/de/privacy-policy/</a>
+            </p>
+            <h3><strong>MailChimp - Newsletter</strong></h3>
+            <p>Wir bieten Ihnen die M&ouml;glichkeit an, sich bei uns &uuml;ber unseren Internetauftritt f&uuml;r unsere
+                kostenlosen Newsletter anmelden zu k&ouml;nnen.</p>
+            <p>Zum Newsletterversand setzen wir MailChimp, einen Dienst der The Rocket Science Group, LLC, 512 Means
+                Street,
+                Suite 404, Atlanta, GA 30318, USA, nachfolgend nur &bdquo;The Rocket Science Group&ldquo; genannt, ein.
+            </p>
+            <p>Zudem bietet The Rocket Science Group unter</p>
+            <p><a href="http://mailchimp.com/legal/privacy/">http://mailchimp.com/legal/privacy/</a></p>
+            <p>weitergehende Datenschutzinformationen an.</p>
+            <p>Falls Sie sich zu unserem Newsletter-Versand anmelden, werden die w&auml;hrend des Anmeldevorgangs
+                abgefragten Daten, wie Ihre E-Mail-Adresse sowie, optional, Ihr Name nebst Anschrift, durch The Rocket
+                Science Group verarbeitet. Zudem werden Ihre IP-Adresse sowie das Datum Ihrer Anmeldung nebst Uhrzeit
+                gespeichert. Im Rahmen des weiteren Anmeldevorgangs wird Ihre Einwilligung in die &Uuml;bersendung des
+                Newsletters eingeholt, der Inhalt konkret beschreiben und auf diese Datenschutzerkl&auml;rung verwiesen.
+            </p>
+            <p>Der anschlie&szlig;end &uuml;ber The Rocket Science Group versandte Newsletter enth&auml;lt zudem einen
+                sog.
+                Z&auml;hlpixel, auch Web Beacon genannt&ldquo;. Mit Hilfe dieses Z&auml;hlpixels k&ouml;nnen wir
+                auswerten,
+                ob und wann Sie unseren Newsletter gelesen haben und ob Sie den in dem Newsletter etwaig enthaltenen
                 weiterf&uuml;hrenden Links gefolgt sind. Neben weiteren technischen Daten, wie bspw. die Daten Ihres
                 EDV-Systems und Ihre IP-Adresse, werden die dabei verarbeiteten Daten gespeichert, damit wir unser
                 Newsletter-Angebot optimieren und auf die W&uuml;nsche der Leser eingehen k&ouml;nnen. Die Daten werden
-                also zur Steigerung der Qualit&auml;t und Attraktivit&auml;t unseres Newsletter-Angebots zu steigern.
-                Rechtsgrundlage f&uuml;r den Versand des Newsletters und die Analyse ist Art. 6 Abs. 1 lit. a.) DSGVO.
-                Die Einwilligung in den Newsletter-Versand k&ouml;nnen Sie gem&auml;&szlig; Art. 7 Abs. 3 DSGVO
-                jederzeit mit Wirkung f&uuml;r die Zukunft widerrufen. Hierzu m&uuml;ssen Sie uns lediglich &uuml;ber
-                Ihren Widerruf in Kenntnis setzen oder den in jedem Newsletter enthaltenen Abmeldelink bet&auml;tigen.
-                Muster-Datenschutzerkl&auml;rung der Anwaltskanzlei Wei&szlig; &amp; Partner</p>
+                also
+                zur Steigerung der Qualit&auml;t und Attraktivit&auml;t unseres Newsletter-Angebots zu steigern.</p>
+            <p>Rechtsgrundlage f&uuml;r den Versand des Newsletters und die Analyse ist Art. 6 Abs. 1 lit. a.) DSGVO.
+            </p>
+            <p>Die Einwilligung in den Newsletter-Versand k&ouml;nnen Sie gem&auml;&szlig; Art. 7 Abs. 3 DSGVO jederzeit
+                mit
+                Wirkung f&uuml;r die Zukunft widerrufen. Hierzu m&uuml;ssen Sie uns lediglich &uuml;ber Ihren Widerruf
+                in
+                Kenntnis setzen oder den in jedem Newsletter enthaltenen Abmeldelink bet&auml;tigen.</p>
+            <p><a
+                    href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html">Muster-Datenschutzerkl&auml;rung</a>
+                der <a
+                    href="https://www.ratgeberrecht.eu/datenschutz/datenschutzerklaerung-generator-dsgvo.html">Anwaltskanzlei
+                    Wei&szlig; &amp; Partner</a></p>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+
+    <!-- Book Now Modal -->
+    <div id="book" class="modal bookNow">
+        <div class="bookNow-container">
+            <div class="form-container">
+                <p class="bookNow-h1">Are you hyped?</p>
+                <p class="bookNow-h2">🎉 Yeah, we are too! </p>
+                <p class="bookNow-h3">Our app is still in development. Sign up for our newsletter to get notified when
+                    it's ready for you.</p>
+
+                <form>
+                    <input type="text" name="email" placeholder="Email" />
+                    <button class="submit-btn" type="submit">SIGN UP</button>
+                </form>
+            </div>
+            <img src="./assets/modal-img.png" alt="bg" class="modal-img">
         </div>
 
     </div>
-
 
     <!-- Cursor -->
     <!-- <div class="cursor"></div>
@@ -800,7 +1107,6 @@
 
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
