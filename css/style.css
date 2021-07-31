@@ -88,7 +88,9 @@ p {
   background: #131e2d;
   transition: transform 0.3s ease-in-out;
   -webkit-transition: transform 0.3s ease-in-out;
-
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
 }
 
 .switch-tab {
@@ -145,6 +147,9 @@ video {
   transform: translate(-50%, -50%);
   transition: opacity 0.4s ease-in-out;
   -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
   cursor: pointer;
 }
 
@@ -204,6 +209,9 @@ video:focus {
   color: #ffffff;
   transition: transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
   cursor: pointer;
   padding: 1rem 2rem;
   margin-top: 0.5rem;
@@ -262,6 +270,9 @@ video:focus {
 .slider-text1 {
   animation: slide 7s linear infinite;
   -webkit-animation: slide 7s linear infinite;
+  -moz-animation: slide 7s linear infinite;
+  -ms-animation: slide 7s linear infinite;
+  -o-animation: slide 7s linear infinite;
 }
 
 
@@ -295,8 +306,248 @@ video:focus {
   }
 }
 
+@-webkit-keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+
+  5% {
+    margin-top: -200px;
+  }
+
+  33% {
+    margin-top: -200px;
+  }
+
+  38% {
+    margin-top: -100px;
+  }
+
+  66% {
+    margin-top: -100px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-moz-keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+
+  5% {
+    margin-top: -200px;
+  }
+
+  33% {
+    margin-top: -200px;
+  }
+
+  38% {
+    margin-top: -100px;
+  }
+
+  66% {
+    margin-top: -100px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-ms-keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+
+  5% {
+    margin-top: -200px;
+  }
+
+  33% {
+    margin-top: -200px;
+  }
+
+  38% {
+    margin-top: -100px;
+  }
+
+  66% {
+    margin-top: -100px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-o-keyframes slide {
+  0% {
+    margin-top: -300px;
+  }
+
+  5% {
+    margin-top: -200px;
+  }
+
+  33% {
+    margin-top: -200px;
+  }
+
+  38% {
+    margin-top: -100px;
+  }
+
+  66% {
+    margin-top: -100px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
 
 @keyframes slide2 {
+  0% {
+    margin-top: -150px;
+  }
+
+  5% {
+    margin-top: -100px;
+  }
+
+  33% {
+    margin-top: -100px;
+  }
+
+  38% {
+    margin-top: -50px;
+  }
+
+  66% {
+    margin-top: -50px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes slide2 {
+  0% {
+    margin-top: -150px;
+  }
+
+  5% {
+    margin-top: -100px;
+  }
+
+  33% {
+    margin-top: -100px;
+  }
+
+  38% {
+    margin-top: -50px;
+  }
+
+  66% {
+    margin-top: -50px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-moz-keyframes slide2 {
+  0% {
+    margin-top: -150px;
+  }
+
+  5% {
+    margin-top: -100px;
+  }
+
+  33% {
+    margin-top: -100px;
+  }
+
+  38% {
+    margin-top: -50px;
+  }
+
+  66% {
+    margin-top: -50px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-ms-keyframes slide2 {
+  0% {
+    margin-top: -150px;
+  }
+
+  5% {
+    margin-top: -100px;
+  }
+
+  33% {
+    margin-top: -100px;
+  }
+
+  38% {
+    margin-top: -50px;
+  }
+
+  66% {
+    margin-top: -50px;
+  }
+
+  71% {
+    margin-top: 0px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-o-keyframes slide2 {
   0% {
     margin-top: -150px;
   }
@@ -502,6 +753,9 @@ input:focus {
   color: #ffffff;
   transition: transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+  -o-transition: transform 0.2s ease-in-out;
   cursor: pointer;
   /* height: 3.1rem; */
 }
@@ -531,8 +785,14 @@ input:focus {
 
 .network-icons1 {
   -webkit-animation: rotate-1 25s infinite;
+  -moz-animation: rotate-1 25s infinite;
+  -ms-animation: rotate-1 25s infinite;
+  -o-animation: rotate-1 25s infinite;
   animation: rotate-1 25 infinite;
   -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   position: absolute;
   top: 15vw;
@@ -544,8 +804,14 @@ input:focus {
 
 .network-icons2 {
   -webkit-animation: rotate-2 30s infinite;
+  -moz-animation: rotate-2 30s infinite;
+  -ms-animation: rotate-2 30s infinite;
+  -o-animation: rotate-2 30s infinite;
   animation: rotate-2 30s infinite;
   -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   position: absolute;
   top: 7vw;
@@ -556,8 +822,14 @@ input:focus {
 
 .network-icons3 {
   -webkit-animation: rotate-3 40s infinite;
+  -moz-animation: rotate-3 40s infinite;
+  -ms-animation: rotate-3 40s infinite;
+  -o-animation: rotate-3 40s infinite;
   animation: rotate-3 40s infinite;
   -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   position: absolute;
   top: -2vw;
@@ -583,6 +855,66 @@ input:focus {
 }
 
 
+@-webkit-keyframes rotate-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-15deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+
+@-moz-keyframes rotate-1 {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  50% {
+    -moz-transform: rotate(-15deg);
+  }
+
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+
+@-ms-keyframes rotate-1 {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  50% {
+    -ms-transform: rotate(-15deg);
+  }
+
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+
+@-o-keyframes rotate-1 {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    -o-transform: rotate(-15deg);
+  }
+
+  100% {
+    -o-transform: rotate(0deg);
+  }
+}
+
+
 @keyframes rotate-2 {
   0% {
     transform: rotate(0deg);
@@ -597,6 +929,62 @@ input:focus {
   }
 }
 
+@-webkit-keyframes rotate-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes rotate-2 {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  50% {
+    -moz-transform: rotate(20deg);
+  }
+
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes rotate-2 {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  50% {
+    -ms-transform: rotate(20deg);
+  }
+
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes rotate-2 {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    -o-transform: rotate(20deg);
+  }
+
+  100% {
+    -o-transform: rotate(0deg);
+  }
+}
+
 @keyframes rotate-3 {
   0% {
     transform: rotate(0deg);
@@ -608,6 +996,62 @@ input:focus {
 
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rotate-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-25deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes rotate-3 {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  50% {
+    -moz-transform: rotate(-25deg);
+  }
+
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes rotate-3 {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  50% {
+    -ms-transform: rotate(-25deg);
+  }
+
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes rotate-3 {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  50% {
+    -o-transform: rotate(-25deg);
+  }
+
+  100% {
+    -o-transform: rotate(0deg);
   }
 }
 
@@ -805,7 +1249,9 @@ input:focus {
   .slider-text1 {
     animation: slide2 7s linear infinite;
     -webkit-animation: slide2 7s linear infinite;
-
+    -moz-animation: slide2 7s linear infinite;
+    -ms-animation: slide2 7s linear infinite;
+    -o-animation: slide2 7s linear infinite;
   }
 
   .h3 {
