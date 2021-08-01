@@ -1,3 +1,14 @@
+// text-Slider
+
+$('.Slider').slick({
+  vertical: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  speed: 300,
+});
+
+
+
 
 //Content Transition
 
@@ -7,7 +18,9 @@ $('#creator').on('click', function() {
   $('#explorer').removeClass('active');
   $('.underline').addClass('switch-tab'); 
 
-  $('.slider').html("<div class=slider-text1>Digitally-guided tours</div> <div class=slider-text2> Gated content</div>  <div class=slider-text3> Ad partners </div>");
+  $('.text1').text("Digitally-guided tours");
+  $('.text2').text("Gated Content");
+  $('.text3').text("Ad partners");
 
   $('.h3').css({ 'opacity': '0', 'height': '0px' });
   $('.btn').html("get exclusive access")
@@ -22,7 +35,9 @@ $('#explorer').on('click', function() {
   $('#explorer').addClass('active');
   $('.underline').removeClass('switch-tab') 
 
-  $('.slider').html(" <div class=slider-text1> Live events.</div> <div class=slider-text2> Unique deals.</div>  <div class=slider-text3> Video-guided Experiences. </div>")
+  $('.text1').text("Live events.");
+  $('.text2').text(" Unique deals.");
+  $('.text3').text("Video-guided Experiences. ");
  
   $('.h3').css({ 'opacity': '1', 'height': 'auto' });
   $('.btn').html("book now")
@@ -79,3 +94,5 @@ var win = $(window).height() - 50;
 if(ht >= win) {
   $(".footer").css("position", "relative")
 }
+
+
