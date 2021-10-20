@@ -289,6 +289,17 @@ video:focus {
 
 
 
+.app-stores-btn{
+  margin-top: 40px;
+}
+
+.btn-app img {
+  height: 48px;
+  width: 161px;   
+}
+
+
+
 /* footer */
 
 .footer {
